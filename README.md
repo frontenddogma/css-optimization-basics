@@ -11,8 +11,8 @@ In the first and initial version of _CSS Optimization Basics_, there are probabl
 
 Because of this early state of things, note two other options:
 
-1. [File an issue](@@) for every problem you find—and get mentioned as a book contributor.
-2. [Submit a pull request](@@) for specific fixes and suggestions—and to get mentioned as a book contributor.
+1. [File an issue](https://github.com/j9t/css-optimization-basics/issues/new) for every problem you find—and get mentioned as a book contributor.
+2. [Submit a pull request](https://github.com/j9t/css-optimization-basics/pulls) for specific fixes and suggestions—and to get mentioned as a book contributor.
 
 With increasing quality and maturity of the book, the price of ebook will go up (probably up to the price of [some of Jens’s self-published books](https://www.amazon.com/Jens-Oliver-Meiert/e/B0045A1CDA?tag=j9t-21-20)). That still won’t be much for a tech book, even a short one, but the idea is to give those who buy a copy now a good deal. Note that everyone can always grab the free version or an update here, so whoever’s purchasing a copy—and that would greatly help Jens’s work—please keep that in mind, as book _updates_ may or may not be available for Amazon ebooks.
 
