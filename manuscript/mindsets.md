@@ -20,4 +20,16 @@ Without becoming overly self-helpish or even philosophical, a useful mindset for
 
 This mindset matters because it keeps our code base and our documentation as clean as possible, and hence contributes significantly to clear focus (“Do One Thing Really, Really Well”, “Keep It Simple”).
 
-@@
+## Keep It Simple
+
+The idea to keep it simple has a lazy touch, and yet it requires high skill. Keeping it simple really means _focus_, to know what’s important, and _through that_ be efficient. Keeping it simple does not mean to simply do less; it means to do what matters.
+
+As such, keeping things simple requires that we thoroughly understand our field—the core technologies, first and foremost, but everything in between and to the sides as well. And it means true economy of motion, because we don’t want to engage in something that doesn’t need to be done.
+
+As a mindset, keeping it simple is truly grandiose, and the interested reader may not want to pick up a book on minimalism but rather one about focus—my recommendation is Gary Keller’s [_The One Thing_](https://www.the1thing.com/).
+
+## Automate
+
+Lastly, a most powerful mindset as loosely as we’re working with them here, is the one to automate. Every step of our work should, if it can, be automated. Sometimes that will be obvious—every time after we made some CSS changes we run some optimization script—, sometimes that will require a bit of listening—a team member mentions how he manually updates some documentation each time someone reports downtime issues—, and at other times it will be obscure—no one even knew that there was the option to automate visual design regression testing.
+
+Whenever we repeat something in our work, we should look into whether that repetition can be automated by a script or tool—no matter how “hacky” the solution may be. (Personally, I work with a recurring reminder to think through my work and check for automation options.) And then it requires attention, for automation is powerful. And it doesn’t “take work away”—but it liberates us to do more important things.
