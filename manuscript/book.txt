@@ -1,5 +1,10 @@
+colophon.md
+acknowledgments.md
 prologue.md
 foreword.md
 introduction.md
 mindsets.md
 operation.md
+production.md
+overview.md
+epilogue.md
