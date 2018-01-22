@@ -151,4 +151,43 @@ Consistency is reasonably easy to achieve. We [establish coding guidelines](http
 
 We’ll cover this last step in the chapter, “Production Optimization” and go over some tools under “Tools and Resources”—but we’ll spare ourselves from going over often subjective coding guidelines and how to automate their implementation and enforcement. What we’ll do is cover select aspects of consistency that are of particular import to CSS optimization. One is automatable; the other isn’t: declaration sorting and selector sorting.
 
+#### Declaration Sorting
+
+This is trivial and at the same time automatable: _Sort declarations alphabetically._ As Google advocates—disclaimer: I’ve worked on setting up respective guidelines—, the only exception are vendor-specific extensions (self-destructing declarations that start with hyphens) which are located right before respective declaration to complement.
+
+```css
+.example {
+  background: none;
+  border: 1em dotted #069;
+  color: #096;
+  display: block;
+  float: none;
+  font-size: 1em;
+  font-style: italic;
+  height: 100px;
+  margin-top: 1em;
+  max-width: calc(100vw - 10em);
+  outline: 2em solid #609;
+  overflow: auto;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  top: 1em;
+  white-space: pre-wrap;
+  width: 100%;
+  z-index: 1;
+  filter: blur(33.35px) sepia(0.34);
+  -webkit-filter: blur(33.35px) sepia(0.34);
+  -moz-filter: blur(33.35px) sepia(0.34);
+}
+```
+
+Example: Quick, where do we add `transform: rotateY(10deg);` so that quick, someone else can immediately spot it?
+
+This is trivial and automatable but still, in my eyes, one of the key optimization methods. That is so because an almost failsafe, easily repeatable, soon habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme like the alphabetical ordering of declarations will at once make our code more understandable and help anyone touching it navigate in it.
+
+I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we will write better code once we can do it ourselves, and not meed some processor to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we do benefit from engraining this way of sorting.)
+
+[Sort declarations alphabetically.](https://meiert.com/en/blog/on-declaration-sorting/)
+
 @@
