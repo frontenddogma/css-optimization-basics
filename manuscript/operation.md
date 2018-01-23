@@ -190,4 +190,70 @@ I intentionally raise alphabetical sorting to “optimization status” because 
 
 [Sort declarations alphabetically.](https://meiert.com/en/blog/on-declaration-sorting/)
 
+#### Selector Sorting
+
+Selector sorting, then, is the antithesis to declaration sorting because it’s far less trivial to standardize (and on a complementary investigation it seems [the author’s own draft](https://meiert.com/en/blog/how-to-order-css-selectors/) is the only discoverable attempt for an order) and likewise difficult to automate.
+
+Yet selector sorting is the next impactful method at our disposal to make our style sheets consistent and, in a way, “optimize them for further optimization.” When it comes to maintenance, for example, a defined and followed selector order is key to successfully DRYing up (from “Don’t Repeat Yourself,” to keep the cost of maintenance low) our style sheet declarations, because it’s what ever helps us to avoid an extra round of DRYing _selector groups_ and spares us from great additional testing complexity.
+
+```css
+html {
+  font: 87.5%/1.5 'helvetica neue', helvetica, sans-serif;
+  max-width: 600px;
+  padding: 1em;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  margin: 2.5em 0 0;
+  padding: 3px 0 0;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a {
+  color: #e30613;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+strong,
+em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.info,
+#intro,
+#error {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.info {
+  background: #fff3ca;
+  margin: 1em -5px;
+}
+```
+
+Example: High level block elements, at some point text level elements, then classes and IDs, [&c.](https://meiert.com/en/blog/how-to-order-css-selectors/)
+
+Although it seems that many generations of web developers and teams of web developers have fared well without any firm idea of how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal), and, more importantly, do we ever have a chance of eliminating possible extra work through haphazard by-chance ordering. As we’ll see with the avoidance of repetition, that extra work is otherwise actually awaiting us.
+
+Accordingly, the lack of a consensus on selector sorting, and particularly the lack of _options_ for selector orders should give us much to think, and something important to work on community-wise. Consider what we do have and help us come up with additional options and, perhaps, standards.
+
 @@
