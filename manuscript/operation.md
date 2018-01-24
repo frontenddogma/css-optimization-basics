@@ -256,4 +256,55 @@ Although it seems that many generations of web developers and teams of web devel
 
 Accordingly, the lack of a consensus on selector sorting, and particularly the lack of _options_ for selector orders should give us much to think, and something important to work on community-wise. Consider what we do have and help us come up with additional options and, perhaps, standards.
 
+### Simplicity
+
+Making code simpler is our next optimization goal. Alas, that goal of code simplicity is often the goal of code minimalism, and simplicity and minimalism don’t necessarily correlate—they don’t correlate in our coming case of shorthands, indeed not, but they do when we speak about character minimization as part of production optimization.
+
+And yet, the goal of simplicity, just seen as one, is important: Optimizing for simplicity appears to make code more understandable and our work easier, and it seems to challenge ourselves as craftsmen to only use the least amount of code possible.
+
+#### ID and Class Naming
+
+In the times of a still surprisingly alive OOCSS, or BEM, or Atomic CSS ID and class naming has drowned as a developer topic, sinking to a second order afterthought seemingly not worth attention. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third party agencies in mostly automated testing and deployment environments so to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand does, we don’t need nor at all benefit from naming schemes that sacrifice all understandability and maintainability for brief presentational class soup equivalent to the 90’s (Atomic CSS), and we notice that the times of knowing how to name IDs and classes, and to actually use the _two_ (and not, as has been attempted with universal selectors, `!important`, or—to be covered, too—shorthands, shun IDs), are not over yet.
+
+The [rules for ID and class naming](https://meiert.com/en/blog/best-practice-ids-and-classes/) are simple and lasting:
+
+* keep use of IDs and classes to a minimum;
+* if needed, use functional ID and class names;
+* otherwise use generic ID and class names; and
+* use names that are as short as possible but as long as necessary.
+
+This doesn’t aim to rule out other naming schemes, but it’s the starting point for every web developer. It’s useful to learn and apply these rules first before switching to a scheme that violates them, because only when we have the experience of developing and maintaining web projects will be able to tell whether the violation is smart and justified, or haphazard and barely thought-out.
+
+The topic of ID and class naming is really a beginner topic but it’s being neglected these days, and I wanted to gloss over that because an otherwise optimized style sheet that uses poor ID and class names is still a poor, that is, poorly crafted style sheet.
+
+#### Shorthands
+
+Shorthands—CSS declarations that combine other declarations, like `font`, `border`, and `animation`—are a very useful part of CSS because they help to make CSS more minimal-simple. They allow us to write less code though not necessarily more understandable code—a situation that perhaps made one camp declare that [CSS shorthands were an anti-pattern](https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/), and the other say [they weren’t](https://meiert.com/en/blog/css-shorthands/).
+
+Modifying what I put to protocol as a part of that other camp, they’re both.
+
+Shorthands make code less understandable in complex projects, but make code more minimal. What tips the simplicity scale in my eyes is the fact that shorthands _always_ make our CSS more minimally simple, whereas _only in large and complex projects_, they make it less understandably simple because they imply too much: Everything a shorthand declaration doesn’t say still says something, because the values that are not set are really set to their initial values. And that can—in larger projects—lead to problems.
+
+```css
+html {
+  background: #fff;
+  font: 100%/1.88 palatino, lora, georgia, cambria, serif;
+}
+
+body {
+  margin: auto;
+  padding: 1.25em 1em;
+}
+
+#announcement {
+  background: #ff0;
+  margin: 1em auto 1.5em;
+  padding: .5em;
+}
+```
+
+Example: In this shorthands-only piece from an [actual website](https://mirrors.meiert.org/coderesponsibly.org/), the shorthands only help.
+
+For their value in making code more compact, their positive effect on small projects, and the few tools to automate shorthands, we benefit from using shorthands in our code, and with that optimizing it.
+
 @@
