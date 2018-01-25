@@ -307,4 +307,12 @@ Example: In this shorthands-only piece from an [actual website](https://mirrors.
 
 For their value in making code more compact, their positive effect on small projects, and the few tools to automate shorthands, we benefit from using shorthands in our code, and with that optimizing it.
 
+## Performance
+
+Performance is one of the most obvious goals to optimize for. The faster, the better, because we know that the [user experience improves the faster everyone gets what they want](https://www.nngroup.com/articles/website-response-times/), and that [with more speed, conversions increase as well](https://blog.kissmetrics.com/speed-is-a-killer/).
+
+And yet what we can roughly say is that improving rendering performance is not nearly as effective and important as is improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not nearly as helpful for performance than compressing images. These calculations are generally done so quickly that respective issues don’t matter (even though personally, as I do when coding without optional tags and without unneeded quotes around attribute values, we may go beyond such non-needs).
+
+The cases that we’ll look at now, still in our section on “operational” optimization, will exemplify a bit of this situation. Performance is not nearly as clear cut as it’s sometimes presented.
+
 @@
