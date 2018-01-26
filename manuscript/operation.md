@@ -349,4 +349,49 @@ _⚐ Note_
 
 With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. We’ve gotten to a point where we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has become weaker. That is development-practically speaking a helpful and development-theoretically speaking a fascinating development. For the time being I still recommend to follow the first paradigm and separate concerns (like structure, presentation, behavior)—and to always [keep the big picture in mind](https://meiert.com/en/blog/big-picture-thinking/).
 
+### Possibly Relevant: Declaration Prudence
+
+For declarations we face a similar situation as with selectors in that avoiding some of them seems to cause more harm and be more cognitively demanding than not to do anything (or continue doing what we used to do).
+
+With declarations, we are reasonably certain that declarations like `box-shadow`, `filter`, `opacity`, and `transform`, and some particular values, are _significantly_ slower and hence more expensive than others. So much more expensive, indeed, that the effects can be perceivable even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
+
+However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has “kangax,”](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/) alas the data are not robust enough or not available anymore (I have not reached kangax).
+
+Until we do more research and can properly, reliably document all the declarations that are particularly slow, or any value ranges that are particularly, we are in a dilemma, however, because there’s no point in panicking now, and no point in blindly guessing what declarations should be avoided.
+
+There may not even be a point taking action at all, because at the end of the day, we will still need to look at the case in question: How important is respective styling, and if it is important, what’s the performance impact of its replacement? In this case, then, it seems advisable to me to flag declarations as a possible optimization source, but not make it a priority—until we have better data.
+
+### Rule Hygiene
+
+Where we can finally start optimizing for performance is with always removing anything in our CSS that isn’t needed anymore: rule hygiene. This sort of hygiene is simple in theory—just get rid of what’s not needed—but tricky in practice.
+
+The trickiness consists in the fact that it’s hard to impossible to tell what rules truly aren’t needed. There are tools for this purpose, but it’s difficult to be certain of where style sheets are needed—and impossible on really large websites that also have similarly looking partner sites where third parties may hot-link main style sheets—, and difficult to automate the procedure.
+
+Generally speaking though, what helps this hygiene is the following:
+
+* Discipline to remove page elements
+* Diligence to immediately clean style sheets
+* Section and general code comments
+* Descriptive, at least direct selectors (`footer` instead of `body > :last-child`)
+* Tools
+  - [Chrome Developer Tools](https://developer.chrome.com/devtools) browser extension audit tab
+  - [Dust-Me Selectors](https://addons.mozilla.org/en-US/firefox/addon/dust-me-selectors/) Firefox browser extension
+  - [Unused CSS](https://unused-css.com/) crawler
+  - [PurifyCSS](https://github.com/purifycss/purifycss) script
+  - UnCSS [script](https://github.com/giakki/uncss) and [online tool](https://uncss-online.com/)
+
+The Unused CSS crawler goes furthest where we actually want to go, to have something that tells us with considerable certainty what is used and what’s not. It has become one of my favorite tools for CSS optimization through rule hygiene.
+
+_⚐ Note_
+
+Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather served the systemic _deterioration_ of websites, by being used endlessly to build entire layouts, then layout tables (though in a way, they only served optimization of said layouts). But then our attention was on
+
+* what formats to use for quality and compression (“GIF or JPG?”)
+* how to compress images
+* how to limit the number of images (to limit the number of HTTP requests)
+* how to not use images (data URIs)
+* and again, what formats to use (“…or SVG?”)
+
+These topics, without the redundancy of the formats and compression questions, are exactly the ones we should still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization. It’s image optimization. (And also, Addy Osmani has just written [such a book](https://images.guide/).)
+
 @@
