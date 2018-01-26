@@ -315,4 +315,38 @@ And yet what we can roughly say is that improving rendering performance is not n
 
 The cases that we’ll look at now, still in our section on “operational” optimization, will exemplify a bit of this situation. Performance is not nearly as clear cut as it’s sometimes presented.
 
+### Irrelevant: Selector Performance
+
+Selector performance is _not_ something to optimize for. Selector performance is irrelevant. The price we pay for optimizing for selector performance is, indeed, terrible: We micro-manage our work for gains that aren’t even noticeable.
+
+In 2009, Steve Souders contributed perhaps the first important results to the topic, and [one of his main articles](http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/) on the subject should have made more of us think. First, in his tests, even style sheets with 18,000 rules (!) were rendered within 600 ms (!). Then, Steve explained in quite clear terms, his hypothesis: “For most web sites, the possible performance gains from optimizing CSS selectors will be small, and are not worth the costs.”
+
+Perhaps people misunderstood when Steve went on to write, “There are some types of CSS rules and interactions with JavaScript that can make a page noticeably slower. This is where the focus should be.”—What we saw, namely, was an [undue focus](https://meiert.com/en/blog/performance-of-css-selectors/) on selector performance and an outright childish ban of selectors, notably the universal selector.
+
+(Years later, in additional investigations, we even find problems with the methodology leading to important observations like this, [one by Ben Frain](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/): “It is practically impossible to predict the final performance impact of a given selector by just examining the selectors.”)
+
+The first problem with optimizing for selectors is that the gains are negligible. Yes, some selectors are slower than others, and from the way they work this is probably going to be the case until the world ends. Alas, nothing practically relevant follows from this observation: The effects are not felt by us nor by our end users. We do not ship websites that use 25,000 rules of the type of `:after` (and that’s it) to bring pages to a crawl; a) they don’t come to a crawl, b) who writes code like that has others issues.
+
+The second problem with optimizing for selectors is that we over-optimize and micro-manage, and actually slow down our workflow and write worse CSS. Putting up rules in place for how _selectors_ should look like is adding a cognitive restriction that only hinders a team of developers, and the outcome is not any more elegant code in terms of minimalism (though those of us who connect verbosity with understandability may have a point).
+
+Where we are right now, selector performance is still a box better left closed.
+
+### Irrelevant: Inline CSS
+
+Similarly, though practically speaking much more legitimate, inline CSS—applying CSS directly through `style` attributes—should also be avoided. This recommendation comes again from the idea to keep [the big picture](https://meiert.com/en/blog/big-picture-thinking/) in mind, by acknowledging that yes, inline CSS is often useful for performance reasons (saving one or more style sheet HTTP requests, applying faster selectors), but no, it violates separation of concerns and makes maintenance harder. Too hard.
+
+It is important to me to drive this point home, and to risk making this book a lot more complicated and seemingly less useful: We are of no good use as web developers when we are blind to the consequences of our work. An accessibility expert, a JavaScript expert, a performance expert are all still rather poor web developers if they don’t understand _and factor in_ what their expert knowledge means for other areas of our field.
+
+```html
+<div style="display:none" jsl="$t t-aTz9-_sUcEc;$x 0;" class="r-ild1JbEZKhjg"></div><div id="duf3-46" data-jiis="up" data-async-type="duffy3" data-async-context-required="type,open,feature_id,async_id,entry_point,authority,card_id,header,suggestions,surface,suggestions_types,suggestions_subtypes" class="y yp"></div><a class="duf3 _sWr" href="#" id="sbfblt" data-async-trigger="duf3-46" jsaction="async.u">Report foo</a></div></form></div><div class="sfbgx"></div><div id="gac_scont"></div><div class="spch s2fp-h" style="display:none" id="spch"><div class="spchc" id="spchc"><div class="_o3"><div class="_AM"><span class="_CMb" id="spchl"></span><span class="button" id="spchb"><div class="_wPb"><span class="_AUb"></span><div class="_Fjd"><span class="_oXb"></span><span class="_dWb"></span></div></div></span></div><div class="_gjb"><span class="spcht" id="spchi" style="color:#777"></span><span class="spcht" id="spchf" style="color:#000"></span></div><div class="foo-logo"></div></div><div class="_ypc"><div class="_zpc"></div></div></div><div class="close-button" id="spchx">&times;</div></div><div style="display:none" jsl="$t t-orNZyHXTT74;$x 0;" class="r-iCneKvRyCT78"></div><div class="content" id="main"><span class="ctr-p" id="body"><center><div style="height:233px;margin-top:89px" id="lga"><div style="padding-top:109px"><style>#hplogo{background:url(/images/branding/foologo/2x/foologo_color_272x92dp.png) no-repeat}@media (-webkit-max-device-pixel-ratio:1),(max-resolution:96dpi){#hplogo{background:url(/images/branding/foologo/1x/foologo_color_272x92dp.png) no-repeat}}</style><div style="background-size:272px 92px;height:92px;width:272px" title="foo" align="left" id="hplogo" onload="window.lol&&lol()">
+```
+
+Example: Can these styles lie? (They can.)
+
+As such, yes, inline CSS is good for performance, and as such we should consider it a CSS optimization measure. But then, categorical no—unless, perhaps, we deal with truly unique styling on ever unique single pages—to use inline CSS. Our vision of web development, to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance, forbids this. We don’t want to touch HTML for CSS updates—and clearly, inline CSS prevents that.
+
+_⚐ Note_
+
+With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. We’ve gotten to a point where we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has become weaker. That is development-practically speaking a helpful and development-theoretically speaking a fascinating development. For the time being I still recommend to follow the first paradigm and separate concerns (like structure, presentation, behavior)—and to always [keep the big picture in mind](https://meiert.com/en/blog/big-picture-thinking/).
+
 @@
