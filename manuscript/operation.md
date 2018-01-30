@@ -394,4 +394,22 @@ Images have always been a matter of optimization on the Web. At first they hadn�
 
 These topics, without the redundancy of the formats and compression questions, are exactly the ones we should still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization. It’s image optimization. (And also, Addy Osmani has just written [such a book](https://images.guide/).)
 
+## Quality
+
+On the surface optimization seems to have an obvious goal of increasing quality, but, and my own knowledge of the philosophy of language leaves me here, optimization seems to have value just as a process, on its own. One can optimize something, for something, and something can have a quality of something, but not of something else.
+
+Generall speaking, we cover the general optimization and the general quality of CSS; all that we’ve established about big picture thinking supports this notion. And yet quality should be called out explicitly, as our general goal. And for that goal, there’s one particular aspect to pay attention to.
+
+### Validation
+
+How can we tell that what we’re coding works? We test. How can we tell it’s error-free? We validate. Yes, in a way testing exposes errors in our code, and on the other end we depend on validators to be up-to-date on the latest and greatest. And still, validation is a crucial part in making sure that our code is syntactically correct and uses selectors and declarations (CSS) as well as a structure and elements and attributes (HTML) that actually exist.
+
+There is a gray area when respective working groups just came up with new things (that is, just extended the specifications), and the validator teams couldn’t catch up yet, but that gray area must not prevent us from validating. That would be like only using mobiles whose batteries are fully charged, or only wearing what had just been laundered.
+
+![“We found the following errors.”](images/validation.png)
+
+Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)
+
+Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/en/analysis/#validation)—we optimize our style sheets because we can correct and remove code that doesn’t work. We also benefit through, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, getting a better technical understanding (validation issues can be quite informative and instructive) and becoming better professionals (everyone can write poor and invalid code—we’re experts because we can and we do write valid code).
+
 @@
