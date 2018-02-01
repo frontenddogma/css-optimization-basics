@@ -412,4 +412,48 @@ Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%
 
 Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/en/analysis/#validation)—we optimize our style sheets because we can correct and remove code that doesn’t work. We also benefit through, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, getting a better technical understanding (validation issues can be quite informative and instructive) and becoming better professionals (everyone can write poor and invalid code—we’re experts because we can and we do write valid code).
 
+## Maintainability
+
+Optimizing for maintainability means to make sure that everything is done to make maintenance as easy as possible. It starts with making sure to avoid _unnecessary_ work, and surprisingly, this begins with the mundanest of things—proper style sheet naming. We won’t discuss such simple things here, but let’s all keep an eye on the senseless idiocy of changing style sheet names and such. When we’re doing that, we’re not taking care of a simple maintenance task—we, excuse the language, royally f’ed up one of the simplest things there is in web development. (As always, let’s just use functional or generic names. I’ve never in my 20 years career changed a style sheet’s name when it was just called “default.css”.)
+
+### Irrelevant: !important
+
+Similar to performance, there’s some garbage to bring out here. Contrary to some developers’ views, there’s nothing harmful, and nothing dangerous, and neither anything unmaintainable about using `!important`. `!important`, a legitimate piece of [the cascade](https://www.w3.org/TR/CSS22/cascade.html#cascade), is a tool.
+
+As with every tool, one can use it wrong. Using a knife to eat a soup is frustrating. Using a hammer to solder circuit boards is very difficult. Using `!important` to fix every layout problem is like using pesticides against bugs around crops: It’s tough on the environment.
+
+Alas, now, that doesn’t mean one shouldn’t use knifes, hammers, or `!important`.
+
+What it means is to learn when it’s best and most effectively used.
+
+In essence (at the time of this writing, I’m just preparing a post about the proper use of `!important`), let’s not refrain from using `!important`. Let’s not shy away from using it for quick _testing and debugging_. Let’s well use it for declarations, then, that come early in our style sheets but that are rather unspecific, and hence face a risk (and probably just suffered from) being overridden in some way. _That is not bad development practice. That makes sense._
+
+`!important` is fine. Let’s move on.
+
+### Separation of Concerns
+
+Separation of concerns is one key for maintainability. It’s defined as follows [in Wikipedia](https://en.wikipedia.org/wiki/Separation_of_concerns):
+
+> In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections, such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program. A concern can be as general as the details of the hardware the code is being optimized for, or as specific as the name of a class to instantiate. A program that embodies SoC well is called a modular program. Modularity, and hence separation of concerns, is achieved by encapsulating information inside a section of code that has a well-defined interface.
+
+The first and most important thing to connect with separation of concerns is to strictly separate structure (HTML), presentation (CSS), and behavior (JavaScript, a term I still use over ECMAScript).
+
+Although macro-separation, it makes sure that we develop using the appropriate technology (we’ve seen what solving design issues in HTML has done) and know where to look when there are issues (we don’t want to fix document-structural issues in JavaScript).
+
+For CSS that means to look beyond and make sure to collect everything that’s related to the appearance of our site or app and have it in our style sheets. In a way separation of concerns is the basis for all optimization, because only that way do we know that our CSS is actually all handled by style sheets (and not, as it happens, in HTML templates or JavaScript files).
+
+On a micro and intra-style sheet level, there are now two options for separation of concerns.
+
+One is to separate all styles by modules (functionality), or perhaps, blocks, or elements (BEM), and to keep them separate. (This goes in the direction of the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).)
+
+Two is not to do anything more—as we don’t have to do anything more if we’re sorting selectors consistently (such sorting will _inherently_ lead to an even modular order in our style sheets), and especially not _if_ we DRY our style sheets entirely. As we will see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, for which module separation is rather inconvenient. (This is another example for where our work requires some feeling for balance and priority—we may well decide for a different course, especially when our projects are of large size.)
+
+_⚐ Note_
+
+Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
+
+In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make for all but fancy beginner-style code.
+
+When we shall avoid the descendant selector (OOCSS), then great, no worries about inheritance (that is the TSA writing CSS right there)—but also no incredible elegance through contextual styling. When we shall avoid nested selectors (BEM), but “in this case [Christmas example] they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (which, by the way, is the opposite of separation of concerns), then we negate quite _all_ the advantages of CSS and separation through a single convention.
+
 @@
