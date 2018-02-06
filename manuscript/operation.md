@@ -456,4 +456,50 @@ In a basic sense, what they do is address some of the problems of _complex_ web 
 
 When we shall avoid the descendant selector (OOCSS), then great, no worries about inheritance (that is the TSA writing CSS right there)—but also no incredible elegance through contextual styling. When we shall avoid nested selectors (BEM), but “in this case [Christmas example] they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (which, by the way, is the opposite of separation of concerns), then we negate quite _all_ the advantages of CSS and separation through a single convention.
 
-@@
+### Don’t Repeat Yourself
+
+The next maintainability pillar to optimize for is to avoid repetition. When we think about selectors in terms of _grouped_ selectors (that is, `section` to be different from `section, div`), and when we assume declarations to be written so consistently as to not inadvertently repeat through different spellings (compare `outline: 0` and `outline: none`), there really is only one way to avoid repetition: through avoiding repeat _declarations_.
+
+That, then, typically makes our style sheets more compact but also more maintainable, because we limit the number of places where we define any specific style.
+
+#### Using Declarations Just Once
+
+“Using declarations just once” is an old technique that has found surprisingly little attention and adoption. It means what is says: To focus on using each declaration—if coding guidelines have assured us to always write them the same way—just a single time.
+
+It’s a tangible optimization step in that we’re still encouraged to write CSS [the natural way](https://meiert.com/en/blog/css-dry-and-optimization/), to then go over what we’ve written to make sure we leave no repetition behind. That process is roughly [as follows](https://meiert.com/en/blog/dry-css/):
+
+* Write CSS, the natural way.
+* Decide on DRY boundaries: section (functionally separate CSS parts) or file/`@media` level?
+* Make sure to format code consistently, as `background: none;`, `background:none;`, or `background-image: none;` could all mean the same but make our task of finding duplicates unnecessarily complicated.
+* Search for duplicate declarations:
+  - For new style sheets: after initial setup is done.
+  - For new features and bug fixes: after respective work is done.
+  - Tip: If version control highlighting for file changes is not enough, temporarily indent changed declarations to only check for their repetition.
+* Dissolve duplicate declarations:
+  - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting de-duplication to sections, take care to limit search scope to these sections).
+  - For each duplicate declaration (the actual work):
+    + Determine which respective rule should come first in the style sheet (for this one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
+    + If this first rule contains additional declarations, i.e. declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original; keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
+    + Copy the selectors of the _other_ rules that contain respective duplicate declaration to the rule that comes first.
+    + Make sure to remove the duplicate declarations whose selectors have just been copied up in the style sheet, and to remove the entire rule if the rule only consisted of the now moved duplicate declaration.
+    + (Repeat.)
+  - Make sure to check the correct _order of the selectors_ for the rules that now handle the formerly duplicate declarations.
+  - Make sure to check for the correct _placement_ of the rules that now combine formerly duplicate declarations.
+* (Repeat.)
+* Test.
+
+This may seem intimidating, but is rather precise; and it’s much work only when we just wrote an entire style sheet. For small updates, for example, the process is considerably easier and much more grateful.
+
+What we receive at the end of it is a style sheet that is, [in many cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example), lighter than what we started with; but as file size is not always a factor for performance (mainly thanks to compression), the main benefit is with improved maintainability: We end with style sheets that are more compact, easier to understand, and easier to manage. So much, indeed, that this optimization step may mean that we don’t need something like variables, because when we don’t, [like the average website does](https://meiert.com/en/blog/70-percent-css-repetition/), repeat each declaration almost four times, there’s less need to sprinkle variables all over our work.
+
+A note: Try this process on for size, and apply it to CSS sections first (that is, avoid declaration repetition within functional blocks, as with for page styles, navigation styles, login styles, however blocks are separated). This way it’s easier to get acquainted with the process, get a moderate result, and also find a way to feed back to the community for your very own ideas on DRY CSS.
+
+⁂
+
+We’re now concluding the section on operational optimization. What we’ve covered are all things we need to focus on while we’re working on style sheets. Most of that could not be automated (with the exception of intermittent controls that inform us if, say, our style sheet contained too much repetition, or we were about to submit something invalid). But even if it all could be automated, I believe it makes sense for us to internalize and live what we’ve just discussed, for it to improve our code and us as professionals.
+
+_⚐ Note_
+
+That last part in parentheses seems innocent but somewhat hints at the future for professional development: automated live feedback. Likely an area for modern editors, this could mean to immediately provide notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way seems long at this point—we’ll need great UI and AI features to make it work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s rather glaringly missing from the current way of development, that only checks code once we checked it into a repository or deployed into a staging or production environment.
+
+—In the next section, things get a little easier.
