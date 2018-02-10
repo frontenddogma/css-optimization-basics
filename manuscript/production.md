@@ -22,4 +22,52 @@ To make our style sheets more compact, that is, make them easier to read and sma
 
 As noted in the introductory section, these items can well be covered by coding guidelines but they’re also easy enough to automate and run through just before pushing our style sheets to production.
 
+### Code Minimization
+
+After we’ve minimized our style sheet code without impairing understandability, the next steps means to remove all the characters that aren’t needed for the style sheet to work—this makes it production-ready.
+
+Note again that this is only a separate step to illustrate that we’re able to and may be mandated to remove certain characters (last step) manually anyway—perhaps our style guide requires us to, where possible, use 3-digit hex color values—, and can still work with our style sheets, while this step makes style sheet maintenance cumbersome if not practically impossible.
+
+What is done here are typically two things:
+
+1) remove all comments,
+2) remove all (non-required) whitespace characters.
+
+```css
+html {
+  font: 87.5%/1.5 'helvetica neue', helvetica, sans-serif;
+  max-width: 600px;
+  padding: 1em;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  margin: 2.5em 0 0;
+  padding: 3px 0 0;
+}
+
+footer small,
+label {
+  display: block;
+}
+```
+
+Example: Random non-minified CSS snippet.
+
+```css
+html{font:87.5%/1.5 'helvetica neue',helvetica,sans-serif;max-width:600px;padding:1em}footer{border-top:1px solid #eee;margin:2.5em 0 0;padding:3px 0 0}footer small,label{display:block}
+```
+
+Example: Random now minified CSS snippet.
+
+As mentioned in the beginning of this book, we benefit from automating our work—as this optimization step is ugly to do and ugly to work with we actually have something here that is almost _always_ automated.
+
+_⚐ Note_
+
+For both character and code optimization there are several tools and scripts on the market, for example:
+
+* [minifier.org](http://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
+* [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port).
+* [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
+
 @@
