@@ -70,4 +70,64 @@ For both character and code optimization there are several tools and scripts on 
 * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port).
 * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
 
+### File Normalization
+
+Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them to a single file to load. That is important for more effective compression and even more so for fewer HTTP requests.
+
+That’s simplified but the basic idea behind this is that HTTP request overhead makes for 500–700 bytes (based on work from Steve Souders and Kyle Simpson) that “costs about 100 ms” (Kyle Simpson).
+
+This data has led others to recommend that files smaller than [1&nbsp;KB] should inlined, and to avoiding inlining of files that are bigger than 4&nbsp;KB (Guy Podjarny).
+
+We may say that most sites that use several style sheets (to at all be combined to one for production) do work with files that are larger than 1&nbsp;KB. As such it’s useful to have these as individual files (and not inline), but for each style sheet we get rid of (merge) we save roughly half a kilobyte and 10 ms. This leads us to the recommendation to merge all styles into one file and link that from our documents.
+
+As we can tell, there must be something else here. What about tiny sites, and what about overall file size and caching?
+
+Tiny sites, particularly one-pagers with just a few rules, may be under the threshold. If the site is and will be a one-pager forever we have a stronger incentive to inline all code, both styles and scripts. But that also depends on the page itself and our ideas about true separation of concerns. If the page resources are so few and so small that the extra CSS request is not felt anyway, then it may well be “fine” to go for separation. Likewise if we strongly believe in separation of concerns, we might just always do this (and what may sound a little rigid here I consider useful for its cognitive simplicity).
+
+File size and caching are normally the issues that are of more concern now. The concern boils down to the following two questions:
+
+1) If all our styles are in one style sheet, but a user visits just one page, how can we justify pushing all the unused styles onto them?
+
+(Note that per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide some number, as bounce rates actually vary heavily per field as well as per type of content.)
+
+2) Same scenario, if all our styles are in one style sheet, what is a good balance to make sure that the style sheets get cached but we can swiftly roll out updates?
+
+I set out to go over both questions in detail but I believe it to be more useful to leave them to everyone to decide on their own. This may be useful, too, to remind ourselves that even though technical questions often beg quite definite answers, there are questions that don’t lead to a strict “right” or “wrong”—the answers often still depend on our priorities.
+
+What should we consider for our decision?
+
+* For performance in terms of efficiency and file size, each page should only come with the styles it uses.
+* For performance in terms of caching, each style sheet should be cacheable.
+* For performance in terms of efficiency and file size if a user visits many pages (low bounce rate with visitors covering a high percentage of needed styles), a single style sheet is usually fastest.
+* For HTML maintainability, style sheets should not be versioned manually (we don’t want to update HTML code every time we update CSS code).
+* For CSS maintainability, style sheets should not be broken up manually (we don‘t want to merge style sheets every time we update CSS code).
+* For general maintainability, code should be kept simple.
+
+et cetera.
+
+I’ll still offer a view. There are a few reasons that suggest to only provide the styles that are used on each page. This approach should be taken if 1) the project is large (perhaps >10,000 pages, or >10,000 declarations) _and_ 2) if it can be automated.
+
+index.css (or)
+contact.css (or)
+search.css (or)
+…
+
+Example: Page-oriented, automated, cacheable style sheets carrying everything each page needs. (Bonus exercise not covered so far: Dynamically load only the styles needed on subsequent page visits.)
+
+In other cases it seems most effective to go for a single style sheet, whether to begin with (easiest to set up) or for production (in which cases the merging of files should also be automated, which can happen through something as simple as PHP-importing sub style sheets into a default.css—processed as PHP but returned as `text/css`, of course).
+
+default.css
+
+Example: Just one style sheet.
+
+And there are compromises (aka exceptions) to be used sparingly and wisely, like [the approach taken with Google’s Go framework](https://meiert.com/en/blog/google-web-frameworks/): Provide a small core style sheet sufficient for basic pages, a bigger one for more complex pages, and individual style sheets for custom sub sites and pages.
+
+go.css (or)
+go-x.css (or)
+default.css (importing either go.css or go-x.css)
+
+Example: The approach taken by the Go framework.
+
+At the end of the day there is no single answer for optimal CSS file management. Complexity is an important criterion, automation is an important approach, simplicity is likewise relevant.
+
 @@
