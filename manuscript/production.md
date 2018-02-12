@@ -130,4 +130,33 @@ Example: The approach taken by the Go framework.
 
 At the end of the day there is no single answer for optimal CSS file management. Complexity is an important criterion, automation is an important approach, simplicity is likewise relevant.
 
-@@
+## Output Control
+
+As the final step as per this basic treatise, it’s important to check what we’re finally shipping. Did all our other optimization steps work? Have we missed anything?
+
+### Reviews and Sanity Checks
+
+For the finishing optimization step we want to regularly employ code reviews and checks, and to run _both_ manual and automated checks.
+
+The reason to do automated checks is clearly efficiency, as we don’t want to spend any human time on constantly validating or otherwise confirming the quality of our style sheets.
+
+The reason to do manual checks is not to miss glaring issues, things that fly under the radar because we missed how, say, a preprocessor may have had a flag that left in comments, or that otherwise generates production output that isn’t desirable.
+
+Test		Automated					Manual
+Schedule	Daily and on deployment		Weekly
+
+Example: CSS routines.
+
+The manual checks can be swift; gloss over the output, perhaps re-formatted to be legible again (tools like [CSSTidy](https://hell.meiert.org/aux/optimize/css/) allow to throw a CSS URL at them to be “uncompressed”).
+
+The automated checks ask for time to be set up properly and depend on one’s priorities and needs; one popular way is to use [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to validate and lint on commit, as through scripts like Wouter Sioen’s [pre-commit](https://github.com/WouterSioen/pre-commit).
+
+These reviews wrap a nice tie around much of what we’ve discussed so far: We enforce our desire for quality (the reason why we optimize in the first place), with our development mindsets (like doing our work really well and automating it so to focus on the things that matter).
+
+⁂
+
+This concludes the overview on CSS optimization basics. There’s more to cover, certainly, but I’ll say that we’ve actually covered most, and more than basics; and I don’t say that so to inflate the idea of “basics” but because pretty much everything else now depends on development paradigms, priorities, and the big picture.
+
+That, then, I’m willing to put to the test: Please share your thoughts on what should also be _required_ optimization steps. Share them privately, by [contacting me](https://meiert.com/en/contact/), or share them publicly, perhaps tagging them so that others can find your views. Although my own shortcut was “#csso” I’ll propose the more verbose and more clear “#cssoptim”.
+
+Other than that, it’s my wish that everyone, the aspiring CSS developer as well as the senior CSS wizard, could take something out of this book. Its value is clearly related to how much you can take with you. To compound that value we’ll finish with an overview and a selection of tools and references.
