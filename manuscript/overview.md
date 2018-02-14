@@ -80,4 +80,53 @@ And, as professionals, we lead by example.
 
 Thank you.
 
-@@
+## Tools and References
+
+The following lists a small selection of useful _CSS_ tools, websites, and books. They are geared towards more experienced developers, and they are because the novice developer will learn more and make bigger jumps learning here than staying with beginner materials.
+
+### Tools
+
+A few handy CSS tools, both for manual and automated testing.
+
+* CSS Analyser [online tool](http://juicystudio.com/services/csstest.php), to validate CSS, units of measurement, and to check for sufficient color contrast
+* CSS Minifier [online tool](https://cssminifier.com/), to minify CSS
+* CSS Stats [script](https://github.com/cssstats/cssstats) and [online tool](http://cssstats.com/), to analyze and show data about style sheets
+* CSS Validation Service [script](https://github.com/w3c/css-validator) and [online tool](https://jigsaw.w3.org/css-validator/), to validate CSS
+* CSSCheck [online tool](http://www.htmlhelp.com/tools/csscheck/), to validate CSS
+* CSSJanus Left-to-Right-to-Left-ifyer [script](https://code.google.com/archive/p/cssjanus/) and [online tool](https://cssjanus.appspot.com/), to convert CSS directionality (LTR/RTL)
+* CSSLint [script](https://github.com/CSSLint/csslint) and [online tool](http://csslint.net/), to identify CSS code issues
+* CSSTidy [script](http://csstidy.sourceforge.net/) and [online tool](https://hell.meiert.org/aux/optimize/css/), to reformat and optimize CSS
+* Minify [script](https://github.com/matthiasmullie/minify) and [online tool](http://www.minifier.org/), to minify CSS
+* pre-commit [script](https://github.com/WouterSioen/pre-commit), to validate syntax errors in CSS (through CSS Lint) and SCSS (through SCSS Lint)
+* purifycss [script](https://github.com/purifycss/purifycss), to remove unused CSS
+* UnCSS [script](https://github.com/giakki/uncss) and [online tool](https://uncss-online.com/), to remove unused CSS
+* Unused CSS [online tool](https://unused-css.com/), to remove unused CSS
+* YUI CSS Compressor [script](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port) and [online tool](https://hell.meiert.org/aux/compress/css/gui/), to format and compress (minify) CSS
+
+### Websites
+
+A selection of CSS experts and resources for web development.
+
+* [A List Apart](https://alistapart.com/)
+* [Andrew, Rachel](https://rachelandrew.co.uk/)
+* [Atkins Jr., Tab](http://www.xanthir.com/blog/)
+* [Can I Use](https://caniuse.com/)
+* [CSS-Tricks](https://css-tricks.com/)
+* [Frain, Ben](https://benfrain.com/)
+* [Heilmann, Christian](https://christianheilmann.com/)
+* [Kinlan, Paul](https://paul.kinlan.me/)
+* [Meiert, Jens Oliver](https://meiert.com/en/blog/categories/development/)
+* [Meyer, Eric](https://meyerweb.com/)
+* [Roberts, Harry](https://csswizardry.com/)
+* [Smashing Magazine](https://www.smashingmagazine.com/)
+* [W3C (Cascading Style Sheets)](https://www.w3.org/Style/CSS/)
+* [Weyl, Estelle](http://www.standardista.com/)
+
+### Books
+
+An even smaller selection of books (my recommendation: still look into [the specs](https://www.w3.org/TR/)).
+
+* [_CSS Secrets: Better Solutions to Everyday Web Design Problems_ (Lea Verou)](https://www.amazon.com/dp/B0131MQ1NS/?tag=j9t-21-20)
+* [_CSS: The Definitive Guide: Visual Presentation for the Web_ (Eric Meyer and Estelle Weyl)](https://www.amazon.com/dp/1449393195/?tag=j9t-21-20)
+* [_CSS: The Missing Manual: The Missing Manual_ (David Sawyer McFarland)](https://www.amazon.com/dp/B0026OR2QI/?tag=j9t-21-20)
+* [_The Little Book of HTML/CSS Frameworks_ (Jens Oliver Meiert)](http://www.oreilly.com/web-platform/free/book-of-html-css-frameworks.csp)
