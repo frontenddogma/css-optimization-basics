@@ -1,6 +1,4 @@
-colophon.md
 acknowledgments.md
-prologue.md
 foreword.md
 introduction.md
 mindsets.md
