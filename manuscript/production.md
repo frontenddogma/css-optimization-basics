@@ -62,13 +62,11 @@ Example: Random now minified CSS snippet.
 
 As mentioned in the beginning of this book, we benefit from automating our work—as this optimization step is ugly to do and ugly to work with we actually have something here that is almost _always_ automated.
 
-_⚐ Note_
-
-For both character and code optimization there are several tools and scripts on the market, for example:
-
-* [minifier.org](http://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
-* [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port).
-* [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
+I> For both character and code optimization there are several tools and scripts on the market, for example:
+I> 
+I> * [minifier.org](http://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
+I> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port).
+I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
 
 ### File Normalization
 
@@ -153,7 +151,7 @@ The automated checks ask for time to be set up properly and depend on one’s pr
 
 These reviews wrap a nice tie around much of what we’ve discussed so far: We enforce our desire for quality (the reason why we optimize in the first place) through our development mindsets (like doing our work really well and automating it so to focus on the things that matter).
 
-⁂
+C> ⁂
 
 This concludes the overview on CSS optimization basics. We’ve covered the most important aspects, and more than basics; and I don’t say that so to inflate the idea of “basics” but because pretty much everything else now depends on development paradigms, priorities, and the big picture.
 

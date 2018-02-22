@@ -345,9 +345,7 @@ Example: Can these styles lie? (They can.)
 
 As such, yes, inline CSS is good for performance, and as such we should consider it a CSS optimization measure. But unless, perhaps, we deal with truly unique styling on ever unique single pages, a categorical no to use inline CSS. Our vision of web development, to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance, forbids this. We don’t want to touch HTML for CSS updates—and clearly, inline CSS prevents that.
 
-_⚐ Note_
-
-With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. We’ve gotten to a point where we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has become weaker. That is development-practically speaking a helpful and development-theoretically speaking a fascinating development. For the time being I still recommend to follow the first paradigm and separate concerns (like structure, presentation, behavior)—and to always keep the big picture in mind.
+I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. We’ve gotten to a point where we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has become weaker. That is development-practically speaking a helpful and development-theoretically speaking a fascinating development. For the time being I still recommend to follow the first paradigm and separate concerns (like structure, presentation, behavior)—and to always keep the big picture in mind.
 
 ### Possibly Relevant: Declaration Prudence
 
@@ -382,17 +380,15 @@ Generally speaking though, what helps this hygiene is the following:
 
 The Unused CSS crawler goes furthest where we actually want to go, to have something that tells us with considerable certainty what is used and what’s not. It has become one of my favorite tools for CSS rule hygiene optimization.
 
-_⚐ Note_
-
-Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather served the systemic _deterioration_ of websites, by being used endlessly to build entire layouts, then layout tables (though in a way, they only served optimization of said layouts). But then our attention was on
-
-* what formats to use for quality and compression (“GIF or JPG?”)
-* how to compress images
-* how to limit the number of images (to limit the number of HTTP requests)
-* how to not use images (data URIs)
-* and again, what formats to use (“…or SVG?”)
-
-These topics, without the redundancy of the formats and compression questions, are exactly the ones we should still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization. It’s image optimization. (And also, Addy Osmani has just written [such a book](https://images.guide/).)
+I> Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather served the systemic _deterioration_ of websites, by being used endlessly to build entire layouts, then layout tables (though in a way, they only served optimization of said layouts). But then our attention was on
+I> 
+I> * what formats to use for quality and compression (“GIF or JPG?”)
+I> * how to compress images
+I> * how to limit the number of images (to limit the number of HTTP requests)
+I> * how to not use images (data URIs)
+I> * and again, what formats to use (“…or SVG?”)
+I> 
+I> These topics, without the redundancy of the formats and compression questions, are exactly the ones we should still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization. It’s image optimization. (And also, Addy Osmani has just written [such a book](https://images.guide/).)
 
 ## Quality
 
@@ -448,13 +444,11 @@ One is to separate all styles by modules (functionality), or perhaps, blocks, or
 
 Two is not to do anything more—as we don’t have to do anything more if we’re sorting selectors consistently (such sorting will _inherently_ lead to a modular order within our style sheets), and especially not _if_ we DRY our style sheets entirely. As we will see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, for which module separation is rather inconvenient. (This is another example for where our work requires some feeling for balance and priority—we may well decide for a different course, especially when our projects are of large size.)
 
-_⚐ Note_
-
-Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
-
-In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make for all but fancy beginner-style code.
-
-When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that is the TSA writing CSS right there)—but also no incredible elegance through contextual styling. When we shall avoid nested selectors (BEM), but “in this case [Christmas example] they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (which, by the way, is the opposite of separation of concerns), then we negate quite _all_ the advantages of CSS and separation through a single convention.
+I> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
+I> 
+I> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make for all but fancy beginner-style code.
+I> 
+I> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that is the TSA writing CSS right there)—but also no incredible elegance through contextual styling. When we shall avoid nested selectors (BEM), but “in this case [Christmas example] they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (which, by the way, is the opposite of separation of concerns), then we negate quite _all_ the advantages of CSS and separation through a single convention.
 
 ### Don’t Repeat Yourself
 
@@ -494,10 +488,8 @@ What we receive at the end of it is a style sheet that is, [in many cases](https
 
 A note: Try this process on for size, and apply it to CSS sections first (that is, avoid declaration repetition within functional blocks, as with for page styles, navigation styles, login styles, however the blocks are divided). This way it’s easier to get acquainted with the process, get a moderate result, and also find a way to feed back to the community your very own ideas on DRY CSS.
 
-⁂
+C> ⁂
 
 We’re now concluding the section on operational optimization. What we’ve covered are all things we need to focus on while we’re working on style sheets. Most of that could not be automated (with the exception of intermittent controls that inform us if, say, our style sheet contained too much repetition, or we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed, for it to improve our code and us as professionals.
 
-_⚐ Note_
-
-That last part in parentheses seems innocent but somewhat hints at the future for professional development: automated live feedback. Likely an area for modern editors, this could mean to immediately provide notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way seems long at this point—we’ll need great UI and AI features to make it work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s rather glaringly missing from the current way of development, that only checks code once we checked it into a repository or deployed into a staging or production environment.
+I> That last part in parentheses seems innocent but somewhat hints at the future for professional development: automated live feedback. Likely an area for modern editors, this could mean to immediately provide notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way seems long at this point—we’ll need great UI and AI features to make it work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s rather glaringly missing from the current way of development, that only checks code once we checked it into a repository or deployed into a staging or production environment.
