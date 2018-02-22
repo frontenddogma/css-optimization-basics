@@ -1,6 +1,6 @@
 # Overview
 
-CSS optimization is important because we, especially not as teams, don’t write only perfectly efficient and maintainable and understandable code.
+CSS optimization is important because we, especially as individuals, don’t always write perfectly efficient and maintainable and understandable code.
 
 Writing such code, quality code, however, is what makes us professionals.
 
@@ -16,13 +16,13 @@ It makes our work easier when we keep it simple.
 
 There’s nothing wrong with doing less work—by automating it.
 
-There’s nothing wrong, either, with not doing work that was automated.
+There’s nothing wrong, either, with not doing work that is automated.
 
 (There’s much wrong with not doing the work that we haven’t yet automated, however.)
 
 Code should be understandable, and for that it’s useful when code is consistent and simple.
 
-Consistent CSS is footed on alphabetical declaration sorting (the rest is too complicated even when opening our mouths) and on a rough order for selector sorting.
+Consistent CSS is footed on alphabetical declaration sorting (everything else is much too complicated) and on a rough order for selector sorting.
 
 Simple CSS may avoid IDs and classes altogether and uses functional or generic names.
 
@@ -44,9 +44,9 @@ The most basic way way to determine quality is through validation, and high erro
 
 Every piece of code gets at least touched _twice_.
 
-Web design is a process.
+Web Design is a process.
 
-For these two reasons, maintainability and maintenance are critical.
+For these last two reasons, maintainability and maintenance are critical.
 
 `!important` is not an obstacle to maintenance; it’s a tool.
 
@@ -62,9 +62,9 @@ When we cannot production-optimize automatically, we should do as much as we can
 
 For production, we remove all unneeded characters. All of them.
 
-We typically want to reference one style sheet that includes all the styles, though there are cases of high complexity in which a different approach can lead to higher performance.
+We typically want to reference one style sheet that includes all the styles, though there are cases of high complexity in which a different approach can lead to better performance.
 
-(We cannot be absolved from making decisions about our particular project.)
+(We cannot be absolved from making decisions about our particular projects.)
 
 (Exceptions prove the rule.)
 
@@ -75,10 +75,6 @@ We are professionals and we aim for quality work.
 As professionals we are aware of our responsibilities, we hold ourselves accountable, and we set high ethical standards for ourselves.
 
 And, as professionals, we lead by example.
-
-⁂
-
-Thank you.
 
 ## Tools and References
 
@@ -124,7 +120,7 @@ A selection of CSS experts and resources for web development.
 
 ### Books
 
-An even smaller selection of books (my recommendation: still look into [the specs](https://www.w3.org/TR/)).
+An even smaller selection of books (my recommendation: look into [the specs](https://www.w3.org/TR/)).
 
 * [_CSS Secrets: Better Solutions to Everyday Web Design Problems_ (Lea Verou)](https://www.amazon.com/dp/B0131MQ1NS/?tag=j9t-21-20)
 * [_CSS: The Definitive Guide: Visual Presentation for the Web_ (Eric Meyer and Estelle Weyl)](https://www.amazon.com/dp/1449393195/?tag=j9t-21-20)
