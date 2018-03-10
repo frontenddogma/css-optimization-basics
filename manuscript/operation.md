@@ -145,7 +145,7 @@ Example: How about we optimize this code by removing all the duplicates.
 }
 ```
 
-Example: Now how about optimizing this code.
+Example: Now how about optimizing this code. (Rather subtly.)
 
 Consistency is, in theory, reasonably easy to achieve. We [establish coding guidelines](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. This goes as far as that many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules particularly geared towards production.
 
@@ -161,6 +161,9 @@ This is trivial and at the same time automatable: _Sort declarations alphabetica
   border: 1em dotted #069;
   color: #096;
   display: block;
+  filter: blur(33.35px) sepia(0.34);
+  -moz-filter: blur(33.35px) sepia(0.34);
+  -webkit-filter: blur(33.35px) sepia(0.34);
   float: none;
   font-size: 1em;
   font-style: italic;
@@ -176,9 +179,6 @@ This is trivial and at the same time automatable: _Sort declarations alphabetica
   white-space: pre-wrap;
   width: 100%;
   z-index: 1;
-  filter: blur(33.35px) sepia(0.34);
-  -webkit-filter: blur(33.35px) sepia(0.34);
-  -moz-filter: blur(33.35px) sepia(0.34);
 }
 ```
 

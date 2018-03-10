@@ -1,3 +1,5 @@
+dedication.md
+prologue.md
 acknowledgments.md
 foreword.md
 introduction.md
