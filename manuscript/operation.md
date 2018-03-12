@@ -28,7 +28,6 @@ Consistency is a _foundational_ part of optimization; it’s the first step of o
 .posts li,
 .events li {
   border-top: 1px solid #eeeeee;
-  border-top: 1px solid rgba(238, 238, 238, 0.1);
   padding: 0.7667em 0;
 }
 
@@ -58,7 +57,6 @@ Consistency is a _foundational_ part of optimization; it’s the first step of o
 .authors li {
   padding: .7667em 0;
   border-top: 1px solid #eee;
-  border-top: 1px solid rgba(238, 238, 238, 0.1);
 }
 
 .authors li:first-child {
@@ -69,45 +67,39 @@ Consistency is a _foundational_ part of optimization; it’s the first step of o
 .authors li:last-child {
   padding-bottom: 0;
 }
-
-.contributors {
-  color: #eee;
-  border-top: 1px solid;
-}
-
-.contributors:first-child {
-  border-top: none;
-}
 ```
 
-Example: How about we optimize this code by removing all the duplicates.
+Example: Random sample code.
 
 ```css
 .feeds ul,
 .posts ul ,
-.events ul {
+.events ul,
+.authors ul {
   list-style: none;
   margin: 0;
 }
 
 .feeds li,
 .posts li,
-.events li {
-  border-top: 1px solid #eeeeee;
-  border-top: 1px solid rgba(238, 238, 238, 0.1);
-  padding: .7667em 0;
+.events li,
+.authors li {
+  border-top: 1px solid #eee;
+  padding: .77em 0;
 }
 
 .feeds li:first-child,
 .posts li:first-child,
-.events li:first-child {
+.events li:first-child,
+.authors li:first-child {
   border-top: 0;
   padding-top: 0;
 }
 
 .feeds li:last-child,
 .posts li:last-child,
-.events li:last-child {
+.events li:last-child,
+.authors li:last-child {
   padding-bottom: 0;
 }
 
@@ -115,37 +107,9 @@ Example: How about we optimize this code by removing all the duplicates.
   display: inline-block;
   margin-bottom: 1em;
 }
-
-.authors ul {
-  list-style: none;
-  margin: 0;
-}
-
-.authors li {
-  border-top: 1px solid #eee;
-  border-top: 1px solid rgba(238, 238, 238, 0.1);
-  padding: .7667em 0;
-}
-
-.authors li:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-
-.authors li:last-child {
-  padding-bottom: 0;
-}
-
-.contributors {
-  border-top: 1px solid #eee;
-}
-
-.contributors:first-child {
-  border-top: 0;
-}
 ```
 
-Example: Now how about optimizing this code. (Rather subtly.)
+Example: Adjusted.
 
 Consistency is, in theory, reasonably easy to achieve. We [establish coding guidelines](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. This goes as far as that many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules particularly geared towards production.
 
