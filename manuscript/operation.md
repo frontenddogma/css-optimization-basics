@@ -69,7 +69,7 @@ Consistency is a _foundational_ part of optimization; it’s the first step of o
 }
 ```
 
-Example: Random sample code.
+C> _Example: Random sample code._
 
 ```css
 .feeds ul,
@@ -109,7 +109,7 @@ Example: Random sample code.
 }
 ```
 
-Example: Adjusted.
+C> _Example: Adjusted._
 
 Consistency is, in theory, reasonably easy to achieve. We [establish coding guidelines](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. This goes as far as that many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules particularly geared towards production.
 
@@ -146,7 +146,7 @@ This is trivial and at the same time automatable: _Sort declarations alphabetica
 }
 ```
 
-Example: Quick, where do we add `transform: rotateY(10deg);` so that quick, someone else can immediately spot it?
+C> _Example: Quick, where do we add `transform: rotateY(10deg);` so that quick, someone else can immediately spot it?_
 
 This is trivial and automatable but still, in my eyes, one of the key optimization methods. That is so because an almost failsafe, easily repeatable, soon habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme like the alphabetical ordering of declarations will at once make our code more understandable and help anyone touching it navigate in it.
 
@@ -214,7 +214,7 @@ em {
 }
 ```
 
-Example: High level block elements, at some point text level elements, then classes and IDs, [&c.](https://meiert.com/en/blog/how-to-order-css-selectors/)
+C> _Example: High level block elements, at some point text level elements, then classes and IDs, [&c.](https://meiert.com/en/blog/how-to-order-css-selectors/)_
 
 Although it seems that many generations of web developers and teams of web developers have survived without any firm idea of how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal), and, more importantly, do we ever have a chance of eliminating possible extra work through haphazard by-chance ordering. As we’ll see with the avoidance of repetition, that extra work is otherwise actually awaiting us.
 
@@ -267,7 +267,7 @@ body {
 }
 ```
 
-Example: In this shorthands-only piece from an [actual website](https://mirrors.meiert.org/coderesponsibly.org/), the shorthands only help.
+C> _Example: In this shorthands-only piece from an [actual website](https://mirrors.meiert.org/coderesponsibly.org/), the shorthands only help._
 
 For their value in making code more compact, their positive effect on small projects, and the few tools to automate shorthands, we benefit from using shorthands in our code, and with that optimizing for them.
 
@@ -305,7 +305,7 @@ It is important to me to drive this point home, and to risk making this book a l
 <div style="display:none" jsl="$t t-aTz9-_sUcEc;$x 0;" class="r-ild1JbEZKhjg"></div><div id="duf3-46" data-jiis="up" data-async-type="duffy3" data-async-context-required="type,open,feature_id,async_id,entry_point,authority,card_id,header,suggestions,surface,suggestions_types,suggestions_subtypes" class="y yp"></div><a class="duf3 _sWr" href="#" id="sbfblt" data-async-trigger="duf3-46" jsaction="async.u">Report foo</a></div></form></div><div class="sfbgx"></div><div id="gac_scont"></div><div class="spch s2fp-h" style="display:none" id="spch"><div class="spchc" id="spchc"><div class="_o3"><div class="_AM"><span class="_CMb" id="spchl"></span><span class="button" id="spchb"><div class="_wPb"><span class="_AUb"></span><div class="_Fjd"><span class="_oXb"></span><span class="_dWb"></span></div></div></span></div><div class="_gjb"><span class="spcht" id="spchi" style="color:#777"></span><span class="spcht" id="spchf" style="color:#000"></span></div><div class="foo-logo"></div></div><div class="_ypc"><div class="_zpc"></div></div></div><div class="close-button" id="spchx">&times;</div></div><div style="display:none" jsl="$t t-orNZyHXTT74;$x 0;" class="r-iCneKvRyCT78"></div><div class="content" id="main"><span class="ctr-p" id="body"><center><div style="height:233px;margin-top:89px" id="lga"><div style="padding-top:109px"><style>#hplogo{background:url(/images/branding/foologo/2x/foologo_color_272x92dp.png) no-repeat}@media (-webkit-max-device-pixel-ratio:1),(max-resolution:96dpi){#hplogo{background:url(/images/branding/foologo/1x/foologo_color_272x92dp.png) no-repeat}}</style><div style="background-size:272px 92px;height:92px;width:272px" title="foo" align="left" id="hplogo" onload="window.lol&&lol()">
 ```
 
-Example: Can these styles lie? (They can.)
+C> _Example: Can these styles lie? (They can.)_
 
 As such, yes, inline CSS is good for performance, and as such we should consider it a CSS optimization measure. But unless, perhaps, we deal with truly unique styling on ever unique single pages, a categorical no to use inline CSS. Our vision of web development, to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance, forbids this. We don’t want to touch HTML for CSS updates—and clearly, inline CSS prevents that.
 
@@ -368,7 +368,7 @@ There is a gray area when respective working groups just came up with new things
 
 ![“We found the following errors.”](images/validation.png)
 
-Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)
+C> _Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)_
 
 Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/en/analysis/#validation)—we optimize our style sheets because we can correct and remove code that doesn’t work. We also benefit through, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, getting a better technical understanding (validation issues can be quite informative and instructive) and becoming better professionals (everyone can write poor and invalid code—we’re experts because we can and we do write valid code).
 

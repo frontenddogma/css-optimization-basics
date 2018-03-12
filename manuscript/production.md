@@ -52,13 +52,13 @@ label {
 }
 ```
 
-Example: Random non-minified CSS snippet.
+C> _Example: Random non-minified CSS snippet._
 
 ```css
 html{font:87.5%/1.5 'helvetica neue',helvetica,sans-serif;max-width:600px;padding:1em}footer{border-top:1px solid #eee;margin:2.5em 0 0;padding:3px 0 0}footer small,label{display:block}
 ```
 
-Example: Random now minified CSS snippet.
+C> _Example: Random now minified CSS snippet._
 
 As mentioned in the beginning of this book, we benefit from automating our work—as this optimization step is ugly to do and ugly to work with we actually have something here that is almost _always_ automated.
 
@@ -110,13 +110,13 @@ I’ll still offer a view. There are a few reasons for only providing the styles
 * search.css (or)
 * …
 
-Example: Page-oriented, automated, cacheable style sheets carrying everything each page needs. (Bonus exercise not covered here: Dynamically load only the styles needed on subsequent page visits.)
+C> _Example: Page-oriented, automated, cacheable style sheets carrying everything each page needs. (Bonus exercise not covered here: Dynamically load only the styles needed on subsequent page visits.)_
 
 In other cases it seems most effective to go for a single style sheet, whether to begin with (easiest to set up) or for production (in which cases the merging of files should be automated, which can happen through something as simple as PHP-importing sub style sheets into a default.css—processed as PHP but returned as `text/css`, of course).
 
 * default.css
 
-Example: Just one style sheet.
+C> _Example: Just one style sheet._
 
 And there are compromises (aka exceptions) to be used sparingly and wisely, like [the approach taken with Google’s Go framework](https://meiert.com/en/blog/google-web-frameworks/): Provide a small core style sheet sufficient for basic pages, a bigger one for more complex pages, and individual style sheets for custom sub sites and pages.
 
@@ -124,7 +124,7 @@ And there are compromises (aka exceptions) to be used sparingly and wisely, like
 * go-x.css (or)
 * default.css (importing either go.css or go-x.css)
 
-Example: The approach taken by the Go framework.
+C> _Example: The approach taken by the Go framework._
 
 At the end of the day there is no single answer for optimal CSS file management. Complexity is an important criterion, automation is an important approach, simplicity is likewise important.
 
@@ -143,7 +143,7 @@ The reason to do manual checks is not to miss glaring issues, things that fly un
 * Automated tests: daily and on deployment
 * Manual tests: weekly
 
-Example: CSS routines.
+C> _Example: CSS routines._
 
 The manual checks can be swift; gloss over the output, perhaps re-formatted to be legible again (tools like [CSSTidy](https://hell.meiert.org/aux/optimize/css/) allow to throw a CSS URL at them to be “uncompressed”).
 
