@@ -125,9 +125,9 @@ This is trivial and at the same time automatable: _Sort declarations alphabetica
   border: 1em dotted #069;
   color: #096;
   display: block;
-  filter: blur(33.35px) sepia(0.34);
   -moz-filter: blur(33.35px) sepia(0.34);
   -webkit-filter: blur(33.35px) sepia(0.34);
+  filter: blur(33.35px) sepia(0.34);
   float: none;
   font-size: 1em;
   font-style: italic;
