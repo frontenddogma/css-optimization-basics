@@ -6,7 +6,7 @@ Writing such code, quality code, however, is what makes us professionals.
 
 CSS optimization does not entail “everything” that can be done in CSS or through tools; it entails what makes it more efficient and maintainable and understandable while achieving a good balance.
 
-As professionals, we benefit from doing one (or two, but not eighty-five) things really, really well; as web developers, it’s not a bad idea if CSS is one of these things.
+As professionals, we benefit from doing one (or two, or three, but not eighty-five) things really, really well; as web developers, it’s not a bad idea if CSS is one of these things.
 
 It’s useful when we know our needs.
 
@@ -22,7 +22,7 @@ There’s nothing wrong, either, with not doing work that is automated.
 
 Code should be understandable, and for that it’s useful when code is consistent and simple.
 
-Consistent CSS is footed on alphabetical declaration sorting (everything else is much too complicated) and on a rough order for selector sorting.
+Consistent CSS is footed on alphabetical declaration sorting (everything else is much too complicated) and on a robust order for selector sorting.
 
 Simple CSS may avoid IDs and classes altogether and uses functional or generic names.
 
@@ -40,7 +40,7 @@ Rule hygiene may be most important for CSS performance.
 
 Quality is the mark of professional work.
 
-The most basic way way to determine quality is through validation, and high error counts are not high quality scores.
+The most basic way way to determine quality is through validation, and high error counts unequal high quality scores.
 
 Every piece of code gets at least touched _twice_.
 

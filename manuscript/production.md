@@ -1,8 +1,8 @@
 # Production Optimization
 
-For production, we usually take care of all the things that are good for machines. I’ve organized this section so that it also contains the things that can be done _by_ machines (tools)—without, again with an eye on us as professionals, it to contain anything that, if we were to miss it, would make us produce significantly worse code.
+For production, we usually take care of all the things that are good for machines. I’ve organized this section so that it also contains the things that can be done _by_ machines (tools)—without, again with an eye on us as professionals, including anything that, if we were to miss it, would make us produce significantly worse code.
 
-It turns out, then, that we do again benefit from trying to follow some of the (human-friendly) ideas ourselves. For example, we can well try to write minimal CSS (like omitting leading `0`’s), or to only link one style sheet (to eventually keep the number of requests low and to avoid future HTML changes), without leaving this to tools.
+It turns out, then, that we do again benefit from trying to follow some of the (human-friendly) ideas ourselves. For example, we can well try to write minimal CSS (like omitting leading `0`’s), or to only link one style sheet (to keep the number of requests low and to avoid future HTML changes), without leaving this to tools.
 
 ## Performance
 
@@ -12,7 +12,7 @@ As long as our code is consistent, the steps suggested here can all be taken car
 
 ### Character Minimization
 
-To make our style sheets more compact, that is, make them easier to read and smaller in size, we remove all unneeded characters. That does not refer to whitespace and comments yet—let’s make this a separate step, although both can be covered by the same tool—, but to removing anything CSS that isn’t strictly needed. This entails:
+To make our style sheets more compact, that is, make them easier to read and smaller in size, we remove all unneeded characters. That doesn’t refer to whitespace and comments yet—let’s make this a separate step, although both can be covered by the same tool—, but to removing any CSS that isn’t strictly needed. This entails:
 
 * semicolons after the last declaration of each rule;
 * leading `0`’s (`margin: .1em`, not `margin: 0.1em`);
@@ -24,11 +24,11 @@ As noted in the introductory section, these items can well be covered by coding 
 
 ### Code Minimization
 
-After we’ve minimized our style sheet code without impairing understandability, the next steps means to remove all the characters that aren’t needed for the style sheet to work—this makes it production-ready.
+After we’ve minimized our style sheet code without impairing understandability, the next steps means to remove all the characters that aren’t needed for the style sheet to work—which makes it production-ready.
 
-Note again that this is only a separate step here to _illustrate_ that we’re able to remove certain characters manually anyway—perhaps our style guide requires us to, where possible, use 3-digit hex color values—, and that we can still work with our style sheets. As an individual step, it may otherwise make style sheet maintenance rather cumbersome if not practically impossible.
+Note again that this is only presented as a separate step here to _illustrate_ that we can remove certain characters manually—perhaps our style guide requires us to, where possible, use 3-digit hex color values—and still are able to work with our style sheets. As a true manual task it would make style sheet maintenance rather cumbersome if not practically impossible.
 
-What is done here are typically two things:
+What’s done here are typically two things:
 
 1) remove all comments,
 2) remove all (non-required) whitespace characters.
@@ -65,18 +65,18 @@ As mentioned in the beginning of this book, we benefit from automating our work�
 I> For both character and code optimization there are several tools and scripts on the market, for example:
 I> 
 I> * [minifier.org](http://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
-I> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port).
+I> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)
 I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
 
 ### File Normalization
 
-Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them to a single file to load. That is important for more effective compression and even more so for fewer HTTP requests. ([HTTP/2 alleviates](@@) here but for this first edit, I wish to stick to advising for fewer connections.)
+Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them to a single file to load. That’s important for more effective compression and even more so for fewer HTTP requests. ([HTTP/2 alleviates](@@) here but for this first edit, I wish to stick to advising for fewer requests.)
 
 That’s simplified but the basic idea behind this is that HTTP request overhead makes for 500–700 bytes (based on work from Steve Souders and Kyle Simpson) that “costs about 100&nbsp;ms” (Kyle Simpson).
 
-This data has led others to recommend that files smaller than 1&nbsp;KB should inlined, and to avoid inlining of files that are bigger than 4&nbsp;KB (Guy Podjarny).
+This data has led others to recommend that files smaller than 1&nbsp;KB should be inlined, and to avoid inlining of files that are bigger than 4&nbsp;KB (Guy Podjarny).
 
-We may say that most sites that use several style sheets (to then be combined to a single one for production) do work with files that are larger than 1&nbsp;KB. As such it’s useful to have these as individual files (and not inline), but for each style sheet we get rid of and merge we save roughly half a kilobyte and 10&nbsp;ms. This leads us to the recommendation to merge all styles into one file and link that from our documents.
+We may say that most sites that use several style sheets (to then be combined to a single one for production) do work with files that are larger than 1&nbsp;KB. As such it’s useful to have these as individual files (and not inline), but for each style sheet we get rid of and merge we save roughly half a kilobyte and 10&nbsp;ms. This leads to the general recommendation to merge all styles into one file and link that from our documents.
 
 As we can tell, there must be something else here. What about tiny sites, and what about overall file size and caching?
 
@@ -96,14 +96,14 @@ What’s there to consider for our decision?
 
 * For performance in terms of efficiency and file size, each page should only come with the styles it uses.
 * For performance in terms of caching, each style sheet should be cacheable.
-* For performance in terms of efficiency and file size if a user visits many pages (low bounce rate with visitors covering a high percentage of needed styles), a single style sheet is usually fastest.
+* For performance in terms of efficiency and file size if a user visits many pages (low bounce rate with visitors covering a high percentage of needed styles), a single style sheet is fastest.
 * For HTML maintainability, style sheets should not be versioned manually (we don’t want to update HTML code every time we update CSS code).
 * For CSS maintainability, style sheets should not be broken up manually (we don‘t want to merge style sheets every time we update CSS code).
 * For general maintainability, code should be kept simple.
 
 et cetera.
 
-I’ll still offer a view. There are a few reasons for only providing the styles that are used on each page. This approach should be taken if 1) the project is large (perhaps >10,000 pages, or >10,000 declarations) _and_ 2) if it can be automated.
+I’ll still offer a view. There are a few reasons for only providing the styles that are used on each page. This approach should be taken if 1) the project is large (perhaps >10,000 pages, or >10,000 declarations) _and_ 2) it can be automated.
 
 * index.css (or)
 * contact.css (or)
@@ -112,7 +112,7 @@ I’ll still offer a view. There are a few reasons for only providing the styles
 
 C> _Example: Page-oriented, automated, cacheable style sheets carrying everything each page needs. (Bonus exercise not covered here: Dynamically load only the styles needed on subsequent page visits.)_
 
-In other cases it seems most effective to go for a single style sheet, whether to begin with (easiest to set up) or for production (in which cases the merging of files should be automated, which can happen through something as simple as PHP-importing sub style sheets into a default.css—processed as PHP but returned as `text/css`, of course).
+In other cases it seems most effective to go for a single style sheet, whether to begin with (easiest to set up) or for production (in which case the merging of files should be automated, which can happen through something as simple as PHP-importing sub style sheets into a default.css—processed as PHP but returned as `text/css`, of course).
 
 * default.css
 
@@ -134,11 +134,11 @@ As the final step as per this basic treatise, it’s important to check what we�
 
 ### Reviews and Sanity Checks
 
-For the finishing optimization step we want to regularly employ code reviews and checks, and to run _both_ manual and automated checks.
+For the finishing optimization step we want to regularly employ code reviews and tests, and to run _both_ manual and automated checks.
 
 The reason to do automated checks is efficiency, as we don’t want to spend any human time on constantly validating or otherwise confirming the quality of our style sheets.
 
-The reason to do manual checks is not to miss glaring issues, things that fly under the radar because we missed how, say, a preprocessor may have had a flag that left in comments, or that otherwise generates production output that isn’t desirable.
+The reason to do manual checks is not to miss any glaring issues, things that fly under the radar because we missed how, say, a preprocessor may have had a flag that left in comments, or that otherwise generates production output that isn’t desirable.
 
 * Automated tests: daily and on deployment
 * Manual tests: weekly
@@ -155,6 +155,6 @@ C> ⁂
 
 This concludes the overview on CSS optimization basics. We’ve covered the most important aspects, and more than basics; and I don’t say that so to inflate the idea of “basics” but because pretty much everything else now depends on development paradigms, priorities, and the big picture.
 
-That, then, I’m willing to put to the test: Please share your thoughts on what should also be _required_ optimization steps. Share them privately, by [contacting me](https://meiert.com/en/contact/), or share them publicly, perhaps tagging them so that others can find your views. Although my own shortcut was “#csso” I’ll propose the more verbose and more clear “#cssoptim”.
+That, then, I’m willing to put to the test: Please share your thoughts on what should also be _required_ optimization steps. Share them privately, by [contacting me](https://meiert.com/en/contact/), or share them publicly, perhaps tagging them so that others can find your views. Although my own shortcut was `#csso` I’ll propose the more verbose and more clear `#cssoptim`.
 
 Other than that, it’s my wish that everyone, the aspiring CSS developer as well as the senior CSS wizard, could take something out of this book. Its value is surely related to how much you can take with you. To compound that value we’ll finish with an overview and a selection of tools and references.
