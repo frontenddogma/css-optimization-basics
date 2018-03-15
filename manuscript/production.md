@@ -70,7 +70,7 @@ I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
 
 ### File Normalization
 
-Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them to a single file to load. That’s important for more effective compression and even more so for fewer HTTP requests. ([HTTP/2 alleviates](@@) here but for this first edit, I wish to stick to advising for fewer requests.)
+Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them to a single file to load. That’s important for more effective compression and even more so for fewer HTTP requests. ([HTTP/2 alleviates](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x) here but for this first edit, I wish to stick to advising for fewer requests.)
 
 That’s simplified but the basic idea behind this is that HTTP request overhead makes for 500–700 bytes (based on work from Steve Souders and Kyle Simpson) that “costs about 100&nbsp;ms” (Kyle Simpson).
 
