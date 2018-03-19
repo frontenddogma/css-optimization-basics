@@ -2,6 +2,6 @@ C> @@
 
 {pagebreak}
 
-With special thanks to [Tony Ruscoe](http://ruscoe.net/), who reviewed the first manuscript of this book.
+With special thanks to [Tony Ruscoe](http://ruscoe.net/) for reviewing the first draft of this book.
 
 @@ 

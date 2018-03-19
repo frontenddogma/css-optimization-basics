@@ -22,18 +22,16 @@ Optimization has a touch of perfectionism, but it’s truly a means, and not an 
 
 ## What’s Not Covered by Optimization
 
-In this book, then, we won’t cover _all_ things relating to CSS development these days. The reason for this is simple: Not all of this relates to _optimization_. And so one thing I won’t cover here are CSS preprocessors. Personally, I’ve already outlined my [reasons for not using preprocessors](https://meiert.com/en/blog/no-css-preprocessors/), but the little there is to optimize through them is already going to be covered in this book in other ways: for example, through repeat emphasis on coding and formatting standards.
+In this book, then, we won’t cover _all_ things relating to CSS development these days. The reason for this is simple: Not all of this relates to _optimization_. And so one thing I won’t cover here are CSS preprocessors. Personally, I’ve sided with [@@](@@) and outlined [reasons for not using preprocessors](https://meiert.com/en/blog/no-css-preprocessors/), but the little there is to optimize through them is already going to be covered in this book in other ways: for example, through repeat emphasis on coding and formatting standards.
 
 On top of that comes that I regard it more useful to stay close to core technologies, and not get bogged down by abstractions, abstractions like preprocessors. In the short run we may benefit from knowing well how to handle abstractions; but in the long run we get much greater rewards from knowing the underlying systems and technologies. And therefore we’ll focus on standard CSS rather than non-standard Sass, Less, Stylus, and whatnot.
 
 The same applies to other forms of abstraction, and so we’ll look and point at CSS tools, but not discuss optimization of use of these tools, their workflows, nor how to improve those tools themselves.
 
-## Notes
+C> ⁂
 
-The code in this book follows [Google’s HTML/CSS style guide](https://google.github.io/styleguide/htmlcssguide.html). (For an introduction to coding guidelines and a few more words on the Google style guide in particular, note another book by me, [_The Little Book of HTML/CSS Coding Guidelines_](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp).)
+The code in this book follows [Google’s HTML/CSS style guide](https://google.github.io/styleguide/htmlcssguide.html). (For an introduction to coding guidelines and notes on the Google style guide, see [_The Little Book of HTML/CSS Coding Guidelines_](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp).)
 
-Finally, this is a self-published book made with little extra help. If you find mistakes in it, you have all reason to blame me as the author—but also a great opportunity to help make the book a little better as a contributor (who are all mentioned unless they choose not to be named). Please [file an issue](https://github.com/j9t/css-optimization-basics/issues/new) for every problem you find, or [submit a pull request](https://github.com/j9t/css-optimization-basics/pulls) for specific fixes and suggestions. If you bought the book [through Leanpub](https://leanpub.com/css-optimization-basics) you should get updates containing your and other people’s fixes automatically. (Otherwise there’s always [the original source](https://github.com/j9t/css-optimization-basics).)
+Before we begin, this is a self-published book made with little extra help. If you find mistakes in it, you have all reason to blame me as the author—but also a great opportunity to help make the book a little better as a contributor (who are all mentioned unless they choose not to be named). Please [file an issue](https://github.com/j9t/css-optimization-basics/issues/new) for every problem you find, or [submit a pull request](https://github.com/j9t/css-optimization-basics/pulls) for specific fixes and suggestions. If you bought the book [through Leanpub](https://leanpub.com/css-optimization-basics) you should get updates containing your and other people’s fixes automatically. (Otherwise there’s always [the original source](https://github.com/j9t/css-optimization-basics).)
 
 Thank you for your support, your understanding, and your help.
-
-Let’s begin.
