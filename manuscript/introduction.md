@@ -22,7 +22,7 @@ Optimization has a touch of perfectionism, but it’s truly a means, and not an 
 
 ## What’s Not Covered by Optimization
 
-In this book, then, we won’t cover _all_ things relating to CSS development these days. The reason for this is simple: Not all of this relates to _optimization_. And so one thing I won’t cover here are CSS preprocessors. Personally, I’ve sided with [@@](@@) and outlined [reasons for not using preprocessors](https://meiert.com/en/blog/no-css-preprocessors/), but the little there is to optimize through them is already going to be covered in this book in other ways: for example, through repeat emphasis on coding and formatting standards.
+In this book, then, we won’t cover _all_ things relating to CSS development these days. The reason for this is simple: Not all of this relates to _optimization_. And so one thing I won’t cover here are CSS preprocessors. Personally, I’ve sided with [Roger Johansson](http://www.456bereastreet.com/archive/201603/why_i_dont_use_css_preprocessors/) and outlined [reasons for not using preprocessors](https://meiert.com/en/blog/no-css-preprocessors/), but the little there is to optimize through them is already going to be covered in this book in other ways: for example, through repeat emphasis on coding and formatting standards.
 
 On top of that comes that I regard it more useful to stay close to core technologies, and not get bogged down by abstractions, abstractions like preprocessors. In the short run we may benefit from knowing well how to handle abstractions; but in the long run we get much greater rewards from knowing the underlying systems and technologies. And therefore we’ll focus on standard CSS rather than non-standard Sass, Less, Stylus, and whatnot.
 
