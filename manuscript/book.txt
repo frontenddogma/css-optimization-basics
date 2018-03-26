@@ -1,5 +1,4 @@
 prologue.md
-foreword.md
 introduction.md
 mindsets.md
 operation.md
