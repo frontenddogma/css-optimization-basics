@@ -1,6 +1,6 @@
 # Development Mindsets
 
-We all know the adage, “Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime.” To me, we feed developers for a lifetime by teaching and cherishing certain _mindsets_. They are not enough, _per se_, but I view them as the foundation that decides where we’re headed with our work and our careers; they’re not all related to CSS optimization—that would be odd for us web developers—, but they’re so useful, let’s look at the key ones.
+We all know the adage, “Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime.” To me, we feed developers for a lifetime by teaching and cherishing certain _mindsets_. They aren’t enough, _per se_, but I view them as the foundation that decides where we’re headed with our work and our careers; they’re not all related to CSS optimization—that would be odd for us as web developers dealing with many different technologies—, but they’re so useful, let’s look at the key ones.
 
 ## Do One Thing Really, Really Well
 
@@ -16,7 +16,7 @@ Knowing our goals and needs is important because evidently, it’s difficult to 
 
 ## Stay in the Present
 
-Without becoming overly self-helpish or even philosophical, another useful mindset for us is to also stay in the present, to stay in the now. It means both a rigid eye to get rid of, that is, archive everything—concepts, documentation, patterns, code snippets, libraries, &c.—that we don’t need and use anymore (“Know Your Needs”), and care not to prematurely code (or plan to code) something that we don’t know to _certainly_ come.
+Without becoming overly self-helpish or even philosophical, another useful mindset for us is to also stay in the present, to stay in the now. It means both a rigid eye to get rid of, that is, archive everything—concepts, documentation, patterns, code snippets, libraries, &c.—that we don’t need and use anymore (“Know Your Needs”), and not bother prematurely coding (or planning to code) something that we don’t know to come _with certainty_.
 
 This mindset matters because it keeps our code base and our documentation clean, and hence significantly contributes to our focus (“Do One Thing Really, Really Well”, “Keep It Simple”).
 
@@ -32,4 +32,4 @@ As a mindset, keeping it simple is truly grandiose, and the interested reader ma
 
 Lastly, a most powerful mindset as loosely as we’re working with them here, is the one to automate. Every step of our work should, if possible, be automated. Sometimes that will be obvious—every time after we made CSS changes we run some optimization script—, sometimes that will require a bit of listening—a team member mentions how he manually updates documentation each time someone reports downtime issues—, and at other times it will be obscure—no one even knew that there was the option to automate visual design regression testing.
 
-Whenever we repeat something in our work, we should look into whether that repeat work can be handled through a script or tool—no matter how “hacky” the solution may be. (Personally, I work with a recurring reminder to think through my work and check for automation options.) And then it requires attention, for automation is powerful. And still it doesn’t “take work away”—but it liberates us to do the more important things.
+Whenever we repeat something in our work, we should look into whether that repeat work can be handled through a script or tool—no matter how “hacky” the solution may be. (Personally, I work with a recurring reminder to review my work and check for automation options.) And then it requires attention, for automation is powerful. And still it doesn’t “take work away”—but liberates us to do the more important things.
