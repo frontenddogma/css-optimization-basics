@@ -297,7 +297,7 @@ Where we are right now, selector performance is still a box better left closed.
 
 ### Irrelevant: Inline CSS
 
-Similarly, though practically speaking much more legitimate, inline CSS—applying CSS directly through `style` attributes—should also be avoided. This recommendation comes again from the idea to keep [the big picture](https://meiert.com/en/blog/big-picture-thinking/) in mind, by acknowledging that yes, inline CSS is often useful for performance reasons (saving one or more style sheet HTTP requests, applying faster selectors), but no, it violates separation of concerns and makes maintenance harder. Too hard.
+Similarly, though practically speaking much more legitimate, inline CSS—applying CSS directly through `style` attributes—should also be avoided. This recommendation comes again from the idea of keeping [the big picture](https://meiert.com/en/blog/big-picture-thinking/) in mind, by acknowledging that yes, inline CSS can be useful for performance reasons (saving one or more style sheet HTTP requests, applying faster selectors), but no, it violates separation of concerns and makes maintenance harder. Too hard.
 
 It is important to me to drive this point home, and to risk making this book a lot more complicated: We are of no good use as web developers when we are blind to the consequences of our work. An accessibility expert, a JavaScript expert, a performance expert are all still rather poor web developers if they don’t understand _and factor in_ what their expert knowledge means for other areas of the field.
 
@@ -305,29 +305,29 @@ It is important to me to drive this point home, and to risk making this book a l
 <div style="display:none" jsl="$t t-aTz9-_sUcEc;$x 0;" class="r-ild1JbEZKhjg"></div><div id="duf3-46" data-jiis="up" data-async-type="duffy3" data-async-context-required="type,open,feature_id,async_id,entry_point,authority,card_id,header,suggestions,surface,suggestions_types,suggestions_subtypes" class="y yp"></div><a class="duf3 _sWr" href="#" id="sbfblt" data-async-trigger="duf3-46" jsaction="async.u">Report foo</a></div></form></div><div class="sfbgx"></div><div id="gac_scont"></div><div class="spch s2fp-h" style="display:none" id="spch"><div class="spchc" id="spchc"><div class="_o3"><div class="_AM"><span class="_CMb" id="spchl"></span><span class="button" id="spchb"><div class="_wPb"><span class="_AUb"></span><div class="_Fjd"><span class="_oXb"></span><span class="_dWb"></span></div></div></span></div><div class="_gjb"><span class="spcht" id="spchi" style="color:#777"></span><span class="spcht" id="spchf" style="color:#000"></span></div><div class="foo-logo"></div></div><div class="_ypc"><div class="_zpc"></div></div></div><div class="close-button" id="spchx">&times;</div></div><div style="display:none" jsl="$t t-orNZyHXTT74;$x 0;" class="r-iCneKvRyCT78"></div><div class="content" id="main"><span class="ctr-p" id="body"><center><div style="height:233px;margin-top:89px" id="lga"><div style="padding-top:109px"><style>#hplogo{background:url(/images/branding/foologo/2x/foologo_color_272x92dp.png) no-repeat}@media (-webkit-max-device-pixel-ratio:1),(max-resolution:96dpi){#hplogo{background:url(/images/branding/foologo/1x/foologo_color_272x92dp.png) no-repeat}}</style><div style="background-size:272px 92px;height:92px;width:272px" title="foo" align="left" id="hplogo" onload="window.lol&&lol()">
 ```
 
-C> _Example: Can these styles lie? (They can.)_
+C> _Example: Can these styles lie?_
 
 As such, yes, inline CSS is good for performance, and as such we should consider it a CSS optimization measure. But unless, perhaps, we deal with truly unique styling on ever unique single pages, a categorical _“no”_ to use inline CSS. Our vision of web development, to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance, forbids this. We don’t want to touch HTML for CSS updates—and clearly, inline CSS prevents that.
 
-I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. We’ve gotten to a point where we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been weakened decisively. That is development-practically speaking a helpful and development-theoretically speaking a fascinating development. For the time being I still recommend to follow the first paradigm and separate concerns (like structure, presentation, behavior), and to keep an eye on the big picture.
+I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. We’ve gotten to a point where we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been weakened decisively. That is development-practically speaking a helpful and development-theoretically speaking a fascinating development. For the time being I still recommend to follow the first paradigm and separate concerns (like structure, presentation, behavior).
 
 ### Possibly Relevant: Declaration Prudence
 
-For declarations we face a similar situation as with selectors in that avoiding some of them seems to cause more harm and be more cognitively demanding than not to do anything (or continue doing what we used to do).
+For declarations we face a similar situation as with selectors in that avoiding some of them seems to cause more harm and be more cognitively demanding than not doing anything (or to continue doing what we used to do).
 
-With declarations, we are reasonably certain that declarations like `box-shadow`, `filter`, `opacity`, and `transform`, and some particular values, are _significantly_ slower and hence more expensive than others. So much more expensive, indeed, that the effects can be perceivable even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
+With declarations, we are reasonably certain that declarations like `box-shadow`, `filter`, `opacity`, and `transform`, plus some particular values, are _significantly_ slower and hence more expensive than others. So much more expensive, indeed, that the effects can be perceivable even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
 
-However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has “kangax,”](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/) alas the data are not robust enough or not available anymore (I have not reached kangax).
+However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has “kangax,”](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/) alas the data are not robust enough or not available anymore (I could not reach kangax for clarification).
 
 Until we do more research and can properly, reliably document all the declarations and value ranges that are particularly slow, there’s no point in panicking and no point in blindly guessing what declarations should be avoided.
 
-There may not even be a point taking any action at all, because at the end of the day, we will still need to look at the cases in question: How important is respective styling, and if it’s important, what’s the performance impact of its replacement? In this case, then, it seems advisable to me to flag declarations as a possible optimization source, but not make it a priority—until we have better data.
+There may not even be a point taking any action at all, because at the end of the day, we will still need to look at the cases in question: How important is respective styling, and what’s the performance impact of its replacement? In this case, then, it seems advisable to me to flag declarations as a possible optimization source, but not make it a priority—until we have better data.
 
 ### Rule Hygiene
 
-Where we can finally start optimizing for performance is with always removing anything in our CSS that isn’t needed anymore: rule hygiene. This sort of hygiene is simple in theory—just get rid of what’s not needed—but tricky in practice.
+Where we can finally start optimizing for performance is with always removing anything in our CSS that isn’t needed anymore: rule hygiene. This sort of hygiene is simple in theory—just get rid of what isn’t needed—but tricky in practice.
 
-The trickiness consists in the fact that it’s often hard, if not impossible, to tell what rules truly aren’t needed. There are tools for this purpose, but it’s difficult to be certain of where styles are used, and outright not feasible on the really large websites—on sites so large that they have similarly looking marketing sites run by third parties that secretly hot-link the mothership’s main style sheets. On top of that, it’s difficult to automate the procedure.
+The trickiness consists in the fact that it’s often hard, if not impossible, to tell what rules truly aren’t needed. There are tools for this purpose, but it’s difficult to be certain of where styles are used, and often not feasible on the really large websites—on sites so large that they have similarly looking marketing sites run by third parties that secretly hot-link the mothership’s main style sheets. On top of that, it’s difficult to automate the procedure.
 
 Generally speaking though, what helps this hygiene is the following:
 
@@ -344,15 +344,15 @@ Generally speaking though, what helps this hygiene is the following:
 
 The Unused CSS crawler goes furthest where we actually want to go, to have something that tells us with considerable certainty what is used and what’s not. (It has become one of my favorite tools for CSS rule hygiene optimization.)
 
-I> Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather served the systemic _deterioration_ of websites by being used endlessly to build entire layouts, then layout tables (though in a way, they only served optimization of said layouts). But then our attention was on
+I> Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather, as the infamous “spacer GIFs,” served the systemic _deterioration_ of websites by being used endlessly to build entire layouts, then layout tables (though in a way, they only served optimization of said layouts). But then our attention was on
 I> 
 I> * what formats to use for quality and compression (“GIF or JPG?”);
 I> * how to compress images;
-I> * how to limit the number of images (to limit the number of HTTP requests);
-I> * how to not use images (data URIs);
+I> * how to limit the number of images (and the number of HTTP requests, through sprites and such);
+I> * how not to use images (data URIs);
 I> * and again, what formats to use (“…or SVG?”).
 I> 
-I> These topics, without the redundancy of the formats and compression questions, are exactly the ones we should still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization—it’s image optimization. And Addy Osmani had just written [such a book](https://images.guide/).
+I> These topics, without the redundancy of the formats and compression questions, are exactly the ones we should still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization—it’s image optimization. And Addy Osmani has just written [such a book](https://images.guide/).
 
 ## Quality
 
