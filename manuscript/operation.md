@@ -150,7 +150,7 @@ C> _Example: Quick, where do we add `transform: rotateY(10deg);` so that someone
 
 This is trivial and automatable but still, in my eyes, one of the key optimization methods. That is so because an almost failsafe, easily repeatable, soon habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme like the alphabetical ordering of declarations will at once make our code more understandable and help anyone touching it navigate in it.
 
-I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we will write better code once we can do it ourselves, and not require some processor to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we strongly benefit from internalizing this way of sorting.)
+I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we’ll write better code once we can do it ourselves, and not require some processor to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we strongly benefit from internalizing this way of sorting.)
 
 [Sort declarations alphabetically.](https://meiert.com/en/blog/on-declaration-sorting/)
 
@@ -321,7 +321,7 @@ However, the problem is that data are hard to come by. Ben Frain has contributed
 
 Until we do more research and can properly, reliably document all the declarations and value ranges that are particularly slow, there’s no point in panicking and no point in blindly guessing what declarations should be avoided.
 
-There may not even be a point taking any action at all, because at the end of the day, we will still need to look at the cases in question: How important is respective styling, and what’s the performance impact of its replacement? In this case, then, it seems advisable to me to flag declarations as a possible optimization source, but not make it a priority—until we have better data.
+There may not even be a point taking any action at all, because at the end of the day, we’ll still need to look at the cases in question: How important is respective styling, and what’s the performance impact of its replacement? In this case, then, it seems advisable to me to flag declarations as a possible optimization source, but not make it a priority—until we have better data.
 
 ### Rule Hygiene
 
@@ -362,19 +362,19 @@ Generall speaking, we cover the general optimization and the general quality of 
 
 ### Validation
 
-How can we tell that what we’re coding works? We test. How can we tell it’s error-free? We validate. Yes, in a way testing exposes errors in our code, and on the other end we depend on validators to be up-to-date on the latest and greatest. And still, validation is a crucial part in making sure that our code is syntactically correct and uses selectors and declarations (CSS) as well as a structure and elements and attributes (HTML) that actually exist.
+How can we tell that what we’re coding works? We test. How can we tell it’s error-free? We validate. Yes, in a way testing already exposes errors in our code, and on the other end we depend on validators to actually be up-to-date on the latest and greatest. And still, validation is a crucial part in making sure that our code is syntactically correct and uses selectors and declarations (CSS) as well as a structure and elements and attributes (HTML) that actually exist.
 
-There is a gray area when respective working groups just came up with new things (that is, just extended the specifications), and the validator teams couldn’t catch up yet, but that gray area must not prevent us from validating. That would be like only using cellphones whose batteries are fully charged, or only wearing what had just been bought.
+There is a gray area when respective working groups just came up with new things (that is, just extended the specifications), and the validator teams couldn’t catch up yet, but that gray area must not prevent us from validating. That would be like only using cellphones whose batteries are fully charged, or only wearing clothes are brand new.
 
 ![“We found the following errors.”](images/validation.png)
 
 C> _Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)_
 
-Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/en/analysis/#validation)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit through, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, getting a better technical understanding (validation issues can be quite informative and instructive) and becoming better professionals (everyone can write poor and invalid code—we’re experts because we can and we do write valid code).
+Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/en/analysis/#validation)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit through, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, getting a better technical understanding (validation issues can be quite informative and instructive) and with that becoming better professionals (everyone can write poor and invalid code—we’re experts because we can and we do write valid code).
 
 ## Maintainability
 
-Optimizing for maintainability means to make sure that everything is done to make maintenance as easy as possible. It starts with making sure to avoid _unnecessary_ work, and surprisingly, this begins with the mundanest of things—proper style sheet naming. We won’t discuss such simple things here, but let’s all keep an eye on the senseless activity of changing style sheet names and such. When we’re doing that, we’re not taking care of a maintenance task—we, excuse the language, just f’ed up one of the simplest things there is in web development. (As always, let’s just use functional or generic names. I’ve never in my 20 years career changed a style sheet’s name once it was just called “default.css”.)
+Optimizing for maintainability means to make sure that everything is done to make maintenance as easy as possible. It starts with making sure to avoid _unnecessary_ work, and surprisingly, this begins with the mundanest of things—proper style sheet naming. We won’t discuss such simple things here, but let’s all keep an eye on the senseless activity of changing style sheet names and such. When we’re doing that, we’re not taking care of a maintenance task—we, excuse the language, just f’ed up one of the simplest things there is in web development. (Defensive caching assumed, let’s just use functional or generic names. Personally, I’ve never in my 20 years career changed a style sheet’s name once it was just called “default.css”—even on heavily frequented Google sites.)
 
 ### Irrelevant: `!important`
 
@@ -386,7 +386,7 @@ Alas, now, that doesn’t mean one shouldn’t use knifes, hammers, or `!importa
 
 In essence, let’s not refrain from using `!important`. Let’s not shy away from using it for quick _testing and debugging_. Let’s well use it for declarations, then, that come early in our style sheets but that are rather unspecific, and hence face a risk (or probably just suffered from) being overridden in some way. _That’s not bad development practice. That makes sense._
 
-`!important` is fine. Let’s move on.
+`!important` is fine.
 
 ### Separation of Concerns
 
@@ -404,7 +404,7 @@ On a micro and intra-style sheet level, there are now two options for separation
 
 One is to separate all styles by modules (functionality), or perhaps, blocks, or elements (BEM), and to keep them separate. (This goes in the direction of the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).)
 
-Two is not to do anything on top—as we don’t have to do anything more if we’re sorting selectors consistently (such sorting will _inherently_ lead to a modular order within our style sheets), and especially not _if_ we DRY our style sheets entirely. As we will see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, for which module separation is rather inconvenient. (This is another example for where our work requires some feeling for balance and priority—we may well decide for a different course, especially when our projects are of large size.)
+Two is not to do anything on top—as we don’t have to do anything more if we’re sorting selectors consistently (such sorting will _inherently_ lead to a modular order within our style sheets), and especially not _if_ we DRY our style sheets entirely. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example for where our work requires some feeling for balance and priority—we may well decide for a different course, especially when our projects are of large size.)
 
 I> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
 I> 
@@ -416,7 +416,7 @@ I> When we’re asked to avoid the descendant selector (OOCSS), then great, no w
 
 The next maintainability pillar to optimize for is to avoid repetition. When we think about selectors in terms of _grouped_ selectors (that is, `section` to be different from `section, div`), and when we assume declarations to be written so consistently as to not inadvertently repeat through different spellings (compare `outline: 0` and `outline: none`), there really is only one way to avoid repetition: through avoiding repeat _declarations_.
 
-Most of the time that makes our style sheets more compact and also more maintainable, because we limit the number of places where we define a particular style.
+Most of the time that makes our style sheets more compact and also more maintainable, because we limit the number of places where a particular style is defined.
 
 #### Using Declarations Just Once
 
@@ -444,14 +444,14 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 * (Repeat.)
 * Test.
 
-This may seem intimidating, but is rather precise; and it’s much work only when we just wrote an entire style sheet. For small updates, for example, the process is considerably easier and much more grateful.
+This may seem intimidating, but is rather precise; and it’s much work only when we just wrote and optimize an entire style sheet. For small updates, for example, the process is considerably easier and much more grateful.
 
-What we receive at the end of it is a style sheet that is, [in many cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example), lighter than what we started with; but as file size is not always a factor for performance (mainly thanks to compression), the main benefit is with improved maintainability: We end with style sheets that are more compact, easier to understand, and easier to manage. So much, indeed, that this optimization step may mean that we don’t need something like variables, because when we don’t, [like the average website does](https://meiert.com/en/blog/70-percent-css-repetition/), repeat each declaration almost four times, there’s less need to sprinkle variables all over our work.
+What we receive at the end is a style sheet that is, [in many cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example), lighter than what we started with; but as file size is not always a factor for performance (mainly thanks to compression), the main benefit is with improved maintainability: We end with style sheets that are more compact, easier to understand, and easier to manage. So much, indeed, that this optimization step may mean that we don’t need something like variables, because when [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/) we don’t repeat each declaration almost four times, we don’t face the issues of such repetition.
 
-Try this process on for size, and apply it to CSS sections first (that is, avoid declaration repetition within functional blocks, as with for page styles, navigation styles, login styles, however the blocks are divided). This way it’s easier to get acquainted with the process, get a moderate result, and also find a way to feed back to the community your very own ideas on DRY CSS.
+Try this process on for size, and apply it to CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, login styles, however the blocks are divided). This way it’s easier to get acquainted with the process, get a moderate result, and also find a way to feed back to the community your very own ideas on DRY CSS.
 
 C> ⁂
 
-We’re now concluding the section on operational optimization. What we’ve covered are all things we need to focus on while we’re working on style sheets. Most of that could not be automated (with the exception of intermittent controls that inform us if, say, our style sheet contained too much repetition, or we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed, for it to improve our code and us as professionals.
+We’re concluding the section on operational optimization. What we’ve covered are all things we need to focus on while we’re working on style sheets. Most of that could not be automated (with the exception of unintermittent controls that inform us if, say, our style sheet contained too much repetition, or if we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed, for it to improve our code and us as professionals.
 
-I> That exception there in parentheses looks innocent but somewhat hints at the future for professional development: automated live feedback. Likely an area for modern editors, this could mean to immediately provide notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way seems long at this point—we’ll need great UI and AI features to make it work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s rather glaringly missing from the current way of development, that only checks code once we checked it into a repository or deployed it to a staging or production environment.
+I> That exception there in parentheses, about unintermittent controls, looks innocent but somewhat hints at the future of professional development: automated live feedback. Likely an area for modern editors, this could mean to immediately provide notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way seems long at this point—we’ll need great UI and AI features to make it work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s rather glaringly missing from the current way of development, that only checks code once we checked it into a repository or deployed it to a staging or production environment.
