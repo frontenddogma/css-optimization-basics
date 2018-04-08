@@ -18,7 +18,7 @@ There’s nothing wrong with doing less work—by automating it.
 
 There’s nothing wrong, either, with not doing work that is automated.
 
-(There’s much wrong with not doing the work that we haven’t yet automated, however.)
+(There’s much wrong with not doing needed work that we haven’t yet automated, however.)
 
 Code should be understandable, and for that it’s useful when code is consistent and simple.
 
@@ -37,8 +37,6 @@ In CSS, selector performance doesn’t matter, and inline CSS is a crime in many
 Some declarations may be slower than others but there’s rarely reason for panic.
 
 Rule hygiene may be most important for CSS performance.
-
-Quality is the mark of professional work.
 
 The most basic way way to determine quality is through validation, and high error counts unequal high quality scores.
 
@@ -78,7 +76,7 @@ And, as professionals, we lead by example.
 
 ## Tools and References
 
-The following lists a small selection of useful _CSS_ tools, websites, and books. They are geared towards more experienced developers, and they are because the novice developer will learn more and make bigger jumps learning here than staying with beginner materials.
+The following lists a small selection of useful _CSS_ tools, websites, and books. They are geared towards more experienced developers, and they are because the novice developer may learn more and make bigger jumps learning here than staying with beginner materials.
 
 ### Tools
 
@@ -120,7 +118,7 @@ A selection of CSS experts and resources for web development.
 
 ### Books
 
-An even smaller selection of books (my recommendation: look into [the specs](https://www.w3.org/TR/)).
+An even smaller selection of books (my recommendation: [the specs](https://www.w3.org/TR/)).
 
 * [_CSS Secrets: Better Solutions to Everyday Web Design Problems_ (Lea Verou)](https://www.amazon.com/dp/B0131MQ1NS/?tag=j9t-21-20)
 * [_CSS: The Definitive Guide: Visual Presentation for the Web_ (Eric Meyer and Estelle Weyl)](https://www.amazon.com/dp/1449393195/?tag=j9t-21-20)

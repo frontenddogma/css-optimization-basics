@@ -1,3 +1,3 @@
 # About the Author
 
-Jens Oliver Meiert is a German author and developer who has been a technical lead at companies like [GMX](https://gmx.de/) and [Google](https://www.google.com/). He has written a few simple, non-bestselling books about a variety of topics (last: [_The Little Book of Website Quality Control_](http://www.oreilly.com/web-platform/free/the-little-book-of-website-quality-control.csp)). He lives at [meiert.com](https://meiert.com/en/). Please say hello.
+Jens Oliver Meiert is a German author and developer who has been a technical lead at companies like [GMX](https://gmx.de/) and [Google](https://www.google.com/). He has written a few simple, non-bestselling books about a variety of topics (last: [_The Little Book of Website Quality Control_](http://www.oreilly.com/web-platform/free/the-little-book-of-website-quality-control.csp)). Online, he lives at [meiert.com](https://meiert.com/en/). Please say hello.

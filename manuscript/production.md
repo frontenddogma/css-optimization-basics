@@ -8,7 +8,7 @@ It turns out, then, that we do again benefit from trying to follow some of the (
 
 Performance is one of the primary optimization goals, and again _rendering_ performance is not the subject here for its often marginal achievements and yet grave practical impediments.
 
-As long as our code is consistent, the steps suggested here can all be taken care of just before production, automatically, and they don’t have to find their way back into the operational repository. The exception is what we’ll start with, because these items can well be handled manually, covered by our code style guides.
+As long as our code is consistent, the steps suggested here can all be taken care of right before production, automatically, and they don’t have to find their way back into the operational repository. The exception is what we’ll start with, because it can first be covered by our code style guidelines and all get handled manually.
 
 ### Character Minimization
 
@@ -20,11 +20,11 @@ To make our style sheets more compact, that is, make them easier to read and sma
 * color notations to use 3-digit hex, where possible (`#fff`, not `#ffffff` or `white`);
 * value shortening (`border: 0` instead of `border: none` but also (these steps aren’t trivial!) `font-family: arial, sans-serif` instead of `font-family: arial, helvetica, sans-serif`—the fallback font is good practice but Helvetica, here, would never be used).
 
-As noted in the introductory section, these items can well be covered by coding guidelines but they’re also easy enough to automate and run through just before pushing our style sheets to production.
+As noted in the introductory section, these items can well be covered by coding guidelines but they’re also easy enough to automate and run through just before pushing style sheets to production.
 
 ### Code Minimization
 
-After we’ve minimized our style sheet code without impairing understandability, the next steps means to remove all the characters that aren’t needed for the style sheet to work—which makes it production-ready.
+After we’ve minimized our style sheet code without impairing understandability, the next steps means to remove all the characters that aren’t needed for the style sheet to work—this makes it production-ready.
 
 Note again that this is only presented as a separate step here to _illustrate_ that we can remove certain characters manually—perhaps our style guide requires us to, where possible, use 3-digit hex color values—and still are able to work with our style sheets. As a true manual task it would make style sheet maintenance rather cumbersome if not practically impossible.
 
@@ -72,7 +72,7 @@ I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
 
 Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them to a single file to load. That’s important for more effective compression and even more so for fewer HTTP requests. ([HTTP/2 alleviates](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x) here but for this first edit, I wish to stick to advising for fewer requests.)
 
-That’s simplified but the basic idea behind this is that HTTP request overhead makes for 500–700 bytes (based on work from Steve Souders and Kyle Simpson) that “costs about 100&nbsp;ms” (Kyle Simpson).
+That’s simplified but the basic idea behind this is that HTTP request overhead makes for 500–700 bytes (based on work from Steve Souders and Kyle Simpson) costing “about 100&nbsp;ms” (Kyle Simpson).
 
 This data has led others to recommend that files smaller than 1&nbsp;KB should be inlined, and to avoid inlining of files that are bigger than 4&nbsp;KB (Guy Podjarny).
 
@@ -86,7 +86,7 @@ File size and caching are normally the issues that are of more concern now. The 
 
 1) If all our styles are in one style sheet, but a user visits just one page, how can we justify pushing all the unused styles onto them?
 
-(Note that per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide some number, as bounce rates actually vary heavily per field as well as per type of content.)
+(Per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide some number, as bounce rates actually vary heavily per field as well as per type of content.)
 
 2) Same scenario, if all our styles are in one style sheet, what is a good balance to make sure that the style sheets get cached but we can swiftly roll out updates?
 
@@ -126,7 +126,7 @@ And there are compromises (aka exceptions) to be used sparingly and wisely, like
 
 C> _Example: The approach taken by the Go framework._
 
-At the end of the day there is no single answer for optimal CSS file management. Complexity is an important criterion, automation is an important approach, simplicity is likewise important.
+At the end of the day there is no single answer for optimal CSS file management. Complexity is an important aspect, automation is an important approach, simplicity is an important criterion.
 
 ## Output Control
 
@@ -138,7 +138,7 @@ For the finishing optimization step we want to regularly employ code reviews and
 
 The reason to do automated checks is efficiency, as we don’t want to spend any human time on constantly validating or otherwise confirming the quality of our style sheets.
 
-The reason to do manual checks is not to miss any glaring issues, things that fly under the radar because we missed how, say, a preprocessor may have had a flag that left in comments, or that otherwise generates production output that isn’t desirable.
+The reason to do manual checks is not to miss anything glaring, issues that fly under the radar because we missed how, say, a preprocessor may have had a flag that left in comments, or that otherwise generates production output that isn’t desirable.
 
 * Automated tests: daily and on deployment
 * Manual tests: weekly
