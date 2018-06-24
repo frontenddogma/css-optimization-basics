@@ -18,9 +18,9 @@ There’s nothing wrong with doing less work—by automating it.
 
 There’s nothing wrong, either, with not doing work that is automated.
 
-(There’s much wrong with not doing needed work that we haven’t yet automated, however.)
+(There’s much wrong with not doing needed work because we haven’t yet automated it, perhaps.)
 
-Code should be understandable, and for that it’s useful when code is consistent and simple.
+Code should be understandable, and for that it’s useful when it’s consistent and simple.
 
 Consistent CSS is footed on alphabetical declaration sorting (everything else is much too complicated) and on a robust order for selector sorting.
 
@@ -52,7 +52,7 @@ One of the most important principles is separation of concerns, and contents, st
 
 In code, we don’t want to repeat ourselves.
 
-Accordingly, we do want to limit the repetition of declarations.
+Accordingly, in CSS, we do want to limit the repetition of declarations.
 
 Optimization for production is an important second step, because in production machines use our code, whereas in operation, humans use it.
 
@@ -62,7 +62,7 @@ For production, we remove all unneeded characters. All of them.
 
 We typically want to reference one style sheet that includes all the styles, though there are cases of high complexity in which a different approach can lead to better performance.
 
-(We cannot be absolved from making decisions about our particular projects.)
+(We cannot be absolved from thinking and making decisions about our particular projects.)
 
 (Exceptions prove the rule.)
 
