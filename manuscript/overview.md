@@ -24,7 +24,7 @@ Code should be understandable, and for that it’s useful when it’s consistent
 
 Consistent CSS is footed on alphabetical declaration sorting (everything else is much too complicated) and on a robust order for selector sorting.
 
-Simple CSS may avoid IDs and classes altogether and uses functional or generic names.
+Simple CSS uses functional or generic names or avoids IDs and classes altogether.
 
 Simple CSS also likes shorthands (yes).
 
@@ -38,7 +38,7 @@ Some declarations may be slower than others but there’s rarely reason for pani
 
 Rule hygiene may be most important for CSS performance.
 
-The most basic way way to determine quality is through validation, and high error counts unequal high quality scores.
+The most basic way to determine quality is through validation, and high error counts unequal high quality scores.
 
 Every piece of code gets at least touched _twice_.
 
@@ -56,7 +56,7 @@ Accordingly, in CSS, we do want to limit the repetition of declarations.
 
 Optimization for production is an important second step, because in production machines use our code, whereas in operation, humans use it.
 
-When we cannot production-optimize automatically, we should do as much as we can manually.
+When we cannot production-optimize automatically, we should do as much as we can manually, as part of our craft.
 
 For production, we remove all unneeded characters. All of them.
 
