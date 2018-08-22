@@ -12,7 +12,7 @@ In this book, then, we’ll look at ways to improve the CSS we write. We’ll go
 
 Sometimes it appears difficult to answer legitimate questions. Why is optimization important? Why is breathing useful? Why should we eat?
 
-Optimization is important because quality is important; and quality (and quality control) is important because, as I’ve established in [_The Little Book of Website Quality Control_](http://www.oreilly.com/web-platform/free/the-little-book-of-website-quality-control.csp), “without it we have no robust way of determining whether what we do and produce is any good. Quality control, therefore, is a key differentiator between professional and amateur work. Consistent quality is the mark of the professional. Quality control, finally, saves time and money and sometimes nerves, particularly in the long run.”
+Optimization is important because quality is important; and quality (and quality control) is important because, as I’ve established in [_The Little Book of Website Quality Control_](https://www.safaribooksonline.com/library/view/the-little-book/9781492042860/), “without it we have no robust way of determining whether what we do and produce is any good. Quality control, therefore, is a key differentiator between professional and amateur work. Consistent quality is the mark of the professional. Quality control, finally, saves time and money and sometimes nerves, particularly in the long run.”
 
 That spontaneous definition, aiming at ways to check our work, doesn’t yet make the beneficiary clear: the user or customer. It’s the end user who benefits and who we want to benefit from great quality work.
 
