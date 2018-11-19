@@ -358,7 +358,7 @@ I> These topics, without the redundancy of the formats and compression questions
 
 On the surface, optimization seems to have an obvious goal of increasing quality, but, and my own knowledge of the philosophy of language leaves me here, optimization seems to have value just as a process, on its own. One can optimize something, for something, and something can have a quality of something, but not of something else.
 
-Generall speaking, we cover the general optimization and the general quality of CSS; all that we’ve established about big picture thinking supports this notion. And yet quality should be called out explicitly, as our general goal. And for that goal, there’s one particular aspect to pay attention to.
+Generally speaking, we cover the general optimization and the general quality of CSS; all that we’ve established about big picture thinking supports this notion. And yet quality should be called out explicitly, as our general goal. And for that goal, there’s one particular aspect to pay attention to.
 
 ### Validation
 
