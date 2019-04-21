@@ -2,7 +2,7 @@
 
 In this first section, on operational optimization, we’re going to talk about the options we have to write higher quality CSS while we’re right at it—in operation. (The second part will deal with options to optimize for production, that is, for release and live use.)
 
-Just as it didn’t seem useful to cover preprocessors so to get a clear look at CSS itself, we’re not going to discuss documentation, as with in-file comments, nor guidelines that we can enforce in an automated fashion. Documentation is an entirely different topic that has more to do with maintenance than with optimization, and coding guidelines, as important as they are and as many of them we can set up, are often a matter of preference that doesn’t necessarily have a bearing on quality (also see: [_The Little Book of HTML/CSS Coding Guidelines_](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp)). We’re already applying two of our mantras: keeping it simple, and automating.
+Just as it didn’t seem useful to cover preprocessors so to get a clear look at CSS itself, we’re not going to discuss documentation, as with in-file comments, nor guidelines that we can enforce in an automated fashion. Documentation is an entirely different topic that has more to do with maintenance than with optimization, and coding guidelines, as important as they are and as many of them we can set up, are often a matter of preference that doesn’t necessarily have a bearing on quality (also see: [_The Little Book of HTML/CSS Coding Guidelines_](https://www.oreilly.com/library/view/the-little-book/9781492048459/)). We’re already applying two of our mantras: keeping it simple, and automating.
 
 ## Understandability
 
@@ -111,7 +111,7 @@ C> _Example: Random sample code._
 
 C> _Example: Adjusted._
 
-Consistency is, in theory, reasonably easy to achieve. We [establish coding guidelines](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. This goes as far as that many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules particularly geared towards production.
+Consistency is, in theory, reasonably easy to achieve. We [establish coding guidelines](https://www.oreilly.com/library/view/the-little-book/9781492048459/), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. This goes as far as that many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules particularly geared towards production.
 
 We’ll cover this last step in the chapter “Production Optimization” and go over some tools under “Tools and Resources.” We’ll spare ourselves from going over often subjective coding guidelines and how to automate their implementation and enforcement. What we’ll do is cover select aspects of consistency that are of particular import to CSS optimization. One is automatable; the other isn’t: declaration sorting and selector sorting.
 

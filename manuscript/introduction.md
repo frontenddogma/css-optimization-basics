@@ -12,7 +12,7 @@ In this book, then, we’ll look at ways to improve the CSS we write. We’ll go
 
 Sometimes it appears difficult to answer legitimate questions. Why is optimization important? Why is breathing useful? Why should we eat?
 
-Optimization is important because quality is important; and quality (and quality control) is important because, as I’ve established in [_The Little Book of Website Quality Control_](https://www.safaribooksonline.com/library/view/the-little-book/9781492042860/), “without it we have no robust way of determining whether what we do and produce is any good. Quality control, therefore, is a key differentiator between professional and amateur work. Consistent quality is the mark of the professional. Quality control, finally, saves time and money and sometimes nerves, particularly in the long run.”
+Optimization is important because quality is important; and quality (and quality control) is important because, as I’ve established in [_The Little Book of Website Quality Control_](https://www.oreilly.com/library/view/the-little-book/9781492042860/), “without it we have no robust way of determining whether what we do and produce is any good. Quality control, therefore, is a key differentiator between professional and amateur work. Consistent quality is the mark of the professional. Quality control, finally, saves time and money and sometimes nerves, particularly in the long run.”
 
 That spontaneous definition, aiming at ways to check our work, doesn’t yet make the beneficiary clear: the user or customer. It’s the end user who benefits and who we want to benefit from great quality work.
 
@@ -30,7 +30,7 @@ The same applies to other forms of abstraction, and so we’ll look and point at
 
 C> ⁂
 
-The code in this book follows [Google’s HTML/CSS style guide](https://google.github.io/styleguide/htmlcssguide.html). (For an introduction to coding guidelines and notes on the Google style guide, see [_The Little Book of HTML/CSS Coding Guidelines_](http://www.oreilly.com/web-platform/free/little-book-html-css-coding-guidelines.csp).)
+The code in this book follows [Google’s HTML/CSS style guide](https://google.github.io/styleguide/htmlcssguide.html). (For an introduction to coding guidelines and notes on the Google style guide, see [_The Little Book of HTML/CSS Coding Guidelines_](https://www.oreilly.com/library/view/the-little-book/9781492048459/).)
 
 Before we begin, this is a self-published book made with little extra help. If you find mistakes in it, you have all reason to blame me, the author—but also a great opportunity to help make the book a little better as a contributor (who are all mentioned unless they choose not to be named). Please [file an issue](https://github.com/j9t/css-optimization-basics/issues/new) for every problem you find, or [submit a pull request](https://github.com/j9t/css-optimization-basics/pulls) for specific fixes and suggestions. If you bought the book [through Leanpub](https://leanpub.com/css-optimization-basics) you should get updates containing your and other people’s fixes automatically. (Otherwise there’s always [the original source](https://github.com/j9t/css-optimization-basics).)
 

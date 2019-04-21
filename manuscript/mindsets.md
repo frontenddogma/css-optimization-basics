@@ -12,7 +12,7 @@ To do one thing really well means to really kneel into web development, to pierc
 
 An idea occasionally forgotten, and not strictly followed, is the one of knowing our needs—of knowing our needs _well_. It’s actually the idea of knowing our _goals_, or having goals in the first place—because our goals likewise determine the specific needs we have.
 
-Knowing our goals and needs is important because evidently, it’s difficult to meet a goal when we don’t know it, and to satisfy a need that we’re ignorant of. In the web development world, there are many goals and needs we may have: from most important goals like how to maintain our projects (from a destructive [“fire and forget”](https://meiert.com/en/blog/fire-and-forget/) to a very efficient process of iteration) to clearly quantified performance, and from basal needs like frameworks that [cover our design ideas but don’t mean bloat](http://www.oreilly.com/web-platform/free/book-of-html-css-frameworks.csp), to decisive ones like automation tools.
+Knowing our goals and needs is important because evidently, it’s difficult to meet a goal when we don’t know it, and to satisfy a need that we’re ignorant of. In the web development world, there are many goals and needs we may have: from most important goals like how to maintain our projects (from a destructive [“fire and forget”](https://meiert.com/en/blog/fire-and-forget/) to a very efficient process of iteration) to clearly quantified performance, and from basal needs like frameworks that [cover our design ideas but don’t mean bloat](https://www.oreilly.com/library/view/the-little-book/9781492048121/), to decisive ones like automation tools.
 
 ## Stay in the Present
 

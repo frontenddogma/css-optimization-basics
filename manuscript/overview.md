@@ -123,4 +123,4 @@ An even smaller selection of books (my recommendation: [the specs](https://www.w
 * [_CSS Secrets: Better Solutions to Everyday Web Design Problems_ (Lea Verou)](https://www.amazon.com/dp/B0131MQ1NS/?tag=j9t-21-20)
 * [_CSS: The Definitive Guide: Visual Presentation for the Web_ (Eric Meyer and Estelle Weyl)](https://www.amazon.com/dp/1449393195/?tag=j9t-21-20)
 * [_CSS: The Missing Manual: The Missing Manual_ (David Sawyer McFarland)](https://www.amazon.com/dp/B0026OR2QI/?tag=j9t-21-20)
-* [_The Little Book of HTML/CSS Frameworks_ (Jens Oliver Meiert)](http://www.oreilly.com/web-platform/free/book-of-html-css-frameworks.csp)
+* [_The Little Book of HTML/CSS Frameworks_ (Jens Oliver Meiert)](https://www.oreilly.com/library/view/the-little-book/9781492048121/)
