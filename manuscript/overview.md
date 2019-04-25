@@ -84,13 +84,13 @@ A few handy CSS tools, both for manual and automated testing.
 
 * CSS Analyser [online tool](http://juicystudio.com/services/csstest.php), to validate CSS, units of measurement, and to check for sufficient color contrast
 * CSS Minifier [online tool](https://cssminifier.com/), to minify CSS
-* CSS Stats [script](https://github.com/cssstats/cssstats) and [online tool](http://cssstats.com/), to analyze and show data about style sheets
+* CSS Stats [script](https://github.com/cssstats/cssstats) and [online tool](https://cssstats.com/), to analyze and show data about style sheets
 * CSS Validation Service [script](https://github.com/w3c/css-validator) and [online tool](https://jigsaw.w3.org/css-validator/), to validate CSS
 * CSSCheck [online tool](http://www.htmlhelp.com/tools/csscheck/), to validate CSS
 * CSSJanus Left-to-Right-to-Left-ifyer [script](https://code.google.com/archive/p/cssjanus/) and [online tool](https://cssjanus.appspot.com/), to convert CSS directionality (LTR/RTL)
 * CSSLint [script](https://github.com/CSSLint/csslint) and [online tool](http://csslint.net/), to identify CSS code issues
 * CSSTidy [script](http://csstidy.sourceforge.net/) and [online tool](https://hell.meiert.org/aux/optimize/css/), to reformat and optimize CSS
-* Minify [script](https://github.com/matthiasmullie/minify) and [online tool](http://www.minifier.org/), to minify CSS
+* Minify [script](https://github.com/matthiasmullie/minify) and [online tool](https://www.minifier.org/), to minify CSS
 * pre-commit [script](https://github.com/WouterSioen/pre-commit), to validate syntax errors in CSS (through CSS Lint) and SCSS (through SCSS Lint)
 * purifycss [script](https://github.com/purifycss/purifycss), to remove unused CSS
 * UnCSS [script](https://github.com/giakki/uncss) and [online tool](https://uncss-online.com/), to remove unused CSS
@@ -103,7 +103,7 @@ A selection of CSS experts and resources for web development.
 
 * [A List Apart](https://alistapart.com/)
 * [Andrew, Rachel](https://rachelandrew.co.uk/)
-* [Atkins Jr., Tab](http://www.xanthir.com/blog/)
+* [Atkins Jr., Tab](https://www.xanthir.com/blog/)
 * [Can I Use](https://caniuse.com/)
 * [CSS-Tricks](https://css-tricks.com/)
 * [Frain, Ben](https://benfrain.com/)

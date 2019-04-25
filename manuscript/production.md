@@ -64,7 +64,7 @@ As mentioned in the beginning of this book, we benefit from automating our work�
 
 I> For both character and code optimization there are several tools and scripts on the market, for example:
 I> 
-I> * [minifier.org](http://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
+I> * [minifier.org](https://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
 I> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)
 I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
 
