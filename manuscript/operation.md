@@ -243,7 +243,7 @@ Even though the topic of ID and class naming is a beginner topic it’s also muc
 
 #### Shorthands
 
-Shorthands—CSS declarations that combine other declarations, like `font`, `border`, and `animation`—are a very useful part of CSS because they help to make CSS more minimal-simple. They allow us to write less code though not necessarily more understandable code—a situation that perhaps made one camp declare that [CSS shorthands were an anti-pattern](https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/), and the other say [they weren’t](https://meiert.com/en/blog/css-shorthands/).
+Shorthands—CSS declarations that combine other declarations, like `font`, `border`, or `animation`—are a very useful part of CSS because they help to make CSS more minimal-simple. They allow us to write less code though not necessarily more understandable code—a situation that perhaps made one camp declare that [CSS shorthands were an anti-pattern](https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/), and the other say [they weren’t](https://meiert.com/en/blog/css-shorthands/).
 
 Modifying what I put to protocol as a part of that other camp, they’re both.
 
