@@ -1,12 +1,12 @@
 # Production Optimization
 
-For production, we usually take care of all the things that are good for machines. I’ve organized this section so that it also contains the things that can be done _by_ machines (tools)—without, again with an eye on us as professionals, including anything that, if we were to miss it, would make us produce significantly worse code.
+For production, we usually take care of all the things that are good for machines. I’ve organized this section so that it also contains the things that can be done _by_ machines (tools)—without, again with an eye on us as professionals, including anything that, if we were to miss it, would make us ship significantly worse code.
 
-It turns out, then, that we do again benefit from trying to follow some of the (human-friendly) ideas ourselves. For example, we can well try to write minimal CSS (like omitting leading `0`’s), or to only link one style sheet (to keep the number of requests low and to avoid future HTML changes), without leaving this to tools.
+It turns out, then, that we do again benefit from trying to follow some of the (human-friendly) ideas ourselves. For example, we can well try to write minimal CSS (like omitting leading `0`’s), or to link only one style sheet (to keep the number of requests low and to avoid future HTML changes), without leaving this to tools.
 
 ## Performance
 
-Performance is one of the primary optimization goals, and again _rendering_ performance is not the subject here for its often marginal achievements and yet grave practical impediments.
+Performance is one of the primary optimization goals, and again _rendering_ performance is not the subject here for the often comparatively marginal results and the grave practical impediments to measure and work with it effectively.
 
 As long as our code is consistent, the steps suggested here can all be taken care of right before production, automatically, and they don’t have to find their way back into the operational repository. The exception is what we’ll start with, because it can first be covered by our code style guidelines and all get handled manually.
 
@@ -18,7 +18,7 @@ To make our style sheets more compact, that is, make them easier to read and sma
 * leading `0`’s (`margin: .1em`, not `margin: 0.1em`);
 * unneeded trailing `0`’s (`line-height: 1`, not `line-height: 1.0`);
 * color notations to use 3-digit hex, where possible (`#fff`, not `#ffffff` or `white`);
-* value shortening (`border: 0` instead of `border: none` but also (these steps aren’t trivial!) `font-family: arial, sans-serif` instead of `font-family: arial, helvetica, sans-serif`—the fallback font is good practice but Helvetica, here, would never be used).
+* value shortening (`border: 0` instead of `border: none` but also (these steps aren’t trivial) `font-family: arial, sans-serif` instead of `font-family: arial, helvetica, sans-serif`—the fallback font is good practice but Helvetica, here, would never be used).
 
 As noted in the introductory section, these items can well be covered by coding guidelines but they’re also easy enough to automate and run through just before pushing style sheets to production.
 
@@ -67,6 +67,7 @@ I>
 I> * [minifier.org](https://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
 I> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)
 I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
+I> * @@
 
 ### File Normalization
 
@@ -80,13 +81,13 @@ We may say that most sites that use several style sheets (to then be combined to
 
 As we can tell, there must be something else here. What about tiny sites, and what about overall file size and caching?
 
-Tiny sites, particularly one-pagers with just a few rules, may be under the threshold. If the site is and will be a one-pager forever we have a stronger incentive to inline all code, both styles and scripts. But that also depends on the page itself and our ideas about true separation of concerns. If the page resources are so few and so small that the extra CSS request is not felt anyway, then it may well be fine to stick with separation. Likewise if we strongly believe in separation of concerns, we might just always go for that separation (and what may sound a little rigid here I consider useful for its simplicity).
+Tiny sites, particularly one-pagers with just a few rules, may be under the threshold. If the site is and will be a one-pager forever we have a stronger incentive to inline all code, both styles and scripts. But that also depends on the page itself and our ideas about true separation of concerns. If the page resources are so few and so small that the extra CSS request is not felt anyway, then it may well be fine to stick with separation. Likewise if we strongly believe in separation of concerns, we might just always go for that separation (and what may at first sound rigid then just becomes consistent and simple).
 
 File size and caching are normally the issues that are of more concern now. The concern boils down to the following two questions:
 
 1) If all our styles are in one style sheet, but a user visits just one page, how can we justify pushing all the unused styles onto them?
 
-(Per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide some number, as bounce rates actually vary heavily per field as well as per type of content.)
+(Per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide some number, as bounce rates vary per field as well as per type of content.)
 
 2) Same scenario, if all our styles are in one style sheet, what is a good balance to make sure that the style sheets get cached but we can swiftly roll out updates?
 
@@ -103,7 +104,7 @@ What’s there to consider for our decision?
 
 et cetera.
 
-I’ll still offer a view. There are a few reasons for only providing the styles that are used on each page. This approach should be taken if 1) the project is large (perhaps >10,000 pages, or >10,000 declarations) _and_ 2) it can be automated.
+I’ll still offer a view. There are a few reasons for only providing the styles that are used on each page. This approach, of [CSS tree shaking](@@), should be taken if 1) the project is large (perhaps >10,000 pages, or >10,000 declarations) _and_ 2) it can be automated.
 
 * index.css (or)
 * contact.css (or)
@@ -126,7 +127,7 @@ And there are compromises (aka exceptions) to be used sparingly and wisely, like
 
 C> _Example: The approach taken by the Go framework._
 
-At the end of the day there is no single answer for optimal CSS file management. Complexity is an important aspect, automation is an important approach, simplicity is an important criterion.
+At the end of the day there is no single answer for optimal CSS file management. The solution benefits from being simple but the approach depends on project complexity as well as our options to automate.
 
 ## Output Control
 
@@ -145,7 +146,7 @@ The reason to do manual checks is not to miss anything glaring, issues that fly 
 
 C> _Example: CSS routines._
 
-The manual checks can be swift; gloss over the output, perhaps re-formatted to be legible again (tools like [CSSTidy](https://hell.meiert.org/aux/optimize/css/) allow to throw a CSS URL at them to be “uncompressed”).
+Manual checks can be swift; gloss over the output, perhaps re-formatted to be legible again (tools like [CSSTidy](https://hell.meiert.org/aux/optimize/css/) allow to throw a CSS URL at them to be “uncompressed”).
 
 The automated checks ask for time to be set up properly and depend on one’s priorities and needs; one popular way is to use [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to validate and lint on commit, as through scripts like Wouter Sioen’s [pre-commit](https://github.com/WouterSioen/pre-commit).
 
@@ -157,4 +158,4 @@ This concludes the overview on CSS optimization basics. We’ve covered the most
 
 That, then, I’m willing to put to the test: Please share your thoughts on what should also be _required_ optimization steps. Share them privately, by [contacting me](https://meiert.com/en/contact/), or share them publicly, perhaps tagging them so that others can find your views. Although my own shortcut was `#csso` I’ll propose the more verbose and more clear `#cssoptim`.
 
-Other than that, it’s my wish that everyone, the aspiring CSS developer as well as the senior CSS wizard, could take something out of this book. Its value is surely related to how much you can take with you. To compound that value we’ll finish with an overview and a selection of tools and references.
+Other than that, it’s my wish that everyone, the aspiring CSS developer as well as the senior CSS tech lead, could take something out of this book. Its value is surely related to how much you can take with you. To compound that value we’ll finish with an overview and a selection of tools and references.
