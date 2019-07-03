@@ -62,12 +62,17 @@ C> _Example: Random now minified CSS snippet._
 
 As mentioned in the beginning of this book, we benefit from automating our work—as this optimization step is ugly to do and ugly to work with we actually have something here that is almost _always_ automated.
 
-I> For both character and code optimization there are several tools and scripts on the market, for example:
+I> For both character and code optimization there are several web-based tools and scripts alone, for example:
 I> 
 I> * [minifier.org](https://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
 I> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)
 I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
-I> * @@
+I>
+I> For the Node ecosystem, some of the more popular packages for CSS compression include:
+I>
+I> * [clean-css](https://www.npmjs.com/package/clean-css)
+I> * [css-minify](https://www.npmjs.com/package/css-minify)
+I> * [UglifyCSS](https://www.npmjs.com/package/uglifycss)
 
 ### File Normalization
 
@@ -104,7 +109,7 @@ What’s there to consider for our decision?
 
 et cetera.
 
-I’ll still offer a view. There are a few reasons for only providing the styles that are used on each page. This approach, of [CSS tree shaking](@@), should be taken if 1) the project is large (perhaps >10,000 pages, or >10,000 declarations) _and_ 2) it can be automated.
+I’ll still offer a view. There are a few reasons for only providing the styles that are used on each page. This approach, of [CSS tree shaking](https://survivejs.com/webpack/styling/eliminating-unused-css/), should be taken if 1) the project is large (perhaps >10,000 pages, or >10,000 declarations) _and_ 2) it can be automated.
 
 * index.css (or)
 * contact.css (or)

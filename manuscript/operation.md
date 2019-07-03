@@ -339,9 +339,10 @@ Generally speaking though, what helps this hygiene is the following:
   - [Chrome Developer Tools](https://developer.chrome.com/devtools) browser extension audit tab
   - [Dust-Me Selectors](https://addons.mozilla.org/en-US/firefox/addon/dust-me-selectors/) Firefox browser extension
   - [Unused CSS](https://unused-css.com/) crawler
+  - UnCSS [online tool](https://uncss-online.com/), [script](https://github.com/giakki/uncss), and [package](https://www.npmjs.com/package/uncss)
   - [PurifyCSS](https://github.com/purifycss/purifycss) script
-  - UnCSS [script](https://github.com/giakki/uncss) and [online tool](https://uncss-online.com/)
-* @@
+  - [Purgecss](https://www.purgecss.com/) package
+  - [rm-unused-css](https://www.npmjs.com/package/rm-unused-css) package
 
 The Unused CSS crawler goes furthest where we actually want to go, to have something that tells us with considerable certainty what is used and what’s not. (It has become one of my favorite tools for CSS rule hygiene optimization.)
 
@@ -455,4 +456,4 @@ C> ⁂
 
 We’re concluding the section on operational optimization. What we’ve covered are all things we need to focus on while we’re working on style sheets. Most of that could not be automated (with the exception of unintermittent controls that inform us if, say, our style sheet contained too much repetition, or if we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed, for it not only to improve our code but also us as professionals.
 
-I> That exception there in parentheses, about unintermittent controls, looks innocent but somewhat hints at the future of professional development: automated live feedback. A priority for modern editors of which some (@@) have begun to pick it up, this will mean to immediately provide notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way still seems long at this point—we’ll need great UI and AI features to make it all work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s rather glaringly missing from the current way of development in which code is only evaluated once we checked it into a repository or deployed it to a staging or production environment.
+I> That exception there in parentheses, about unintermittent controls, looks innocent but somewhat hints at the future of professional development: automated live feedback. A priority for modern editors of which some ([Visual Studio Code](https://code.visualstudio.com/), [WebStorm](https://www.jetbrains.com/webstorm/)) have begun to pick it up, this will mean to immediately provide notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way still seems long at this point—we’ll need great UI and AI features to make it all work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s rather glaringly missing from the current way of development in which code is only evaluated once we checked it into a repository or deployed it to a staging or production environment.

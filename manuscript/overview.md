@@ -82,20 +82,25 @@ The following lists a small selection of useful _CSS_ tools, websites, and books
 
 A few handy CSS tools, both for manual and automated testing.
 
+* clean-css [package](https://www.npmjs.com/package/clean-css), to optimize and minify CSS
 * CSS Analyser [online tool](http://juicystudio.com/services/csstest.php), to validate CSS, units of measurement, and to check for sufficient color contrast
 * CSS Minifier [online tool](https://cssminifier.com/), to minify CSS
-* CSS Stats [script](https://github.com/cssstats/cssstats) and [online tool](https://cssstats.com/), to analyze and show data about style sheets
-* CSS Validation Service [script](https://github.com/w3c/css-validator) and [online tool](https://jigsaw.w3.org/css-validator/), to validate CSS
+* CSS Stats [online tool](https://cssstats.com/) and [script](https://github.com/cssstats/cssstats), to analyze and show data about style sheets
+* CSS Validation Service [online tool](https://jigsaw.w3.org/css-validator/) and [script](https://github.com/w3c/css-validator), to validate CSS
+* css-minify [package](https://www.npmjs.com/package/css-minify), to minify CSS
 * CSSCheck [online tool](http://www.htmlhelp.com/tools/csscheck/), to validate CSS
-* CSSJanus Left-to-Right-to-Left-ifyer [script](https://code.google.com/archive/p/cssjanus/) and [online tool](https://cssjanus.appspot.com/), to convert CSS directionality (LTR/RTL)
-* CSSLint [script](https://github.com/CSSLint/csslint) and [online tool](http://csslint.net/), to identify CSS code issues
-* CSSTidy [script](http://csstidy.sourceforge.net/) and [online tool](https://hell.meiert.org/aux/optimize/css/), to reformat and optimize CSS
-* Minify [script](https://github.com/matthiasmullie/minify) and [online tool](https://www.minifier.org/), to minify CSS
+* CSSJanus Left-to-Right-to-Left-ifyer [online tool](https://cssjanus.appspot.com/) and [script](https://code.google.com/archive/p/cssjanus/), to convert CSS directionality (LTR/RTL)
+* CSSLint [online tool](http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
+* CSSTidy [online tool](https://hell.meiert.org/aux/optimize/css/) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
+* Minify [online tool](https://www.minifier.org/) and [script](https://github.com/matthiasmullie/minify), to minify CSS
 * pre-commit [script](https://github.com/WouterSioen/pre-commit), to validate syntax errors in CSS (through CSS Lint) and SCSS (through SCSS Lint)
+* Purgecss [package](https://www.purgecss.com/), to remove unused CSS
 * purifycss [script](https://github.com/purifycss/purifycss), to remove unused CSS
-* UnCSS [script](https://github.com/giakki/uncss) and [online tool](https://uncss-online.com/), to remove unused CSS
+* rm-unused-css [package](https://www.npmjs.com/package/rm-unused-css), to remove unused CSS
+* UglifyCSS [package](https://www.npmjs.com/package/uglifycss), to minify CSS
+* UnCSS [online tool](https://uncss-online.com/), [script](https://github.com/giakki/uncss), and [package](https://www.npmjs.com/package/uncss), to remove unused CSS
 * Unused CSS [online tool](https://unused-css.com/), to remove unused CSS
-* YUI CSS Compressor [script](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port) and [online tool](https://hell.meiert.org/aux/compress/css/gui/), to format and compress (minify) CSS
+* YUI CSS Compressor [online tool](https://hell.meiert.org/aux/compress/css/gui/) and [script](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port), to format and compress (minify) CSS
 
 ### Websites
 
