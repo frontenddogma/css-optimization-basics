@@ -5,7 +5,7 @@ This is the source of the open and living book [_CSS Optimization Basics_](https
 You have two options to get the book.
 
 1. You can read the book here, for free.
-2. You can [purchase a nicer electronic copy](https://leanpub.com/css-optimization-basics) for a small amount.
+2. For a small amount you can purchase a nicer electronic copy at [Leanpub](https://leanpub.com/css-optimization-basics) or [Amazon](https://www.amazon.com/dp/B07TVW1ZT8/?tag=j9t-21-20).
 
 In the first and initial version of _CSS Optimization Basics_, there are probably some errors and typos and everything. There will also be more that not only could but _should_ be said about CSS optimization. (Note that the book is a lot about the _craft_ and the _basics_ of writing CSS though.)
 
@@ -17,11 +17,3 @@ Because of this early state of things, note two other options:
 With increasing quality and maturity of the book, the price of ebook may go up (probably only up to the price of [some of Jens’s self-published books](https://www.goodreads.com/author/show/13623828.Jens_Oliver_Meiert). That still won’t be much for a tech book, even a short one, but the idea is to give those who buy a copy a good deal. Remember that everyone can always grab the free version or an update here, so whoever’s purchasing a copy—and that would greatly help [Jens’s work](https://meiert.com/en/)—please keep that in mind, as book _updates_ may or may not be available for any editions of the book appearing on sale anywhere outside of Leanpub.
 
 This just for a start. The book is open as everything’s public and free, and it’s living as it’s going to be maintained both by Jens as well as everyone who likes to help make it better. 🥂
-
-## Outlook
-
-As of October, 2018, I’m planning the following major additions and updates for _CSS Optimization Basics_:
-
-* a chapter about CSS optimization and respective modules for Node.js
-
-(For other suggestions, please contact me or [file an issue](https://github.com/j9t/css-optimization-basics/issues/new)—thank you!)
