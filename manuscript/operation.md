@@ -372,7 +372,7 @@ There is a gray area when respective working groups just came up with new things
 
 C> _Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)_
 
-Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/analysis/#validation)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, by getting a better technical understanding (validation issues can be quite informative and instructive) and with that becoming better professionals (_everyone_ can write poor and invalid code—we’re experts because we can and we do write valid code).
+Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/analysis/#conformance)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, by getting a better technical understanding (validation issues can be quite informative and instructive) and with that becoming better professionals (_everyone_ can write poor and invalid code—we’re experts because we can and we do write valid code).
 
 ## Maintainability
 
