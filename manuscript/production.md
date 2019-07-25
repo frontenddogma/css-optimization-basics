@@ -12,13 +12,14 @@ As long as our code is consistent, the steps suggested here can all be taken car
 
 ### Character Minimization
 
-To make our style sheets more compact, that is, make them easier to read and smaller in size, we remove all unneeded characters. That doesn’t refer to whitespace and comments yet—let’s make this a separate step, although both can be covered by the same tool—, but to removing any CSS that isn’t strictly needed. This entails:
+To make our style sheets more compact, that is, make them easier to read and smaller in size, we remove all unneeded characters. That doesn’t refer to whitespace and comments yet—let’s make this a separate step, although both can be covered by the same tool—, but to removing any CSS that isn’t strictly needed. This affects:
 
-* semicolons after the last declaration of each rule;
 * leading `0`’s (`margin: .1em`, not `margin: 0.1em`);
 * unneeded trailing `0`’s (`line-height: 1`, not `line-height: 1.0`);
 * color notations to use 3-digit hex, where possible (`#fff`, not `#ffffff` or `white`);
-* value shortening (`border: 0` instead of `border: none` but also (these steps aren’t trivial) `font-family: arial, sans-serif` instead of `font-family: arial, helvetica, sans-serif`—the fallback font is good practice but Helvetica, here, would never be used).
+* `z-index` values to be rebased;
+* general value shortening (`border: 0` instead of `border: none` but also (these steps aren’t trivial) `font-family: arial, sans-serif` instead of `font-family: arial, helvetica, sans-serif`—the fallback font is good practice but Helvetica, here, would never be used);
+* semicolons after the last declaration of each rule.
 
 As noted in the introductory section, these items can well be covered by coding guidelines but they’re also easy enough to automate and run through just before pushing style sheets to production.
 
