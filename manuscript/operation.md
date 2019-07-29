@@ -427,7 +427,7 @@ Most of the time that makes our style sheets more compact and also more maintain
 It’s a tangible optimization step in that we’re still encouraged to write CSS [the natural way](https://meiert.com/en/blog/css-dry-and-optimization/), to then go over what we’ve written to make sure we leave no repetition behind. That process is roughly [as follows](https://meiert.com/en/blog/dry-css/):
 
 * Write CSS, the natural way.
-* Decide on DRY boundaries: section (functionally separate CSS parts) or file/`@media` level?
+* Decide on DRY boundaries: section (functionally separate CSS parts) or file, component, `@media` level?
 * Make sure to format code consistently, as `background: none;`, `background:none;`, or `background-image: none;` could all mean the same but make our task of finding duplicates unnecessarily complicated.
 * Search for duplicate declarations:
   - For new style sheets: after initial setup is done.
