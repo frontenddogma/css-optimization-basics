@@ -14,7 +14,7 @@ Sometimes it can be difficult to answer legitimate questions. Why is optimizatio
 
 Optimization is important because quality is important; and quality (and quality control) is important because, as I’ve established in [_The Little Book of Website Quality Control_](https://www.oreilly.com/library/view/the-little-book/9781492042860/), “without it we have no robust way of determining whether what we do and produce is any good. Quality control, therefore, is a key differentiator between professional and amateur work. Consistent quality is the mark of the professional. Quality control, finally, saves time and money and sometimes nerves, particularly in the long run.”
 
-That spontaneous definition, aiming at ways to check our work, doesn’t yet make the beneficiary clear: the user or customer. It’s the end user who benefits and who we want to have benefit from great quality work.
+That spontaneous definition, aiming at ways to check our work, doesn’t yet make the beneficiary clear: the user or customer. It’s the end user who benefits and who we want to benefit from great quality work.
 
 As such, optimization, code optimization, CSS optimization all represent a striving to deliver better quality work to the benefit of our users, and to our benefit of becoming greater professionals.
 
@@ -24,7 +24,7 @@ Optimization has a touch of perfectionism, but it’s truly a means, and not an 
 
 In this book, then, I won’t cover _all_ things relating to CSS development these days. The reason for this is simple: Not all of this relates to _optimization_. And so one thing I won’t cover here are CSS preprocessors. Personally, I’ve sided with [Roger Johansson](https://www.456bereastreet.com/archive/201603/why_i_dont_use_css_preprocessors/) and outlined [reasons for not using preprocessors](https://meiert.com/en/blog/no-css-preprocessors/), but the little there is to optimize through them is already going to be covered in this book in other ways: for example, through repeat emphasis on coding and formatting standards.
 
-On top of that comes that I regard it more useful to stay close to core technologies, and not get bogged down by abstractions, abstractions like preprocessors. In the short run we may benefit from knowing well how to handle abstractions; but in the long run we get much greater rewards from knowing the underlying systems and technologies. And therefore we’ll focus on standard CSS rather than non-standard Sass, Less, Stylus, and whatnot.
+On top of that comes that I regard it more useful to stay close to core technologies, and not get bogged down by abstractions, abstractions like preprocessors. In the short run we may benefit from knowing how to handle abstractions; but in the long run we get much greater rewards from knowing the underlying systems and technologies. And therefore we’ll focus on standard CSS rather than non-standard Sass, Less, Stylus, and whatnot.
 
 The same applies to other forms of abstractions, and so we’ll look and point at CSS tools, but not discuss optimization of _use_ of these tools, their workflows, nor how to improve those tools themselves.
 

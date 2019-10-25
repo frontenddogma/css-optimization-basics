@@ -2,7 +2,7 @@
 
 For production, we usually take care of all the things that are good for machines. I’ve organized this section so that it also contains the things that can be done _by_ machines (tools)—without, again with an eye on us as professionals, including anything that, if we were to miss it, would make us ship significantly worse code.
 
-It turns out, then, that we do again benefit from trying to follow some of the (human-friendly) ideas ourselves. For example, we can well try to write minimal CSS (like omitting leading `0`’s), or to link only one style sheet (to keep the number of requests low and to avoid future HTML changes), without leaving this to tools.
+It turns out, then, that we do again benefit from trying to follow some of the (human-friendly) ideas ourselves. For example, we can try to write minimal CSS (like omitting leading `0`’s), or to link only one style sheet (to keep the number of requests low and to avoid future HTML changes), without leaving this to tools.
 
 ## Performance
 
@@ -21,7 +21,7 @@ To make our style sheets more compact, that is, make them easier to read and sma
 * general value shortening (`border: 0` instead of `border: none` but also (these steps aren’t trivial) `font-family: arial, sans-serif` instead of `font-family: arial, helvetica, sans-serif`—the fallback font is good practice but Helvetica, here, would never be used);
 * semicolons after the last declaration of each rule.
 
-As noted in the introductory section, these items can well be covered by coding guidelines but they’re also easy enough to automate and run through just before pushing style sheets to production.
+As noted in the introductory section, these items can be covered by coding guidelines but they’re also easy enough to automate and run through just before pushing style sheets to production.
 
 ### Code Minimization
 
@@ -77,7 +77,7 @@ I> * [UglifyCSS](https://www.npmjs.com/package/uglifycss)
 
 ### File Normalization
 
-Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them to a single file to load. That’s important for more effective compression and even more so for fewer HTTP requests. ([HTTP/2 alleviates](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x) here but for this first edit, I wish to stick to advising for fewer requests.)
+Although it makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”), we can work with as many CSS or preprocessor files as we want. However, at the end, for production, we should make sure to combine them into a single file to load. That’s important for more effective compression and even more so for fewer HTTP requests. ([HTTP/2 alleviates](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x) here but for this first edit, I wish to stick to advising for fewer requests.)
 
 That’s simplified but the basic idea behind this is that HTTP request overhead makes for 500–700 bytes (based on work from Steve Souders and Kyle Simpson) costing “about 100&nbsp;ms” (Kyle Simpson).
 
@@ -125,7 +125,7 @@ In other cases it seems most effective to go for a single style sheet, whether t
 
 C> _Example: Just one style sheet._
 
-And there are compromises (aka exceptions) to be used sparingly and wisely, like [the approach taken with Google’s Go framework](https://meiert.com/en/blog/google-web-frameworks/): Provide a small core style sheet sufficient for basic pages, a bigger one for more complex pages, and individual style sheets for custom sub sites and pages.
+And there are compromises (aka exceptions) to be used sparingly and wisely, like [the approach taken with Google’s Go framework](https://meiert.com/en/blog/google-web-frameworks/): Provide a small core style sheet sufficient for basic pages, a bigger one for more complex pages, and individual style sheets for custom subsites and pages.
 
 * go.css (or)
 * go-x.css (or)

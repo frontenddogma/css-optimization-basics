@@ -148,7 +148,7 @@ This is trivial and at the same time automatable: _Sort declarations alphabetica
 
 C> _Example: Quick, where do we add `transform: rotateY(10deg);` so that someone else can spot it as quickly?_
 
-This is trivial and automatable but still, in my eyes, one of the key optimization methods. That is so because an almost failsafe, easily repeatable, soon habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme like the alphabetical ordering of declarations will at once make our code more understandable and help anyone touching it navigate in it.
+This is trivial and automatable but still, in my eyes, one of the key optimization methods. That is so because an almost failsafe, easily repeatable, soon habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme like the alphabetical ordering of declarations will at once make our code more understandable and help anyone touching it to navigate in it.
 
 I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we’ll write better code once we can do it ourselves, and not require some processor to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we strongly benefit from internalizing this way of sorting.)
 
@@ -218,7 +218,7 @@ C> _Example: High level block elements, at some point text level elements, then 
 
 Although it seems that many generations of web developers and teams of web developers have survived without a firm idea of how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal), and, more importantly, do we ever have a chance of eliminating possible extra work through haphazard by-chance ordering. As we’ll see with the avoidance of repetition, that extra work is otherwise actually awaiting us.
 
-Accordingly, the lack of a consensus on selector sorting, and particularly the lack of _options_ for selector orders should give us much to think, and something important to work on community-wise. If you’re in a position to do so, consider what we do have and help us come up with additional options and, perhaps, standards.
+Accordingly, the lack of a consensus on selector sorting, and particularly the lack of _options_ for selector orders should give us much to think about, and something important to work on community-wise. If you’re in a position to do so, consider what we do have and help us come up with additional options and, perhaps, standards.
 
 ### Simplicity
 
@@ -281,7 +281,7 @@ The cases that we’ll look at now, still in our section on “operational” op
 
 ### Irrelevant: Selector Performance
 
-Selector performance is _not_ something to optimize for. Selector performance is irrelevant. The price we pay for optimizing for selector performance is, indeed, terrible: We micro-manage our work for gains that aren’t even noticeable.
+Selector performance is _not_ something to optimize for. Selector performance is irrelevant. The price we pay for optimizing for selector performance is, indeed, terrible: We micromanage our work for gains that aren’t even noticeable.
 
 In 2009, Steve Souders contributed perhaps the first insights into the topic, and [one of his main articles](http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/) on the subject should have made more of us think. First, in his tests, even style sheets with 18,000 rules (!) were rendered within 600&nbsp;ms (!). Then, Steve explained in quite clear terms, his hypothesis: “For most web sites, the possible performance gains from optimizing CSS selectors will be small, and are not worth the costs.”
 
@@ -291,7 +291,7 @@ Perhaps people misunderstood when Steve went on to write, “There are some type
 
 The first problem with optimizing for selectors is that the gains are negligible. Yes, some selectors are slower than others, and from the way they work this is probably going to be the case until the world ends. Alas, nothing practically relevant follows from this observation: The effects are not felt by us nor by our end users. We do not ship websites that use 25,000 rules of the type of `:after` (and nothing else) to bring pages to a crawl; a) they don’t come to a crawl, b) who writes code like that has other issues.
 
-The second problem with optimizing for selectors is that we over-optimize and micro-manage, and actually slow down our workflow writing _worse_ CSS. Putting up rules in place for how _selectors_ should look like is adding a cognitive restriction that only hinders a team of developers, and the outcome is not any more elegant code in terms of code minimalism (though those who connect verbosity with understandability may have a point).
+The second problem with optimizing for selectors is that we over-optimize and micromanage, and actually slow down our workflow writing _worse_ CSS. Putting up rules in place for how _selectors_ should look like is adding a cognitive restriction that only hinders a team of developers, and the outcome is not any more elegant code in terms of code minimalism (though those who connect verbosity with understandability may have a point).
 
 Where we are right now, selector performance is still a box better left closed.
 
@@ -372,7 +372,7 @@ There is a gray area when respective working groups just came up with new things
 
 C> _Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)_
 
-Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/analysis/#conformance)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit, and I’ve once called these the actually [two great things](https://meiert.com/en/blog/about-validation/) about validating, by getting a better technical understanding (validation issues can be quite informative and instructive) and with that becoming better professionals (_everyone_ can write poor and invalid code—we’re experts because we can and we do write valid code).
+Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [some other tool](https://uitest.com/analysis/#conformance)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit, and I’ve once called these the [two great things](https://meiert.com/en/blog/about-validation/) about validating, by getting a better technical understanding (validation issues can be quite informative and instructive) and with that becoming better professionals (_everyone_ can write poor and invalid code—we’re experts because we can and we do write valid code).
 
 ## Maintainability
 
@@ -382,7 +382,7 @@ Optimizing for maintainability means to make sure that everything is done to mak
 
 Similar to performance, there’s some trash to bring out here. Contrary to some views, there’s nothing harmful, and nothing dangerous, and neither anything unmaintainable about using `!important`. `!important`, a legitimate piece of [the cascade](https://www.w3.org/TR/CSS22/cascade.html#cascade), is a tool.
 
-As with every tool, one can use it wrong. Using a knife to eat a soup is frustrating. Using a hammer to solder circuit boards is very difficult. Using `!important` to fix every layout problem is like using pesticides against bugs around crops: It’s tough on the environment.
+As with every tool, one can use it wrong. Using a knife to eat soup is frustrating. Using a hammer to solder circuit boards is very difficult. Using `!important` to fix every layout problem is like using pesticides against bugs around crops: It’s tough on the environment.
 
 Alas, now, that doesn’t mean one shouldn’t use knives, hammers, or `!important`. What it means is to learn when it’s best and most effectively used.
 
@@ -434,7 +434,7 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
   - For new features and bug fixes: after respective work is done.
   - Tip: If version control highlighting for file changes is not enough, temporarily indent changed declarations to only check for their repetition.
 * Dissolve duplicate declarations:
-  - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting de-duplication to sections, take care to limit search scope to these sections).
+  - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting deduplication to sections, take care to limit search scope to these sections).
   - For each duplicate declaration (the actual work):
     + Determine which respective rule should come first in the style sheet (for this one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
     + If this first rule contains additional declarations, i.e. declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original; keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
