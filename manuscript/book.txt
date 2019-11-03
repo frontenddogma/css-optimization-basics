@@ -5,3 +5,4 @@ operation.md
 production.md
 overview.md
 author.md
+author-promo.md
