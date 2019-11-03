@@ -4,4 +4,4 @@ mindsets.md
 operation.md
 production.md
 overview.md
-epilogue.md
+author.md
