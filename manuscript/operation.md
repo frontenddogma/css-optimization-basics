@@ -12,7 +12,7 @@ This understandability, as we established for documentation and comments, can in
 
 ### Consistency
 
-Consistency in the case of code means to write and format things the same way every time. With individual or [“level 1” consistency](https://meiert.com/en/blog/consistency-levels/), this means to be consistent with how we ourselves write code. With collective and “level 2” consistency, we strive to stay consistent within the realm that we work in, as when we touch third party code and stick to their code style. And then there’s institutional or “level 3” consistency, referring to being consistent with coding standards put up by our organization.
+Consistency in the case of code means to write and format things the same way every time. With individual or [“level 1” consistency](https://meiert.com/en/blog/consistency-levels/), this means to be consistent with how we ourselves write code. With collective and “level 2” consistency, we strive to stay consistent within the realm that we work in, as when we touch third-party code and stick to their code style. And then there’s institutional or “level 3” consistency, referring to being consistent with coding standards put up by our organization.
 
 Consistency is a _foundational_ part of optimization; it’s the first step of optimization. Without any sort of consistency, any other optimization attempts are a lot harder.
 
@@ -228,7 +228,7 @@ And yet, the goal of simplicity, just seen as one, is important: Optimizing for 
 
 #### ID and Class Naming
 
-In the times of a still surprisingly alive OOCSS and BEM and Atomic CSS, ID and class naming has drowned as a developer topic, sinking to a second order afterthought not paid much attention to. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third party agencies in automated testing and deployment environments so to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand is doing—indeed—, we don’t need nor benefit at all from naming schemes that sacrifice understandability and maintainability for brief presentational class soups well matching the 90’s (Atomic CSS). The time to know how to name IDs and classes, and to actually use _both_ aren’t over yet; IDs aren’t blindly to be shunned, just as little as universal selectors, `!important`, and shorthands.
+In the times of a still surprisingly alive OOCSS and BEM and Atomic CSS, ID and class naming has drowned as a developer topic, sinking to a second order afterthought not paid much attention to. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third-party agencies in automated testing and deployment environments so to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand is doing—indeed—, we don’t need nor benefit at all from naming schemes that sacrifice understandability and maintainability for brief presentational class soups well matching the 90’s (Atomic CSS). The time to know how to name IDs and classes, and to actually use _both_ aren’t over yet; IDs aren’t blindly to be shunned, just as little as universal selectors, `!important`, and shorthands.
 
 The [rules for ID and class naming](https://meiert.com/en/blog/best-practice-ids-and-classes/) are simple and lasting:
 
