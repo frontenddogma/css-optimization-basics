@@ -83,7 +83,6 @@ The following lists a small selection of useful _CSS_ tools, websites, and books
 A few handy CSS tools, both for manual and automated testing.
 
 * clean-css [package](https://www.npmjs.com/package/clean-css), to optimize and minify CSS
-* CSS Analyser [online tool](http://juicystudio.com/services/csstest.php), to validate CSS, units of measurement, and to check for sufficient color contrast
 * CSS Minifier [online tool](https://cssminifier.com/), to minify CSS
 * CSS Stats [online tool](https://cssstats.com/) and [script](https://github.com/cssstats/cssstats), to analyze and show data about style sheets
 * CSS Validation Service [online tool](https://jigsaw.w3.org/css-validator/) and [script](https://github.com/w3c/css-validator), to validate CSS
