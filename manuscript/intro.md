@@ -1,5 +1,4 @@
 {sample: true}
-
 # Introduction
 
 We live in exciting times. Indeed, politically, but particularly, and particularly in the context of this book, technologically. The times are exciting because there has never been a greater wealth of web technologies, tools, and resources to build ever more appealing and performant web sites as well as web apps.
