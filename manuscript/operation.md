@@ -368,7 +368,7 @@ How can we tell that what we’re coding works? We test. How can we tell it’s 
 
 There is a gray area when respective working groups just came up with new things (that is, just extended the specifications), and the validator teams couldn’t catch up yet, but that gray area must not prevent us from validating. That would be like only using cellphones whose batteries are fully charged, or only wearing clothes that are brand new.
 
-![“We found the following errors.”](images/validation.png)
+![“We found the following errors.”](resources/images/validation.png)
 
 C> _Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)_
 
