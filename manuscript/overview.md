@@ -107,8 +107,10 @@ A small collection of experts and resources covering CSS:
 
 * [Andrew, Rachel](https://rachelandrew.co.uk/)
 * [Atkins Jr., Tab](https://www.xanthir.com/blog/)
+* [Barker, Michelle](https://css-irl.info/)
 * [Can I Use](https://caniuse.com/)
 * [CSS-Tricks](https://css-tricks.com/)
+* [Eckles, Stephanie](https://moderncss.dev/)
 * [Frain, Ben](https://benfrain.com/)
 * [Heilmann, Christian](https://christianheilmann.com/)
 * [Kinlan, Paul](https://paul.kinlan.me/)
