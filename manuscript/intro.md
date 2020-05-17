@@ -5,7 +5,7 @@ We live in exciting times. Indeed, politically, but particularly, and particular
 
 The times are exciting, too, because they are challenging. They are challenging because the wealth of technologies, tools, and resources has led to other types of wealth: of complexity, and of confusion.
 
-The confusion is to be thought of in a sense of focus, precisely: lack of focus, for with all the options we have it has become less apparent what we best pay attention to, whether that’s what we should do in the first place, or how we should work with what we have at our disposal. That relates to the sites and apps we build, to the frameworks and libraries we use, and, and here we get back to why you’re holding this book in your hands, to the code we write, including: the CSS we write.
+The confusion is to be thought of in a sense of focus, precisely: lack of focus, for with all the options we have it has become less apparent what we best pay attention to, whether that’s what we should do in the first place, or how we should work with what we have. That relates to the sites and apps we build, to the frameworks and libraries we use, and, and here we get back to why you’re holding this book in your hands, to the code we write, including: the CSS we write.
 
 In this book, then, we’ll look at ways to improve the CSS we write. We’ll go over why that generally matters, and why each method matters. We’ll also talk about what doesn’t matter so much. For example, processors. Much of that will have to do with quality as well as craft. Both I deem important, no less of an idea of web development would I wish to promote. How to best _automate_ such optimization is a great question, but first we need to understand what to optimize for exactly—and though it’s encouraged to automate as much as possible, whether optimization is to be done manually or automatically is not a concern of this book.
 
@@ -23,11 +23,11 @@ Optimization has a touch of perfectionism, but it’s truly a means, and not an 
 
 ## What’s Not Covered by Optimization
 
-In this book, then, I won’t cover _all_ things relating to CSS development these days. The reason for this is simple: Not all of this relates to _optimization_. And so one thing I won’t cover here are CSS preprocessors. Personally, I’ve sided with [Roger Johansson](https://www.456bereastreet.com/archive/201603/why_i_dont_use_css_preprocessors/) and outlined [reasons for not using preprocessors](https://meiert.com/en/blog/no-css-preprocessors/), but the little there is to optimize through them is already going to be covered in this book in other ways: for example, through repeat emphasis on coding and formatting standards.
+On the pages that follow I won’t cover _all_ things relating to CSS development these days. The reason for this is simple: Not all of this relates to _optimization_. And so one thing I won’t cover are CSS preprocessors. Personally, I’ve sided with [Roger Johansson](https://www.456bereastreet.com/archive/201603/why_i_dont_use_css_preprocessors/) and outlined [reasons for not using preprocessors](https://meiert.com/en/blog/no-css-preprocessors/), but the little there is to optimize through them is already going to be covered in other ways: for example, through repeat emphasis on coding and formatting standards.
 
-On top of that comes that I regard it more useful to stay close to core technologies, and not get bogged down by abstractions, abstractions like preprocessors. In the short run we may benefit from knowing how to handle abstractions; but in the long run we get much greater rewards from knowing the underlying systems and technologies. And therefore we’ll focus on standard CSS rather than non-standard Sass, Less, Stylus, and whatnot.
+On top of that comes that I regard it more useful to stay close to core technologies, and not get bogged down by abstractions, abstractions like preprocessors. In the short run we may benefit from knowing how to handle abstractions; but in the long run we get much greater rewards from knowing the underlying technologies. And therefore we’ll focus on standard CSS rather than non-standard Sass, Less, Stylus, and whatnot.
 
-The same applies to other forms of abstractions, and so we’ll look and point at CSS tools, but not discuss optimization of _use_ of these tools, their workflows, nor how to improve those tools themselves.
+The same applies to other forms of abstractions, and so we’ll look at CSS tools, but not discuss optimization of the _use_ of these tools, their workflows, or how to improve the tools themselves.
 
 C> ⁂
 

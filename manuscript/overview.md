@@ -38,7 +38,7 @@ Some declarations may be slower than others but there’s rarely reason for pani
 
 Rule hygiene may be most important for CSS performance.
 
-The most basic way to determine quality is through validation, and high error counts unequal high quality scores.
+The most basic way to determine quality is through validation, and high error counts don’t equal high quality scores.
 
 Every piece of code gets at least touched _twice_.
 
@@ -60,7 +60,7 @@ When we cannot production-optimize automatically, we should do as much as we can
 
 For production, we remove all unneeded characters. All of them.
 
-We typically want to reference one style sheet that includes all the styles, though there are cases of high complexity in which a different approach can lead to better performance.
+We typically want to reference one style sheet that includes all the styles, though there are cases of high complexity in which a modular approach leads to better performance.
 
 (We cannot be absolved from thinking and making decisions about our particular projects.)
 
@@ -76,11 +76,11 @@ And, as professionals, we lead by example.
 
 ## Tools and References
 
-The following lists a small selection of useful _CSS_ tools, websites, and books. They are geared towards more experienced developers, and they are because the novice developer may learn more and make bigger jumps learning here than staying with beginner materials.
+The following is a small selection of useful _CSS_ tools, websites, and books. They are geared towards more experienced developers, yet the novice developer may learn more and make larger leaps with these than staying with beginner materials.
 
 ### Tools
 
-A few handy CSS tools, both for manual and automated testing.
+A few handy CSS tools, for manual and automated testing:
 
 * clean-css [package](https://www.npmjs.com/package/clean-css), to optimize and minify CSS
 * CSS Minifier [online tool](https://cssminifier.com/), to minify CSS
@@ -103,9 +103,8 @@ A few handy CSS tools, both for manual and automated testing.
 
 ### Websites
 
-A selection of CSS experts and resources for web development.
+A small collection of experts and resources covering CSS:
 
-* [A List Apart](https://alistapart.com/)
 * [Andrew, Rachel](https://rachelandrew.co.uk/)
 * [Atkins Jr., Tab](https://www.xanthir.com/blog/)
 * [Can I Use](https://caniuse.com/)
@@ -116,13 +115,13 @@ A selection of CSS experts and resources for web development.
 * [Meiert, Jens Oliver](https://meiert.com/en/blog/categories/development/)
 * [Meyer, Eric](https://meyerweb.com/)
 * [Roberts, Harry](https://csswizardry.com/)
-* [Smashing Magazine](https://www.smashingmagazine.com/)
 * [W3C (Cascading Style Sheets)](https://www.w3.org/Style/CSS/)
+* [Verou, Lea](http://lea.verou.me/)
 * [Weyl, Estelle](http://www.standardista.com/)
 
 ### Books
 
-An even smaller selection of books (my recommendation: [the specs](https://www.w3.org/TR/)).
+An even smaller selection of books:
 
 * [_CSS Secrets: Better Solutions to Everyday Web Design Problems_ (Lea Verou)](https://www.amazon.com/dp/B0131MQ1NS/?tag=j9t-21-20)
 * [_CSS: The Definitive Guide: Visual Presentation for the Web_ (Eric Meyer and Estelle Weyl)](https://www.amazon.com/dp/1449393195/?tag=j9t-21-20)
