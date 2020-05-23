@@ -5,7 +5,7 @@ This is the source of the open and living book [_CSS Optimization Basics_](https
 You have two options to get the book.
 
 1. You can read the book here, for free.
-2. For a small amount you can purchase a nicer electronic copy at [Leanpub](https://leanpub.com/css-optimization-basics) or [Amazon](https://www.amazon.com/dp/B07TVW1ZT8/?tag=j9t-21-20).
+2. For a small amount you can purchase a nicer electronic copy at [Amazon](https://www.amazon.com/dp/B07TVW1ZT8/?tag=j9t-21-20), [Google Play Books](https://play.google.com/store/books/details/Jens_Oliver_Meiert_CSS_Optimization_Basics?id=xgTfDwAAQBAJ), [Leanpub](https://leanpub.com/css-optimization-basics), or [Payhip](https://payhip.com/b/Bnie).
 
 In the first and initial version of _CSS Optimization Basics_, there are probably some errors and typos and everything. There will also be more that not only could but _should_ be said about CSS optimization. (Note that the book is a lot about the _craft_ and the _basics_ of writing CSS though.)
 
