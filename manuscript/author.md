@@ -24,3 +24,5 @@ Other titles by Jens Oliver Meiert:
 * [_100 Things I Learned as an Everyday Adventurer_](https://www.amazon.com/dp/B00GAC2SJI/?tag=j9t-21-20) (2013):
 
   This is the book that the most boring person would write when it found a life and had too much time at his hands. Meet Jens, a hectic, neurotic self-proclaimed adventurer, and his very individual account of one hundred different activities he’s tried over the last three years (2010–2013). From crocheting to security guard certifications to rafting, everything had a lesson, and these lessons are shared in this book. Expect the German answer to Winston Wolfe to explain how to live a life, in his own words.
+
+[1.2.0]
