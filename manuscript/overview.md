@@ -87,7 +87,6 @@ A few handy CSS tools, for manual and automated testing:
 * CSS Stats [online tool](https://cssstats.com/) and [script](https://github.com/cssstats/cssstats), to analyze style sheets
 * CSS Validation Service [online tool](https://jigsaw.w3.org/css-validator/) and [script](https://github.com/w3c/css-validator), to validate CSS
 * css-minify [package](https://www.npmjs.com/package/css-minify), to minify CSS
-* CSSCheck [online tool](https://www.htmlhelp.com/tools/csscheck/), to validate CSS
 * CSSJanus Left-to-Right-to-Left-ifyer [online tool](https://cssjanus.appspot.com/) and [script](https://code.google.com/archive/p/cssjanus/), to convert CSS directionality (LTR/RTL)
 * CSSLint [online tool](http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
 * CSSTidy [online tool](https://hell.meiert.org/aux/optimize/css/) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
