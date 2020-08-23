@@ -119,7 +119,7 @@ A small collection of initiatives and individuals covering CSS:
 * [Meyer, Eric](https://meyerweb.com/)
 * [Roberts, Harry](https://csswizardry.com/)
 * [W3C (Cascading Style Sheets)](https://www.w3.org/Style/CSS/)
-* [Verou, Lea](http://lea.verou.me/)
+* [Verou, Lea](https://lea.verou.me/)
 * [Weyl, Estelle](http://www.standardista.com/)
 
 ### Books
