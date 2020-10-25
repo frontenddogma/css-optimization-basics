@@ -61,17 +61,17 @@ C> _Example: Random now minified CSS snippet._
 
 As mentioned in the beginning of this book, we benefit from automating our work. As this optimization step is ugly to perform manually, we actually have a case here that’s almost _always_ automated.
 
-I> For both character and code optimization there are several web-based tools and scripts, for example:
-I> 
-I> * [minifier.org](https://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
-I> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)
-I> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
-I>
-I> For the Node ecosystem, some of the more popular packages for CSS compression include:
-I>
-I> * [clean-css](https://www.npmjs.com/package/clean-css)
-I> * [css-minify](https://www.npmjs.com/package/css-minify)
-I> * [UglifyCSS](https://www.npmjs.com/package/uglifycss)
+T> For both character and code optimization there are several web-based tools and scripts, for example:
+T> 
+T> * [minifier.org](https://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
+T> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)
+T> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
+T>
+T> For the Node ecosystem, some of the more popular packages for CSS compression include:
+T>
+T> * [clean-css](https://www.npmjs.com/package/clean-css)
+T> * [css-minify](https://www.npmjs.com/package/css-minify)
+T> * [UglifyCSS](https://www.npmjs.com/package/uglifycss)
 
 ### File Normalization
 

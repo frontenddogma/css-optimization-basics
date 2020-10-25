@@ -406,11 +406,11 @@ One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/w
 
 Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets), and especially not _if_ we DRY our style sheets. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example for where our work requires a feeling for balance and priority. We might opt for a different approach when our projects are of a particularly large size.)
 
-I> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
-I> 
-I> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make only for fancier beginner-style code.
-I> 
-I> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that’s the TSA writing CSS right there)—but also none of the incredible elegance achieved through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate quite _all_ the advantages of CSS and separation of concerns.
+T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
+T> 
+T> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make only for fancier beginner-style code.
+T> 
+T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that’s the TSA writing CSS right there)—but also none of the incredible elegance achieved through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate quite _all_ the advantages of CSS and separation of concerns.
 
 ### Don’t Repeat Yourself
 
