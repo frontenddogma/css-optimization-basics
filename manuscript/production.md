@@ -152,7 +152,7 @@ C> _Example: CSS routines._
 
 Manual checks can be swift; scan the output, perhaps re-formatted to be more readable (if browser developer tools don’t suffice for an in-depth look, web-based services like [CSSTidy](https://hell.meiert.org/aux/optimize/css/) allow to “uncompress” a style sheet).
 
-Automated checks ask for time to be set up properly and depend on needs and priorities. Solutions include both free and paid services used in conjunction with task runners or hooked up to respective CI pipeline. A very simple setup may involve making use of [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to use a script like [pre-commit](https://github.com/WouterSioen/pre-commit) to validate and lint on commit; nowadays there are more elegant options, notably [stylelint](https://stylelint.io/).
+Automated checks ask for time to be set up properly and depend on needs and priorities. Solutions include both free and paid services used in conjunction with task runners or hooked up to the respective CI pipeline. A very simple setup may involve making use of [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to use a script like [pre-commit](https://github.com/WouterSioen/pre-commit) to validate and lint on commit; nowadays there are more elegant options, notably [stylelint](https://stylelint.io/).
 
 The topic of reviews ties a nice tie around much of what we’ve discussed so far: We enforce our desire for quality (the reason why we optimize in the first place) through our development mindsets (like doing our work really well and automating it in order to focus on the things that matter).
 

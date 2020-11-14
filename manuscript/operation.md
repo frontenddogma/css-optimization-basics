@@ -117,7 +117,7 @@ We’ll cover this last step in the chapter “Production Optimization” and go
 
 #### Declaration Sorting
 
-This is trivial and at the same time automatable: _Sort declarations alphabetically._ As Google advocates—disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines—, the only exception are vendor-specific extensions (self-destructing declarations that start with hyphens) which are to be located right before respective main declaration.
+This is trivial and at the same time automatable: _Sort declarations alphabetically._ As Google advocates—disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines—, the only exception are vendor-specific extensions (self-destructing declarations that start with hyphens) which are to be located right before the respective main declaration.
 
 ```css
 .example {
@@ -275,7 +275,7 @@ Because of their value in making code more compact, and their generally positive
 
 Performance is one of the most obvious goals to optimize for. The faster, the better, because we know that the [user experience improves the faster everyone gets what they want](https://www.nngroup.com/articles/website-response-times/), and that [with more speed, conversions increase as well](https://blog.kissmetrics.com/speed-is-a-killer/).
 
-And yet what we can roughly say is that improving rendering performance is not nearly as effective and important as is improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not as helpful for performance as is compressing images. These calculations are generally done so quickly that respective issues don’t matter in practice. (Accordingly, there’s nothing to worry about when [omitting optional tags and unneeded quotes](https://meiert.com/en/blog/optional-html/) around attribute values.)
+And yet what we can roughly say is that improving rendering performance is not nearly as effective and important as is improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not as helpful for performance as is compressing images. These calculations are generally done so quickly that the respective issues don’t matter in practice. (Accordingly, there’s nothing to worry about when [omitting optional tags and unneeded quotes](https://meiert.com/en/blog/optional-html/) around attribute values.)
 
 The cases we’ll look at now, still in our section on “operational” optimization, will exemplify a bit of this situation. Performance is not nearly as clear cut as it’s sometimes presented.
 
@@ -321,7 +321,7 @@ However, the problem is that data are hard to come by. Ben Frain has contributed
 
 Until we do more research and can properly, reliably document all the declarations and value ranges that are particularly slow, there’s no point in panicking and no point in blindly guessing what declarations and values should be avoided.
 
-There may not even be a point taking any action, because at the end of the day, we’ll still need to look at the cases in question: How important is respective styling, and what’s the performance impact of its substitute? In this case, then, it seems advisable to flag declarations as a possible optimization source, but not to make it a priority until we have better data.
+There may not even be a point taking any action, because at the end of the day, we’ll still need to look at the cases in question: How important is the respective styling, and what’s the performance impact of its substitute? In this case, then, it seems advisable to flag declarations as a possible optimization source, but not to make it a priority until we have better data.
 
 ### Rule Hygiene
 
@@ -364,7 +364,7 @@ What is code quality, or quality code? A great question for technical interviews
 
 How can we tell that what we’re coding works? We test. How can we tell it’s error-free? We validate. Yes, testing also exposes errors in our code, and we depend on validators to actually be up-to-date on the latest, which they aren’t always. Still, validation plays the critical part in making sure that our code is syntactically correct and uses selectors and declarations (CSS) as well as a document structure and elements and attributes (HTML) that actually exist.
 
-There’s a gray area when respective working groups have just come up with new features (that is, recently extended the specifications), and the validator teams couldn’t catch up yet. That gray area must not prevent us from validating. That would be like refusing to use cellphones unless the batteries are fully charged, or rejecting to wear clothes unless they’re brand new.
+There’s a gray area when the respective working groups have just come up with new features (that is, recently extended the specifications), and the validator teams couldn’t catch up yet. That gray area must not prevent us from validating. That would be like refusing to use cellphones unless the batteries are fully charged, or rejecting to wear clothes unless they’re brand new.
 
 ![“We found the following errors.”](resources/images/validation.png)
 
@@ -429,14 +429,14 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 * Make sure to format code consistently, as `background: none;`, `background:none;`, or `background-image: none;` could all mean the same but make our task of finding duplicates unnecessarily complicated.
 * Search for duplicate declarations:
   - For new style sheets: after initial setup is done.
-  - For new features and bug fixes: after respective work is done.
+  - For new features and bug fixes: after the respective work is done.
   - Tip: If version control highlighting for file changes is not enough, temporarily indent changed declarations to only check for their repetition.
 * Dissolve duplicate declarations:
   - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting deduplication to sections, take care to limit search scope to these sections).
   - For each duplicate declaration (the actual work):
     + Determine which respective rule should come first in the style sheet (for this one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
     + If this first rule contains additional declarations, i.e. declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original; keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
-    + Copy the selectors of the _other_ rules that contain respective duplicate declaration to the rule that comes first.
+    + Copy the selectors of the _other_ rules that contain the respective duplicate declaration to the rule that comes first.
     + Make sure to remove the duplicate declarations whose selectors have just been copied up in the style sheet, and to remove the entire rule if the rule only consisted of the now moved duplicate declaration.
     + (Repeat.)
   - Make sure to check the correct _order of the selectors_ for the rules that now handle the formerly duplicate declarations.
