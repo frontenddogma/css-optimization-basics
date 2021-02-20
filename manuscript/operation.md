@@ -404,7 +404,7 @@ On a micro and intra-style sheet level, there are now two options for separation
 
 One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), is to separate all styles by functionality and to break them into modules, or blocks, or elements (BEM).
 
-Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets), and especially not _if_ we DRY our style sheets. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example for where our work requires a feeling for balance and priority. We might opt for a different approach when our projects are of a particularly large size.)
+Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets), and especially not _if_ we DRY our style sheets. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example of where our work requires a feeling for balance and priority. We might opt for a different approach when our projects are of a particularly large size.)
 
 T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
 T> 
