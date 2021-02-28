@@ -87,21 +87,21 @@ Yet, there must be something else. What about small sites, and what about overal
 
 Small sites, particularly one-pagers with just a few rules, may be under the threshold. If the site is and will be a one-pager forever we have a stronger incentive to inline all code, both styles and scripts. But that also depends on the page itself and our ideas about true separation of concerns. If the page resources are so few and light that an extra CSS request is not noticeable, then it may well be fine to stick with a separate style sheet. If we strongly believe in separation of concerns, we might just always go for that separation (and what may at first sound rigid then becomes consistent and simple).
 
-File size and caching are normally the issues that are of biggest concern. They’re linked with the following two questions:
+File size and caching are normally the issues of biggest concern. They’re linked with the following two questions:
 
 1) If all our styles are in one style sheet, but a user visits just one page, how can we justify pushing all the unused styles onto them?
 
 (Per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide some number, as bounce rates vary per field as well as per type of content.)
 
-2) Same scenario, if all our styles are in one style sheet, what is a good balance to make sure that the style sheet gets cached but we can swiftly roll out updates?
+2) Same scenario—if all our styles are in one style sheet, what is a good balance to make sure that the style sheet gets cached but we can swiftly roll out updates?
 
-I set out to go over both questions in detail but I believe it more useful to leave them a little open. This should remind ourselves that even though technical questions often beg quite definite answers, there are questions that don’t lead to a strict “right” or “wrong”—the answers often still depend on our priorities.
+I set out to go over both questions in detail but I believe it more useful to leave them a little open. This should remind us that, even though technical questions often beg quite definite answers, there are questions that don’t lead to a strict “right” or “wrong”—the answers often still depend on our priorities.
 
 What’s there to consider for a decision?
 
-* For performance in terms of efficiency and file size, each page should only come with the styles it uses.
-* For performance in terms of caching, each style sheet should be cacheable.
-* For performance in terms of efficiency and file size when a user visits many pages (low bounce rate with visitors covering a high percentage of needed styles), a single style sheet is fastest.
+* For performance, in terms of efficiency and file size, each page should only come with the styles it uses.
+* For performance, in terms of caching, each style sheet should be cacheable.
+* For performance, in terms of efficiency and file size when a user visits many pages (low bounce rate with visitors covering a high percentage of needed styles), a single style sheet is fastest.
 * For HTML maintainability, style sheets should not be versioned manually (we don’t want to update HTML code every time we update CSS code).
 * For CSS maintainability, style sheets should not be broken up manually (we don‘t want to merge style sheets every time we update CSS code).
 * For general maintainability, code should be kept simple.
@@ -117,7 +117,7 @@ I’ll offer a perspective. There are a few reasons for only providing the style
 
 C> _Example: Page-oriented, automated, cacheable style sheets carrying everything each page needs. (Bonus exercise not covered here: Dynamically load only the styles needed on subsequent page visits.)_
 
-In other cases it seems most effective to go for a single style sheet, whether to begin with (easiest to set up, especially in small projects) or for production (in which case the merging or bundling of style sheets should be automated).
+In other cases it seems most effective to go for a single style sheet. That holds both for fresh starts (easiest to set up, especially in small projects) as well as for production (in which case the merging or bundling of style sheets should be automated).
 
 * default.css
 
@@ -131,7 +131,7 @@ Compromises and exceptions should be made sparingly and wisely, as with [the app
 
 C> _Example: The approach taken by the Go framework._
 
-At the end of the day there’s no single answer for optimal CSS file management. The solution we choose benefits from being simple, but the approach depends on project complexity as well as our options to automate. And sometimes, as of recent years, our frameworks and tooling answer this for us.
+At the end of the day, there’s no single answer for optimal CSS file management. The solution we choose benefits from being simple, but the approach depends on project complexity and our options to automate. And sometimes, as of recent years, our frameworks and tooling answer this for us.
 
 ## Output Control
 
