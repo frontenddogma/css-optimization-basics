@@ -1,12 +1,12 @@
 # Development Mindsets
 
-We all know the adage, “Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime.” To me, we feed developers for a lifetime by teaching and cherishing certain _mindsets_. They aren’t _per se_ enough, but I view them as the foundation that shapes where we’re headed with our work and our careers. They’re not all related to CSS optimization—that would be odd given that we’re dealing with so many different technologies—, but they’re generally useful. Let’s look at the key ones.
+We all know the adage, “Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime.” To me, we feed developers for a lifetime by teaching and cherishing certain _mindsets_. They aren’t enough _per se_, but I view them as the foundation that shapes where we’re headed with our work and our careers. They’re not all related to CSS optimization—that would be odd given that we’re dealing with so many different technologies—, but they’re generally useful. Let’s look at the key ones.
 
 ## Do One Thing Really, Really Well
 
-Out of [the Google book](https://www.google.com/about/philosophy.html), one guiding idea is to aim to do things really, really well. But I used the plural, and Google uses singular for a reason, and for us as web developers this thing should be _web development_.
+Out of [the Google book](https://www.google.com/about/philosophy.html), one guiding idea is to aim to do things really, really well. But I used the plural, and Google uses singular for a reason, and for us as web developers, this thing should be _web development_.
 
-To do one thing really well means to kneel into web development, to practice it, to pierce through it, to fully understand it, to master it. Optimizing CSS is part of writing CSS well is part of doing web development well, and that’s why this mindset is important for us. The goal to do web development well is an idea that serves us in our work.
+To do one thing really well means to immerse ourselves in web development, to practice it, to fully understand it, to practice it more, to master it. Optimizing CSS is part of writing CSS well which is part of doing web development well, and that’s why this mindset is important for us. The goal to do web development well is an idea that serves us in our work.
 
 ## Know Your Needs
 
@@ -16,7 +16,7 @@ Knowing our goals and needs is important because evidently, it’s difficult to 
 
 ## Stay in the Present
 
-Without becoming overly self-helpish or even philosophical, another useful mindset for us is to [stay in the present](https://meiert.com/en/blog/develop-for-what-is/), to stay in the now. This means both a rigid eye to get rid of everything (concepts, documentation, patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know to be needed _with certainty_.
+Without becoming overly self-helpish or even philosophical, another useful mindset for us is to [stay in the present](https://meiert.com/en/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (concepts, documentation, patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know to be needed _with certainty_.
 
 This mindset matters because it keeps our code base and our documentation clean, and hence contributes to our focus (“Do One Thing Really, Really Well,” “Keep It Simple”).
 
