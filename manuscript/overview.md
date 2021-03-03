@@ -1,12 +1,12 @@
 # Overview
 
-CSS optimization is important because we, especially as individuals, don’t always write perfectly efficient and maintainable and understandable code.
+CSS optimization is important because we, especially as individuals, don’t always write perfectly efficient, maintainable, and understandable code.
 
-Writing such code, quality code, however, is what makes us professionals.
+Writing quality code, however, is what makes us professionals.
 
-CSS optimization does not entail “everything” that can be done with a style sheet; it entails what makes it more efficient and maintainable and understandable while looking for a good balance.
+CSS optimization does not entail “everything” that can be done with a style sheet; it entails what makes it more efficient, maintainable, and understandable while looking for a good balance.
 
-As professionals, we benefit from doing one (or two, or three, but not eighty-five) things really, really well; as web developers, it’s not a bad idea if CSS is one of these things.
+As professionals, we benefit from doing one (or two, or three, but not eighty-five) things really, really well; as web developers, it’s not a bad idea if CSS is one of those things.
 
 It’s useful when we know our needs.
 
@@ -20,9 +20,9 @@ There’s nothing wrong, either, with not doing any work, of a certain type—by
 
 (There’s much wrong with not doing important work because we haven’t yet managed or automated the unimportant work.)
 
-Code should be understandable, and for that it’s useful when it’s consistent and simple.
+Code should be understandable and for that, it’s useful when it’s consistent and simple.
 
-Consistent CSS is footed on alphabetical declaration sorting (everything else is too complicated) and on a robust order for selector sorting.
+Consistent CSS is founded on alphabetical declaration sorting (everything else is too complicated) and on a robust order for selector sorting.
 
 Simple CSS uses functional or generic names or avoids IDs and classes altogether.
 
@@ -30,7 +30,7 @@ Simple CSS also likes shorthands (yes).
 
 Speed is important.
 
-Selector performance doesn’t matter, and inline CSS is a crime.
+Selector performance doesn’t matter and inline CSS is a crime.
 
 (Web development is not software development.)
 
@@ -48,19 +48,19 @@ For these last two observations, maintainability and maintenance are critical.
 
 `!important` is not an obstacle to maintenance; it’s a tool.
 
-One of the most important principles is separation of concerns, and content, structure, presentation, behavior are all different concerns.
+One of the most important principles is separation of concerns. Content, structure, presentation, behavior are all different concerns.
 
 In code, we don’t want to repeat ourselves.
 
 Accordingly, in CSS, we want to limit the repetition of declarations.
 
-Optimization for production is an important second step, because in production machines use our code, whereas in operation, humans use it.
+Optimization for production is an important second step because, in production, machines use our code whereas, in operation, humans use it.
 
 When we cannot production-optimize automatically, we should do as much as we can manually, as part of our craft.
 
 For production, we remove all unneeded characters. All of them.
 
-We typically want to reference one style sheet that includes all styles, though there are cases of high complexity in which a modular approach leads to better performance.
+We typically want to reference one style sheet that includes all styles, though there are cases of high complexity where a modular approach leads to better performance.
 
 (We cannot be absolved from thinking and making decisions about our particular projects.)
 
@@ -70,7 +70,7 @@ We regularly review our CSS, both pre-production and in production.
 
 We are professionals and we aim for quality work.
 
-As professionals we feel responsible, we hold ourselves accountable, and we set high ethical standards for ourselves.
+As professionals, we feel responsible, we hold ourselves accountable, and we set high ethical standards for ourselves.
 
 And, as professionals, we lead by example.
 

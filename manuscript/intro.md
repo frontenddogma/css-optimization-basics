@@ -1,21 +1,21 @@
 {sample: true}
 # Introduction
 
-We live in exciting times. Indeed, politically, but particularly, and particularly in the context of this book, technologically. The times are exciting because there has never been a greater wealth of web technologies, tools, and resources to build ever more appealing and performant web sites as well as web apps.
+We live in exciting times; indeed politically, and in the context of this book, technologically. The times are exciting because there has never been a greater wealth of web technologies, tools, and resources to build ever more appealing and performant web sites and web apps.
 
-The times are exciting, too, because they are challenging. They are challenging because the wealth of technologies, tools, and resources has led to other types of wealth: of complexity, and of confusion.
+The times are also exciting because they are challenging. They are challenging because the wealth of technologies, tools, and resources has led to complexity and confusion.
 
-The confusion is to be thought of in a sense of focus, precisely: lack of focus, for with all the options we have it has become less apparent what we best pay attention to, whether that’s what we should do in the first place, or how we should work with what we have. That relates to the sites and apps we build, to the frameworks and libraries we use, and, and here we get back to why you’re holding this book in your hands, to the code we write, including: the CSS we write.
+We can think of the confusion in terms of focus. Precisely, lack of focus, for with all the options we have it has become less apparent what we best pay attention to. This includes what we should do in the first place, and how we should work with what we have at our disposal. It relates to the sites and apps we build, to the frameworks and libraries we use, and—here we get back to why you’re holding this book in your hands—to the code and CSS we write.
 
-In this book, then, we’ll look at ways to improve the CSS we write. We’ll go over why that generally matters, and why each method matters. We’ll also talk about what doesn’t matter so much. For example, processors. Much of that will have to do with quality as well as craft. Both I deem important, no less of an idea of web development would I wish to promote. How to best _automate_ such optimization is a great question, but first we need to understand what to optimize for exactly—and though it’s encouraged to automate as much as possible, whether optimization is to be done manually or automatically is not a concern of this book.
+In this book we’ll look at ways to improve our CSS. We’ll go over why that generally matters, and why each method matters. We’ll also talk about what doesn’t matter so much. For example, processors. Much of that will have to do with quality as well as craft. Both I deem important, no less of an idea of web development would I wish to promote. How to best _automate_ such optimization is a great question, but first we need to understand what to optimize for exactly—and though it’s encouraged to automate as much as possible, whether optimization is to be done manually or automatically is not a concern of this book.
 
 ## Why Optimization Is Important
 
 Sometimes it can be difficult to answer legitimate questions. Why is optimization important? Why do we need the Web? Why should we breathe?
 
-Optimization is important because quality is important; and quality (and quality control) is important because, as I’ve established in [_The Little Book of Website Quality Control_](https://www.oreilly.com/library/view/the-little-book/9781492042860/), “without it we have no robust way of determining whether what we do and produce is any good. Quality control, therefore, is a key differentiator between professional and amateur work. Consistent quality is the mark of the professional. Quality control, finally, saves time and money and sometimes nerves, particularly in the long run.”
+Optimization is important because quality is important. Quality (and quality control) is important because, as I’ve established in [_The Little Book of Website Quality Control_](https://www.oreilly.com/library/view/the-little-book/9781492042860/), “without it, we have no robust way to determine whether what we do and produce is any good. Quality control, therefore, is a key differentiator between professional and amateur work. Consistent quality is the mark of the professional. Quality control, finally, saves time and money and sometimes nerves, particularly in the long run.”
 
-That spontaneous definition, aiming at ways to check our work, doesn’t yet make the beneficiary clear: the user or customer. It’s the end user who benefits and who we want to benefit from great quality work.
+That spontaneous definition, aimed at ways to check our work, doesn’t yet make the beneficiary clear: the user or customer. It’s the end user who benefits and who we want to benefit from great quality work.
 
 As such, optimization, code optimization, CSS optimization all represent a striving to deliver better quality work to the benefit of our users, and to our benefit of becoming greater professionals.
 
