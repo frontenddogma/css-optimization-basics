@@ -16,20 +16,20 @@ Knowing our goals and needs is important because evidently, it’s difficult to 
 
 ## Stay in the Present
 
-Without becoming overly self-helpish or even philosophical, another useful mindset for us is to [stay in the present](https://meiert.com/en/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (concepts, documentation, patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know to be needed _with certainty_.
+Without becoming overly self-helpish or even philosophical, another useful mindset for us is to [stay in the present](https://meiert.com/en/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (concepts, documentation, patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know is needed _with certainty_.
 
 This mindset matters because it keeps our code base and our documentation clean, and hence contributes to our focus (“Do One Thing Really, Really Well,” “Keep It Simple”).
 
 ## Keep It Simple
 
-The idea to keep it simple has a lazy touch, and yet requires high skill. Keeping it simple really means _focus_, to know what’s important, and through that be efficient. Keeping it simple does not mean simply to do less; it means to _do what matters_.
+The idea to keep it simple has a lazy touch, yet requires a high level of skill. Keeping it simple really means _focus_, to know what’s important, and through that, be efficient. Keeping it simple does not mean simply to do less; it means to _do what matters_.
 
-As such, keeping things simple requires that we thoroughly understand our field—the core technologies, first and foremost, but everything in between and to the sides as well. And it means true economy of motion, because we don’t want to engage in something that doesn’t need to be done.
+As such, keeping things simple requires that we thoroughly understand our field—the core technologies, first and foremost, but everything in between and to the sides as well. And it means true economy of motion, because we don’t want to engage in something we don’t need to do.
 
-As a mindset, keeping it simple is truly grandiose, and the interested reader may not want to pick up a book on minimalism but rather one about focus—one of my recommendations is Gary Keller’s [_The One Thing_](https://www.the1thing.com/).
+As a mindset, keeping it simple is truly grandiose, and you may not want to pick up a book on minimalism but rather one about focus—one of my recommendations is Gary Keller’s [_The One Thing_](https://www.the1thing.com/).
 
 ## Automate
 
-Lastly, a most powerful mindset as loosely as we’re working with them here, is the one to automate. Every step of our work should, if possible, be automated. Sometimes that will be obvious—every time after we made a CSS change we run some optimization script, so let’s automate this step—, sometimes that will require a bit of listening—a team member mentions how they manually update documentation each time someone reports a downtime issue—, and at other times it will be obscure—no one on the team realized there was the option to automate visual design regression testing.
+Lastly, a most powerful mindset is the one to automate. Every step of our work should, if possible, be automated. Sometimes that will be obvious—every time after we made a CSS change we run some optimization script, so let’s automate this step. Sometimes that will require a bit of listening—a team member mentions how they manually update documentation each time someone reports a downtime issue. At other times it will be obscure—no one on the team realized there was the option to automate visual design regression testing.
 
-Whenever we repeat something in our work we should look into whether that repeat work can be automated: Is there a tool for this task? Can we script this? Automation is powerful because it makes us more efficient and frees us to do more important things. However, automation also requires vigilance. Personally, I work with a recurring reminder to review work processes for automation options—everything helps that keeps us mindful of automation.
+Whenever we repeat something in our work, we should look into whether that repeat work can be automated: Is there a tool for this task? Can we script this? Automation is powerful because it makes us more efficient and frees us to do more important things. However, automation also requires vigilance. Personally, I work with a recurring reminder (set up in Google Calendar) to review work processes for automation options. Everything that keeps us mindful of automation, helps.
