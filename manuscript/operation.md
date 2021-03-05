@@ -111,13 +111,13 @@ C> _Example: Random sample code._
 
 C> _Example: Adjusted (note the order of declarations and selectors). Since the writing of this book, [the `:is()` pseudo-class](https://css-tricks.com/almanac/selectors/i/is/) emerged as a great option to simplify code like this._
 
-Consistency is reasonably easy to achieve. We [establish coding guidelines](https://www.oreilly.com/library/view/the-little-book/9781492048459/), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. This goes as far as that many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules particularly geared towards production.
+Consistency is reasonably easy to achieve. We [establish coding guidelines](https://www.oreilly.com/library/view/the-little-book/9781492048459/), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. Many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules, specifically geared towards production.
 
-We’ll cover this last step in the chapter “Production Optimization” and go over some tools under “Tools and Resources.” We skip going over often subjective coding guidelines and how to automate their implementation and enforcement. What’s more useful is to cover select aspects of consistency that are of particular import to CSS optimization. One is automatable; the other isn’t: declaration sorting and selector sorting.
+We’ll cover this last step in the chapter “Production Optimization” and go over some tools under “Tools and Resources.” We won’t go over subjective coding guidelines and how to automate their implementation and enforcement. It’s more useful to cover select aspects of consistency that are of particular import to CSS optimization. One is automatable; the other isn’t: declaration sorting and selector sorting.
 
 #### Declaration Sorting
 
-This is trivial and at the same time automatable: _Sort declarations alphabetically._ As Google advocates—disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines—, the only exception are vendor-specific extensions (self-destructing declarations that start with hyphens) which are to be located right before the respective main declaration.
+This is trivial and, at the same time, automatable: _Sort declarations alphabetically._ As Google advocates, the only exception are vendor-specific extensions—self-destructing declarations that start with hyphens—which are to be located right before the respective main declaration. (Disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines.)
 
 ```css
 .example {
