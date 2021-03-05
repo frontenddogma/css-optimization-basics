@@ -397,25 +397,25 @@ The first and most important part of separation of concerns is to strictly separ
 
 On a macro level, separation of concerns ensures that we develop using the appropriate technology (in the 90’s and 2000’s we’ve seen what solving design issues in HTML leads to) and know where to look when there are issues (we don’t want to address document-structural issues in JavaScript).
 
-For CSS that means to look beyond, to make sure to collect everything that’s related to the appearance of our site or app and have that in our style sheets. In a way separation of concerns is the basis for all optimization, because only that way do we know that our CSS is actually handled in style sheets (and not, as it happens, in HTML templates or JavaScript files).
+For CSS, that means to look beyond, to make sure we collect everything that’s related to the appearance of our site or app and have that in our style sheets. In a way, separation of concerns is the basis for all optimization—that way, we know that our CSS is actually handled in style sheets (and not in HTML templates or JavaScript files).
 
 On a micro and intra-style sheet level, there are now two options for separation of concerns.
 
-One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), is to separate all styles by functionality and to break them into modules, or blocks, or elements (BEM).
+One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), is to separate all styles by functionality and to break them into modules, blocks, or elements (BEM).
 
-Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets), and especially not _if_ we DRY our style sheets. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example of where our work requires a feeling for balance and priority. We might opt for a different approach when our projects are of a particularly large size.)
+Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets). This is especially true when we DRY our style sheets. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example of where our work requires a feeling for balance and priority. We might opt for a different approach when our projects are of a particularly large size.)
 
 T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
 T> 
 T> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make only for fancier beginner-style code.
 T> 
-T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that’s the TSA writing CSS right there)—but also none of the incredible elegance achieved through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate quite _all_ the advantages of CSS and separation of concerns.
+T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that’s the TSA writing CSS right there)—but also none of the incredible elegance achieved through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate _all_ the advantages of CSS and separation of concerns.
 
 ### Don’t Repeat Yourself
 
 The next maintainability pillar to optimize for is (avoidance of) repetition. When we think about selectors in terms of _grouped_ selectors (that is, `section` to be different from `section, div`), and when we assume declarations to be written so consistently as not to inadvertently repeat through different spellings (compare `outline: 0` and `outline: none`), there really is only one way to avoid repetition: through avoiding repeat _declarations_.
 
-Because we limit the number of places where a particular style is defined, most of the time that makes our style sheets more compact and maintainable.
+Limiting the number of places where a particular style is defined usually makes our style sheets more compact and maintainable.
 
 #### Using Declarations Just Once
 
@@ -425,7 +425,7 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 
 * Write CSS.
 * Decide on DRY boundaries: section (functionally separate CSS parts) or file, component, `@media` level?
-* Make sure to format code consistently, as `background: none;`, `background:none;`, or `background-image: none;` could all mean the same but make our task of finding duplicates unnecessarily complicated.
+* Be sure to format code consistently, as `background: none;`, `background:none;`, or `background-image: none;` could all mean the same but make our task of finding duplicates unnecessarily complicated.
 * Search for duplicate declarations:
   - For new style sheets: after initial setup is done.
   - For new features and bug fixes: after the respective work is done.
@@ -434,23 +434,23 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
   - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting deduplication to sections, take care to limit search scope to these sections).
   - For each duplicate declaration (the actual work):
     + Determine which respective rule should come first in the style sheet (for this one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
-    + If this first rule contains additional declarations, i.e. declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original; keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
+    + If this first rule contains additional declarations, i.e. declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original. Keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
     + Copy the selectors of the _other_ rules that contain the respective duplicate declaration to the rule that comes first.
-    + Make sure to remove the duplicate declarations whose selectors have just been copied up in the style sheet, and to remove the entire rule if the rule only consisted of the now moved duplicate declaration.
+    + Be sure to remove the duplicate declarations whose selectors have just been copied up in the style sheet, and to remove the entire rule if the rule only consisted of the now moved duplicate declaration.
     + (Repeat.)
-  - Make sure to check the correct _order of the selectors_ for the rules that now handle the formerly duplicate declarations.
-  - Make sure to check for the correct _placement_ of the rules that now combine formerly duplicate declarations.
+  - Be sure to check the correct _order of the selectors_ for the rules that now handle the formerly duplicate declarations.
+  - Be sure to check for the correct _placement_ of the rules that now combine formerly duplicate declarations.
 * (Repeat.)
 * Test.
 
-This may seem intimidating, but is rather precise; and it’s much work only when we just wrote and optimize an entire style sheet. For small updates, the process is considerably easier and much more grateful. (Unfortunately, there’s no tooling yet for UDJO. As it’s generally difficult to automate, it’s all the more a technique that belongs to the craft of writing CSS.)
+This may seem intimidating, but is rather precise; and it’s only a lot of work when we just wrote and optimized an entire style sheet. For small updates, the process is considerably easier and feels much more grateful. (Unfortunately, there’s no tooling yet for UDJO. As it’s generally difficult to automate, it’s all the more a technique that belongs to the craft of writing CSS.)
 
-What we receive in the end is a style sheet that’s [in most cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example) lighter than what we started with; but as file size is not always a factor for performance (thanks to compression), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so large that we may not even need something like variables anymore, because when, [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
+What we receive in the end is a style sheet that’s [in most cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example) lighter than what we started with. Yet as file size is not always a factor for performance (thanks to compression), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so great that we may not even need something like variables anymore. When, [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
 
-Try this process on for size, and apply it to components or CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, login styles, however the blocks are divided). This way it’s easier to get acquainted with the process, to get a moderate result, and also to feed back your very own ideas on DRY CSS to the community.
+Try this process on for size, and apply it to components or CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, login styles, however the blocks are divided). This way, it’s easier to get acquainted with the process, to get a moderate result, and also to feed back your very own ideas on DRY CSS to the community.
 
 C> ⁂
 
-We’re concluding this section on operational optimization. What we’ve covered are all things we need to focus on while we’re working on style sheets. Most of that couldn’t be automated (with the exception of unintermittent controls that inform us when, say, our style sheet contained too much repetition, or if we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed. Not only does that improve our code but also us as professionals.
+We’re concluding this section on operational optimization. What we’ve covered are all things we need to focus on while working on style sheets. Most of that couldn’t be automated (with the exception of unintermittent controls that inform us when, say, our style sheet contained too much repetition, or if we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed. Not only does that improve our code but also us as professionals.
 
-I> That exception there in parentheses, about unintermittent controls, looks innocent but somewhat hints at the future of professional development: automatic live feedback. A priority for modern editors of which some ([Visual Studio Code](https://code.visualstudio.com/), [WebStorm](https://www.jetbrains.com/webstorm/)) have begun to pick it up, this will mean to instantly, on editing, get notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way still seems long at this point—we’ll need great UI and AI features to make it all work effectively, from easy ways to mark false positives to train the software false negatives—but it’s what’s missing from the current way of development in which code is only evaluated once we checked it into a repository or deployed it to a staging or production environment.
+I> That exception there in parentheses, about unintermittent controls, looks innocent but hints at the future of professional development: automatic live feedback. A priority for modern editors of which some ([Visual Studio Code](https://code.visualstudio.com/), [WebStorm](https://www.jetbrains.com/webstorm/)) have begun to pick it up, this will mean to instantly, on editing, get notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way still seems long at this point: We’ll need great UI and AI features to make it all work effectively, from easy ways to mark false positives to train the software false negatives. Still it’s what’s missing from the current way of development in which code is only evaluated once we checked it into a repository or deployed it to a staging or production environment.
