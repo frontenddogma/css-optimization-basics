@@ -306,27 +306,27 @@ It’s important to drive a point home: We are of no good use as web developers 
 
 C> _Example: Can these styles lie?_
 
-As such, yes, inline CSS is good for performance, and as such we should consider it a CSS optimization measure. But unless we deal with truly unique styling on truly unique single pages, a categorical _“no”_ to inline CSS. Our vision of web development, to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance, discourages this. We don’t want to touch HTML for formatting updates—and inline CSS prevents that.
+As such, yes, inline CSS is good for performance, and as such, we should consider it a CSS optimization measure. But unless we deal with truly unique styling on truly unique single pages, a categorical _“no”_ to inline CSS. Our vision of web development discourages this: It asks to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance. We don’t want to touch HTML for formatting updates—and inline CSS prevents that.
 
-I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. And not just with component-based development have we gotten to a point at which we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been softened decisively. That’s development-practically speaking a helpful and development-theoretically speaking a fascinating development. Personally, I still recommend to follow the first paradigm and to separate concerns (like structure, presentation, and behavior).
+I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. Not just with component-based development have we gotten to a point at which we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been softened decisively. That’s practically speaking a helpful and theoretically speaking a fascinating development. Personally, I still recommend following the first paradigm and to separate concerns (like structure, presentation, and behavior).
 
 ### Possibly Relevant: Declaration Prudence
 
-For declarations we face a similar situation as with selectors in that avoiding certain declarations appears to be more counter-productive than not doing anything.
+For declarations, we face a similar situation as with selectors—avoiding certain declarations appears to be more counter-productive than not doing anything.
 
-We know that declarations like `box-shadow`, `filter`, `opacity`, and `transform`, as well as a few special values, are significantly slower and hence more expensive than others. They’re so much more expensive that the effects can be perceivable even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
+We know that declarations like `box-shadow`, `filter`, `opacity`, and `transform`, as well as a few special values, are significantly slower and hence more expensive than others. They’re so much more expensive that we can perceive the effects even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
 
-However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has Juriy Zaytsev](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/), alas the data are not robust or not even available anymore (I couldn’t reach Juriy for clarification).
+However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has Juriy Zaytsev](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/). Alas, the data are not robust and may not even be available anymore (I couldn’t reach Juriy for clarification).
 
 Until we do more research and can properly, reliably document all the declarations and value ranges that are particularly slow, there’s no point in panicking and no point in blindly guessing what declarations and values should be avoided.
 
-There may not even be a point taking any action, because at the end of the day, we’ll still need to look at the cases in question: How important is the respective styling, and what’s the performance impact of its substitute? In this case, then, it seems advisable to flag declarations as a possible optimization source, but not to make it a priority until we have better data.
+There may not even be a point taking any action because, at the end of the day, we’ll still need to look at the cases in question: How important is the respective styling, and what’s the performance impact of its substitute? In this case it seems advisable to flag declarations as a possible optimization source, but not to make it a priority until we have better data.
 
 ### Rule Hygiene
 
-Where we can have a big impact on performance is with removing unused CSS, and anything in our CSS that isn’t needed: rule hygiene. This sort of hygiene is simple in theory—just get rid of what isn’t necessary—but a bit more tricky in practice.
+We can have a big impact on performance by removing unused and unneeded CSS. This sort of hygiene is simple in theory—just get rid of what isn’t necessary—but a bit more tricky in practice.
 
-The trickiness consists in the fact that it’s often hard, if not impossible, to tell what rules truly aren’t needed. There are tools for this purpose, but it’s difficult to be certain of where styles are used, and often not feasible on the really large websites—sites so large that they have similarly looking marketing sites run by third parties that secretly hot-link the main site’s core style sheets. On top of that, it’s difficult to automate the procedure.
+The trickiness lies in the fact that it’s often hard, if not impossible, to tell what rules truly aren’t needed. There are tools for this purpose, but it’s difficult to be certain of where styles are used, and often not feasible on the really large websites—sites so large that they have similarly looking marketing sites run by third parties that secretly hot-link the main site’s core style sheets. On top of that, it’s difficult to automate the procedure.
 
 Here are some actions that help keep unused CSS in check:
 
@@ -373,17 +373,17 @@ Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org
 
 ## Maintainability
 
-Optimizing for maintainability means doing everything to make maintenance as easy as possible. It starts with avoiding work that’s unnecessary, and surprisingly, this begins with the mundanest of things—proper style sheet naming. We won’t dive deeper into such simple things here, but let’s all have a close eye on the senseless activity of changing style sheet names. When we’re doing that, we’re not taking care of a maintenance task—we instead messed up one of the simplest things there are in web development. (Defensive caching assumed, let’s just use functional or generic names. Personally, I’ve never in my 20 years career changed a style sheet’s name once it was just called “default.css”—not even on heavily frequented Google sites.)
+Optimizing for maintainability means doing everything to make maintenance as easy as possible. It starts with avoiding work that’s unnecessary, and surprisingly, this begins with the mundanest of things—proper style sheet naming. We won’t dive deeper into such simple things here, but let’s all keep a close eye on the senseless activity of changing style sheet names. When we’re doing that, we’re not taking care of a maintenance task—we instead mess up one of the simplest things in web development. (Defensive caching assumed, let’s just use functional or generic names. Personally, I’ve never in my 20-year career changed a style sheet’s name once it was just called “default.css”—not even on heavily frequented Google sites.)
 
 ### Irrelevant: `!important`
 
-Similar to performance, there’s some trash to bring out. Contrary to some views, there’s nothing harmful, and nothing dangerous, and neither anything unmaintainable about using `!important`. `!important`, a part of [the cascade](https://www.w3.org/TR/CSS22/cascade.html#cascade), is a tool.
+Similar to performance, there’s some trash to bring out. Contrary to some views, there’s nothing harmful, dangerous, or unmaintainable about using `!important`. `!important`, a part of [the cascade](https://www.w3.org/TR/CSS22/cascade.html#cascade), is a tool.
 
 As with every tool, one can use it wrong. Using a knife to eat soup is frustrating. Using a hammer to solder circuit boards is very difficult. Using `!important` to fix every layout problem is like using pesticides against bugs: It’s tough on the environment.
 
-Alas, now, that doesn’t mean one shouldn’t use knives, hammers, or `!important`. What it means is to learn when it’s best and most effectively used.
+Alas, that doesn’t mean one shouldn’t use knives, hammers, or `!important`. What it means is to learn when it’s best and most effectively used.
 
-In essence, let’s not refrain from using `!important`. Let’s not shy away from using it for quick _testing and debugging_. Let’s well use it for declarations, then, that come early in our style sheets but that are rather unspecific, and hence face a risk (or probably just suffered from) being overridden in some way. That’s not bad development practice. That makes sense.
+In essence, let’s not refrain from using `!important`. Let’s not shy away from using it for quick _testing and debugging_. Let’s use it for declarations that come early in our style sheets but that are rather unspecific, and hence run the risk of (or probably just suffered from) being overridden in some way. That’s not bad development practice. That makes sense.
 
 Use of `!important` is legitimate.
 
@@ -393,9 +393,9 @@ Separation of concerns is one key for maintainability. It’s defined as follows
 
 > In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program. A concern can be as general as “the details of the hardware for an application,” or as specific as “the name of which class to instantiate.” A program that embodies SoC well is called a modular program. Modularity, and hence separation of concerns, is achieved by encapsulating information inside a section of code that has a well-defined interface.
 
-The first and most important thing to connect with separation of concerns is to strictly separate structure (HTML), presentation (CSS), and behavior (JavaScript or, more generally speaking, ECMAScript).
+The first and most important part of separation of concerns is to strictly separate structure (HTML), presentation (CSS), and behavior (JavaScript or, more generally speaking, ECMAScript).
 
-On a macro level, separation of concerns makes sure that we develop using the appropriate technology (in the 90’s and 2000’s we’ve seen what solving design issues in HTML leads to) and know where to look when there are issues (we don’t want to address document-structural issues in JavaScript).
+On a macro level, separation of concerns ensures that we develop using the appropriate technology (in the 90’s and 2000’s we’ve seen what solving design issues in HTML leads to) and know where to look when there are issues (we don’t want to address document-structural issues in JavaScript).
 
 For CSS that means to look beyond, to make sure to collect everything that’s related to the appearance of our site or app and have that in our style sheets. In a way separation of concerns is the basis for all optimization, because only that way do we know that our CSS is actually handled in style sheets (and not, as it happens, in HTML templates or JavaScript files).
 
