@@ -59,7 +59,7 @@ html{font:87.5%/1.5 'helvetica neue',helvetica,sans-serif;max-width:600px;paddin
 
 C> _Example: Random now minified CSS snippet._
 
-As mentioned at the beginning of this book, we benefit from automating our work. As this optimization step is ugly to perform manually, we actually have a case here that’s almost _always_ automated.
+As mentioned at the beginning of this book, we benefit from automating our work. As this optimization step is ugly to perform manually, we have a case here that’s almost _always_ automated.
 
 T> For both character and code optimization there are several web-based tools and scripts, for example:
 T> 
