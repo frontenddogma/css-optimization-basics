@@ -95,7 +95,7 @@ File size and caching are normally the issues of biggest concern. They’re link
 
 2) Same scenario—if all our styles are in one style sheet, what is a good balance to make sure that the style sheet gets cached but we can swiftly roll out updates?
 
-I set out to go over both questions in detail but I believe it more useful to leave them a little open. This should remind us that, even though technical questions often beg quite definite answers, there are questions that don’t lead to a strict “right” or “wrong”—the answers often still depend on our priorities.
+I set out to go over both questions in detail but I believe it more useful to leave them a little open. This should remind us that, even though technical questions often beg definite answers, there are questions that don’t lead to a strict “right” or “wrong”—the answers often still depend on our priorities.
 
 What’s there to consider for a decision?
 
@@ -131,11 +131,11 @@ Compromises and exceptions should be made sparingly and wisely, as with [the app
 
 C> _Example: The approach taken by the Go framework._
 
-At the end of the day, there’s no single answer for optimal CSS file management. The solution we choose benefits from being simple, but the approach depends on project complexity and our options to automate. And sometimes, as of recent years, our frameworks and tooling answer this for us.
+Ultimately, there’s no single answer for optimal CSS file management. The solution we choose benefits from being simple, but the approach depends on project complexity and our options to automate. And sometimes, as of recent years, our frameworks and tooling answer this for us.
 
 ## Output Control
 
-As the final step as per this basic treatise, it’s important to check what we’re ultimately shipping. Did all our other optimization steps work? Have we missed anything?
+As the final step as per this basic treatise, it’s important to check what we’re shipping. Did all our other optimization steps work? Have we missed anything?
 
 ### Reviews and Sanity Checks
 
@@ -152,7 +152,7 @@ C> _Example: CSS routines._
 
 Manual checks can be swift—scan the output, perhaps re-formatted to be more readable. (If browser developer tools don’t suffice for an in-depth look, web-based services like [CSSTidy](https://hell.meiert.org/aux/optimize/css/) allow us to “uncompress” a style sheet).
 
-Automated checks take time to be set up properly and depend on needs and priorities. Solutions include both free and paid services used in conjunction with task runners or hooked up to the respective CI pipeline. A very simple setup may involve making use of [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to use a script like [pre-commit](https://github.com/WouterSioen/pre-commit) to validate and lint on commit. Nowadays there are more elegant options, notably [stylelint](https://stylelint.io/).
+Automated checks take time to be set up properly and depend on needs and priorities. Solutions include both free and paid services used in conjunction with task runners or hooked up to the respective CI pipeline. A simple setup may involve making use of [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to use a script like [pre-commit](https://github.com/WouterSioen/pre-commit) to validate and lint on commit. Nowadays there are more elegant options, notably [stylelint](https://stylelint.io/).
 
 The topic of reviews brings together much of what we’ve discussed so far: We enforce our desire for quality (the reason why we optimize in the first place) through our development mindsets (like doing our work really well and automating it in order to focus on the things that matter).
 

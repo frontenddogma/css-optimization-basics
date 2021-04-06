@@ -242,7 +242,7 @@ Because the topic of ID and class naming, although a beginner topic, has been so
 
 #### Shorthands
 
-Shorthands—CSS declarations that combine other declarations, like `font`, `border`, or `animation`—are a very useful part of CSS because they help to make CSS more minimal-simple. They allow us to write less code, though not necessarily more understandable code. This is a situation that perhaps made one camp declare that [CSS shorthands were an anti-pattern](https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/), and the other say [they weren’t](https://meiert.com/en/blog/css-shorthands/).
+Shorthands—CSS declarations that combine other declarations, like `font`, `border`, or `animation`—are a useful part of CSS because they help to make CSS more minimal-simple. They allow us to write less code, though not necessarily more understandable code. This is a situation that perhaps made one camp declare that [CSS shorthands were an anti-pattern](https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/), and the other say [they weren’t](https://meiert.com/en/blog/css-shorthands/).
 
 Modifying what I put to protocol as a part of that other camp, they’re both.
 
@@ -320,13 +320,13 @@ However, the problem is that data are hard to come by. Ben Frain has contributed
 
 Until we do more research and can properly, reliably document all the declarations and value ranges that are particularly slow, there’s no point in panicking and no point in blindly guessing what declarations and values should be avoided.
 
-There may not even be a point taking any action because, at the end of the day, we’ll still need to look at the cases in question: How important is the respective styling, and what’s the performance impact of its substitute? In this case it seems advisable to flag declarations as a possible optimization source, but not to make it a priority until we have better data.
+There may not even be a point taking any action because we’ll still need to look at the cases in question: How important is the respective styling, and what’s the performance impact of its substitute? In this case it seems advisable to flag declarations as a possible optimization source, but not to make it a priority until we have better data.
 
 ### Rule Hygiene
 
 We can have a big impact on performance by removing unused and unneeded CSS. This sort of hygiene is simple in theory—just get rid of what isn’t necessary—but a bit more tricky in practice.
 
-The trickiness lies in the fact that it’s often hard, if not impossible, to tell what rules truly aren’t needed. There are tools for this purpose, but it’s difficult to be certain of where styles are used, and often not feasible on the really large websites—sites so large that they have similarly looking marketing sites run by third parties that secretly hot-link the main site’s core style sheets. On top of that, it’s difficult to automate the procedure.
+The trickiness lies in the fact that it’s often hard, if not impossible, to tell what rules truly aren’t needed. There are tools for this purpose, but it’s difficult to be certain of where styles are used, and often not feasible on the large websites—sites so large that they have similarly looking marketing sites run by third parties that secretly hot-link the main site’s core style sheets. On top of that, it’s difficult to automate the procedure.
 
 Here are some actions that help keep unused CSS in check:
 
@@ -405,7 +405,7 @@ One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/w
 
 Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets). This is especially true when we DRY our style sheets. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example of where our work requires a feeling for balance and priority. We might opt for a different approach when our projects are of a particularly large size.)
 
-T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look very closely how they help, and how they hinder you.
+T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look closely how they help, and how they hinder you.
 T> 
 T> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make only for fancier beginner-style code.
 T> 
@@ -413,7 +413,7 @@ T> When we’re asked to avoid the descendant selector (OOCSS), then great, no w
 
 ### Don’t Repeat Yourself
 
-The next maintainability pillar to optimize for is (avoidance of) repetition. When we think about selectors in terms of _grouped_ selectors (that is, `section` to be different from `section, div`), and when we assume declarations to be written so consistently as not to inadvertently repeat through different spellings (compare `outline: 0` and `outline: none`), there really is only one way to avoid repetition: through avoiding repeat _declarations_.
+The next maintainability pillar to optimize for is (avoidance of) repetition. When we think about selectors in terms of _grouped_ selectors (that is, `section` to be different from `section, div`), and when we assume declarations to be written so consistently as not to inadvertently repeat through different spellings (compare `outline: 0` and `outline: none`), there’s only one way to avoid repetition: through avoiding repeat _declarations_.
 
 Limiting the number of places where a particular style is defined usually makes our style sheets more compact and maintainable.
 
@@ -445,9 +445,9 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 
 This may seem intimidating, but is rather precise; and it’s only a lot of work when we just wrote and optimized an entire style sheet. For small updates, the process is considerably easier and feels much more grateful. (Unfortunately, there’s no tooling yet for UDJO. As it’s generally difficult to automate, it’s all the more a technique that belongs to the craft of writing CSS.)
 
-What we receive in the end is a style sheet that’s [in most cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example) lighter than what we started with. Yet as file size is not always a factor for performance (thanks to compression), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so great that we may not even need something like variables anymore. When, [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
+What we receive is a style sheet that’s [in most cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example) lighter than what we started with. Yet as file size is not always a factor for performance (thanks to compression), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so great that we may not even need something like variables anymore. When, [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
 
-Try this process on for size, and apply it to components or CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, login styles, however the blocks are divided). This way, it’s easier to get acquainted with the process, to get a moderate result, and also to feed back your very own ideas on DRY CSS to the community.
+Try this process on for size, and apply it to components or CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, login styles, however the blocks are divided). This way, it’s easier to get acquainted with the process, to get a moderate result, and also to feed back your own ideas on DRY CSS to the community.
 
 C> ⁂
 
