@@ -6,3 +6,4 @@ production.md
 overview.md
 feedback.md
 author.md
+book.md
