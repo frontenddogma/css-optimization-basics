@@ -4,6 +4,7 @@ mindsets.md
 operation.md
 production.md
 overview.md
+resources.md
 feedback.md
 author.md
 book.md
