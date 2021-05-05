@@ -162,4 +162,4 @@ This concludes our CSS optimization basics. We’ve covered the most important p
 
 That, then, I’m willing to put to the test: Please share your thoughts on what else should be _required_ optimization steps. Share them privately by [contacting me](https://meiert.com/en/contact/), or share them publicly, perhaps tagging them so that others can find your views. For this, I propose the hashtag [`#cssoptim`](https://twitter.com/search?q=%23cssoptim).
 
-Other than that, it’s my wish that everyone, the aspiring CSS developer as well as the senior CSS tech lead, could take something from this book. Its value is surely related to how much you can take with you. To compound that value, we’ll finish with an overview and a selection of tools and references.
+Other than that, it’s my wish that everyone, the aspiring CSS developer as well as the senior CSS tech lead, could take something from this book. Its value is surely related to how much you can take with you. To compound that value, we’ll finish with an overview and a selection of resources.
