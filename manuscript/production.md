@@ -25,7 +25,7 @@ As noted in the introductory section, these items can be covered by coding guide
 
 In the last step, we minimized our CSS code in a way that doesn’t impair understanding. The next step is to remove all characters that aren’t needed for the style sheet to work. This makes it production-ready.
 
-Again, note that this is only presented as a separate step to illustrate that we can remove certain characters manually, but we can still work with our style sheets. The outcome of full code minimization makes working with style sheets rather cumbersome, if not practically impossible (note the minified style sheet below).
+Again, this is only presented as a separate step to illustrate that we can remove certain characters manually, but we can still work with our style sheets. The outcome of full code minimization makes working with style sheets rather cumbersome, if not practically impossible (note the minified style sheet below).
 
 We’re doing two things at this step:
 
