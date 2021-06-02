@@ -246,7 +246,7 @@ Shorthands—CSS declarations that combine other declarations, like `font`, `bor
 
 Modifying what I put to protocol as a part of that other camp, they’re both.
 
-Shorthands make code less understandable in complex projects, but do make code more minimal. What tips the simplicity scale in my mind is the fact that shorthands _always_ make our CSS more minimally simple. _Only in large and complex projects_, they make it less understandably simple because they imply so much: Everything a shorthand declaration _doesn’t_ say still means something, because the values that aren’t set are really set to their initial values. And that can—in larger projects—lead to problems.
+Shorthands make code less understandable in complex projects, but do make code more minimal. What tips the simplicity scale in my mind is the fact that shorthands _always_ make our CSS more minimally simple. _Only in large and complex projects_, they make it less understandably simple because they imply so much: Everything a shorthand declaration _doesn’t_ say still means something, because the values that aren’t set are set to their initial values. And that can—in larger projects—lead to problems.
 
 ```css
 html {

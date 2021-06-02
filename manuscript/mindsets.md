@@ -22,7 +22,7 @@ This mindset matters because it keeps our code base and our documentation clean,
 
 ## Keep It Simple
 
-The idea to keep it simple has a lazy touch, yet requires a high level of skill. Keeping it simple really means _focus_, to know what’s important, and through that, be efficient. Keeping it simple does not mean simply to do less; it means to _do what matters_.
+The idea to keep it simple has a lazy touch, yet requires a high level of skill. Keeping it simple means _focus_, to know what’s important, and through that, be efficient. Keeping it simple does not mean simply to do less; it means to _do what matters_.
 
 As such, keeping things simple requires that we thoroughly understand our field—the core technologies, first and foremost, but everything in between and to the sides as well. And it means true economy of motion, because we don’t want to engage in something we don’t need to do.
 
