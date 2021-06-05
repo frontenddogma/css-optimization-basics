@@ -379,7 +379,7 @@ Optimizing for maintainability means doing everything to make maintenance as eas
 
 Similar to performance, there’s some trash to bring out. Contrary to some views, there’s nothing harmful, dangerous, or unmaintainable about using `!important`. `!important`, a part of [the cascade](https://www.w3.org/TR/CSS22/cascade.html#cascade), is a tool.
 
-As with every tool, one can use it wrong. Using a knife to eat soup is frustrating. Using a hammer to solder circuit boards is very difficult. Using `!important` to fix every layout problem is like using pesticides against bugs: It’s tough on the environment.
+As with every tool, one can use it wrong. Using a knife to eat soup is frustrating. Using a hammer to solder circuit boards is difficult. Using `!important` to fix every layout problem is like using pesticides against bugs: It’s tough on the environment.
 
 Alas, that doesn’t mean one shouldn’t use knives, hammers, or `!important`. What it means is to learn when it’s best and most effectively used.
 
