@@ -14,4 +14,4 @@ Contact +1-754-400-0999 or press@meiert.com for more information.
 
 Follow Jens Oliver Meiert on Twitter: [@j9t](https://twitter.com/j9t)
 
-[1.3.12]
+[1.3.13]
