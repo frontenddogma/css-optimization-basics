@@ -146,7 +146,7 @@ This is trivial and, at the same time, automatable: _Sort declarations alphabeti
 }
 ```
 
-C> _Example: Where to add `transform: rotateY(10deg);` so that everyone can find it quickly?_
+C> _Example: Where to add `transform: rotateY(10deg)` so that everyone can find it quickly?_
 
 This is trivial and automatable but still, in my eyes, one of the key optimization methods. That’s because an almost failsafe, easily repeatable, soon to become habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme, like the alphabetical ordering of declarations, at once makes our code more understandable and helps anyone to navigate it.
 
@@ -425,7 +425,7 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 
 * Write CSS.
 * Decide on DRY boundaries: section (functionally separate CSS parts) or file, component, `@media` level?
-* Be sure to format code consistently, as `background: none;`, `background:none;`, or `background-image: none;` could all mean the same but make our task of finding duplicates unnecessarily complicated.
+* Be sure to format code consistently, as `background: none`, `background:none`, and `background-image: none` could all mean the same but make our task of finding duplicates unnecessarily complicated.
 * Search for duplicate declarations:
   - For new style sheets: after initial setup is done.
   - For new features and bug fixes: after the respective work is done.
