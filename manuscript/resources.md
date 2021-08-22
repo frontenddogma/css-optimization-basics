@@ -16,9 +16,10 @@ A few handy CSS tools, for manual and automated testing:
 * CSSLint [online tool](http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
 * CSSTidy [online tool](https://hell.meiert.org/aux/optimize/css/) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
 * Minify [online tool](https://www.minifier.org/) and [script](https://github.com/matthiasmullie/minify), to minify CSS
+* ngx-unused-css [package](https://www.npmjs.com/package/ngx-unused-css), to remove unused CSS (for Angular)
 * pre-commit [script](https://github.com/WouterSioen/pre-commit), to validate syntax errors in CSS (through CSS Lint) and SCSS (through SCSS Lint)
 * Prettier [package](https://prettier.io/), to format CSS
-* Purgecss [package](https://www.purgecss.com/), to remove unused CSS
+* PurgeCSS [package](https://www.purgecss.com/), to remove unused CSS
 * purifycss [script](https://github.com/purifycss/purifycss), to remove unused CSS
 * rm-unused-css [package](https://www.npmjs.com/package/rm-unused-css), to remove unused CSS
 * stylelint [package](https://stylelint.io/), to lint and format CSS

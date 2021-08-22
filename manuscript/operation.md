@@ -109,15 +109,15 @@ C> _Example: Random sample code._
 }
 ```
 
-C> _Example: Adjusted (note the order of declarations and selectors). Since the writing of this book, [the `:is()` pseudo-class](https://css-tricks.com/almanac/selectors/i/is/) emerged as a great option to simplify code like this._
+C> _Example: Revised sample code (note the order of declarations and selectors). Since the writing of this book, [the `:is()` pseudo-class](https://css-tricks.com/almanac/selectors/i/is/) emerged as a great option to simplify code like this._
 
-Consistency is reasonably easy to achieve. We [establish coding guidelines](https://www.oreilly.com/library/view/the-little-book/9781492048459/), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. Many guidelines can be enforced right after writing and editing our CSS, and then again for production, where we may apply slightly different rules, specifically geared towards production.
+Consistency is reasonably easy to achieve. We [establish coding guidelines](https://www.oreilly.com/library/view/the-little-book/9781492048459/), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. Many guidelines can be enforced right after writing and editing our CSS; others when shipping the code to production, where we may apply slightly different rules.
 
-We’ll cover this last step in the chapter “Production Optimization” and go over some tools under “Tools and Resources.” We won’t go over subjective coding guidelines and how to automate their implementation and enforcement. It’s more useful to cover select aspects of consistency that are of particular import to CSS optimization. One is automatable; the other isn’t: declaration sorting and selector sorting.
+We’ll cover this last part in the chapter “Production Optimization” and go over some tools under “Tools and Resources.” It’s more useful to cover aspects of consistency that are of import to CSS optimization. One is automatable; the other isn’t: declaration sorting and selector sorting.
 
 #### Declaration Sorting
 
-This is trivial and, at the same time, automatable: _Sort declarations alphabetically._ As Google advocates, the only exception are vendor-specific extensions—self-destructing declarations that start with hyphens—which are to be located right before the respective main declaration. (Disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines.)
+This is trivial and, at the same time, automatable: _Sort declarations alphabetically._ [As Google advocates](https://google.github.io/styleguide/htmlcssguide.html#Declaration_Order), the only exception are vendor-specific extensions—self-destructing declarations that start with hyphens—which are to be located right before the respective main declaration. (Disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines, which introduced alphabetical sorting.)
 
 ```css
 .example {
@@ -146,19 +146,19 @@ This is trivial and, at the same time, automatable: _Sort declarations alphabeti
 }
 ```
 
-C> _Example: Where to add `transform: rotateY(10deg)` so that everyone can find it quickly?_
+C> _Example: Where to add `transform: rotateY(10deg)` so that everyone can immediately find it?_
 
 This is trivial and automatable but still, in my eyes, one of the key optimization methods. That’s because an almost failsafe, easily repeatable, soon to become habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme, like the alphabetical ordering of declarations, at once makes our code more understandable and helps anyone to navigate it.
 
-I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we’ll write better code once we can do it ourselves and not require some processor to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we strongly benefit from internalizing this way of sorting.)
+I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we’ll write better code once we can do it ourselves and not require a processor to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we benefit from internalizing this way of sorting.)
 
 Sort declarations [alphabetically](https://meiert.com/en/blog/on-declaration-sorting/).
 
 #### Selector Sorting
 
-Selector sorting is the antithesis to declaration sorting. It’s far less trivial to standardize and also more difficult to automate. (On a complementary investigation it seems [my own draft](https://meiert.com/en/blog/how-to-order-css-selectors/) is the only public attempt for an order.)
+Selector sorting is the antithesis to declaration sorting. It’s far less trivial to standardize and also more difficult to automate. (On a complementary investigation it seems that so far, [my own draft](https://meiert.com/en/blog/how-to-order-css-selectors/) is the only public attempt for an order.)
 
-Yet selector sorting is the next impactful method at our disposal to make our style sheets consistent and, in a way, “optimize them for further optimization.” When it comes to maintenance, a defined and followed selector order is crucial to successfully DRYing up our style sheet declarations (“DRY” from “Don’t Repeat Yourself,” a principle that helps with maintenance). It makes us avoid an extra round of DRYing _selector groups_ and spares us from great additional testing complexity.
+Yet selector sorting is the next impactful method at our disposal to make style sheets consistent and, in a way, optimize them for further optimization. When it comes to maintenance, a defined and followed selector order is crucial to successfully DRYing up our style sheet declarations (“DRY” from “Don’t Repeat Yourself,” a principle that helps with maintenance). It makes us avoid an extra round of DRYing _selector groups_ and spares us from additional testing complexity.
 
 ```css
 html {
@@ -216,19 +216,19 @@ em {
 
 C> _Example: High level block elements, then text level elements, then classes and IDs, [&c.](https://meiert.com/en/blog/how-to-order-css-selectors/)_
 
-Although it seems that many teams of web developers have survived without a firm idea of how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal). More importantly, only then do we ever have a chance of eliminating extra work through haphazard by-chance ordering. As we’ll see with the avoidance of repetition, that extra work is otherwise awaiting us.
+Although it seems that many teams of web developers have survived without a firm idea of how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal). More importantly, only then do we have a chance of eliminating unnecessary work caused by chance ordering. As we’ll see with the avoidance of repetition, that unnecessary work is otherwise awaiting us.
 
-Accordingly, the lack of initiatives and options for selector orders should give us much to think about and something important to work on community-wise. If you’re in a position to do so, consider what we do have and help us come up with additional options and, perhaps, a standard.
+Accordingly, the lack of initiatives and options for selector orders should give us something to think about and to work on community-wise. If you’re in a position to do so, consider what we have and help us come up with additional options and, perhaps, a standard.
 
 ### Simplicity
 
 Making code simpler is the next optimization goal. However, the goal of code simplicity is often also a goal of code minimalism. Simplicity and minimalism don’t necessarily correlate—they don’t correlate in our coming case of shorthands, yet they do when we speak about character minimization as part of production optimization.
 
-The goal of simplicity is important: Optimizing for it makes code more understandable and, in most cases, faster. It makes our work easier. And it probably generally makes our work better, because using simple and concise code challenges ourselves as craftspeople.
+The goal of simplicity is important: Optimizing for it makes code more understandable and, in most cases, faster. It makes our work easier. And it generally makes our work better, because using simple and concise code challenges ourselves as craftspeople.
 
 #### ID and Class Naming
 
-In times of a still surprisingly alive OOCSS and BEM and Atomic CSS, ID and class naming has drowned as a developer topic, sinking to a second-order afterthought. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third-party agencies in automated testing and deployment environments, in order to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand is doing—short pause—, we don’t need or benefit from naming schemes that sacrifice understandability and maintainability for brief presentational class soups from the 90’s (Atomic CSS). The time to know how to name IDs and classes, and to use _both_ aren’t over yet; IDs aren’t blindly to be shunned, just as little as universal selectors, `!important`, and shorthands.
+In times of a surprisingly alive OOCSS and BEM and Atomic CSS, ID and class naming has drowned as a developer topic, sinking to a second-order afterthought. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third-party agencies in automated testing and deployment environments, in order to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand is doing—short pause—, we don’t need or benefit from naming schemes that sacrifice understandability and maintainability for brief presentational class soups from the 90’s (Atomic CSS). The time to know how to name IDs and classes, and to use _both_ aren’t over yet; IDs aren’t blindly to be shunned, just as little as universal selectors, `!important`, and shorthands.
 
 The [rules for ID and class naming](https://meiert.com/en/blog/best-practice-ids-and-classes/) are simple and lasting:
 
@@ -236,7 +236,7 @@ The [rules for ID and class naming](https://meiert.com/en/blog/best-practice-ids
 * If needed, use _functional_ ID and class names; otherwise use _generic_ ID and class names.
 * Use names that are _as short as possible but as long as necessary_.
 
-This doesn’t aim to rule out other naming schemes, but should be the starting point for every web developer. It’s useful to learn and apply these rules first before switching to a scheme that violates them. Only when we have the experience of developing and maintaining web projects will we be able to tell whether the violation is smart and justified, or haphazard and premature.
+This doesn’t aim to rule out other naming schemes, but should be the starting point. It’s useful to learn and apply these rules before switching to a scheme that violates them. Only when we have the experience of developing and maintaining web projects will we be able to tell whether the violation is smart and justified, or haphazard and premature.
 
 Because the topic of ID and class naming, although a beginner topic, has been so neglected, it’s important to note: No matter how otherwise optimized, a style sheet that uses poor ID and class names is still a poorly crafted style sheet.
 
@@ -246,7 +246,7 @@ Shorthands—CSS declarations that combine other declarations, like `font`, `bor
 
 Modifying what I put to protocol as a part of that other camp, they’re both.
 
-Shorthands make code less understandable in complex projects, but do make code more minimal. What tips the simplicity scale in my mind is the fact that shorthands _always_ make our CSS more minimally simple. _Only in large and complex projects_, they make it less understandably simple because they imply so much: Everything a shorthand declaration _doesn’t_ say still means something, because the values that aren’t set are set to their initial values. And that can—in larger projects—lead to problems.
+Shorthands make code less understandable in complex projects, but do make code more minimal. What tips the simplicity scale is the fact that shorthands _always_ make our CSS more minimally simple. _Only in large and complex projects_, they make it less understandably simple because they imply so much: Everything a shorthand declaration _doesn’t_ say still means something, because the values that aren’t set are set to their initial values. And that can—in larger projects—lead to problems.
 
 ```css
 html {
@@ -272,27 +272,27 @@ Because of their value in making code more compact, and their generally positive
 
 ## Performance
 
-Performance is one of the most obvious goals to optimize for. The faster, the better—we know that the [user experience improves when everyone gets what they want quickly](https://www.nngroup.com/articles/website-response-times/), and that [with more speed, conversions increase as well](https://blog.kissmetrics.com/speed-is-a-killer/).
+Performance is an obvious goal to optimize for. The faster, the better. We know that the [user experience improves when everyone gets what they want quickly](https://www.nngroup.com/articles/website-response-times/), and that [with better speed, conversions increase as well](https://blog.kissmetrics.com/speed-is-a-killer/).
 
 And yet what we can roughly say is that improving rendering performance is not nearly as effective and important as is improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not as helpful for performance as is compressing images. These calculations are generally done so quickly that the respective issues don’t matter in practice. (Accordingly, there’s nothing to worry about when [omitting optional tags and unneeded quotes](https://meiert.com/en/blog/optional-html/) around attribute values.)
 
-The cases we’ll look at now, still in our section on “operational” optimization, will exemplify this situation. Performance is not nearly as clear cut as it’s sometimes presented.
+The cases we’ll look at now, still in our section on “operational” optimization, exemplify this situation. Performance is not nearly as clear cut as it’s sometimes presented.
 
 ### Irrelevant: Selector Performance
 
 Selector performance is _not_ something to optimize for. Selector performance is irrelevant. The price we pay for optimizing for selector performance is terrible: We micromanage our work for gains that aren’t noticeable.
 
-In 2009, Steve Souders contributed perhaps the first insights into the topic, and [one of his main articles](https://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/) on the subject should have made more of us think. First, in his tests, even style sheets with _18,000_ rules were rendered within _600&nbsp;ms_. Then, Steve explained his hypothesis in clear terms: “For most web sites, the possible performance gains from optimizing CSS selectors will be small, and are not worth the costs.”
+In 2009, Steve Souders contributed perhaps the first insights into the topic, and [one of his main articles](https://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/) on the subject should have made us think. First, in his tests, even style sheets with _18,000_ rules were rendered within _600&nbsp;ms_. Then, Steve explained his hypothesis: “For most web sites, the possible performance gains from optimizing CSS selectors will be small, and are not worth the costs.”
 
 Perhaps people misunderstood when Steve went on to write, “There are some types of CSS rules and interactions with JavaScript that can make a page noticeably slower. This is where the focus should be.”—What we saw was an [undue focus](https://meiert.com/en/blog/performance-of-css-selectors/) on selector performance and an outright childish ban of selectors, notably, the universal selector.
 
 (Years later, in additional investigations, we find problems with the methodology, leading to important observations like this one, [by Ben Frain](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/): “It is practically impossible to predict the final performance impact of a given selector by just examining the selectors.”)
 
-The first problem with optimizing for selectors is that the gains are negligible. Yes, some selectors are slower than others, and from the way they work this is probably going to be the case until the world ends. Alas, nothing practically relevant follows from this observation: The effects are not felt by us nor by our users. We do not ship websites that use 25,000 rules of the type of `::after` (and nothing else) to bring pages to a crawl; a) they don’t come to a crawl, b) someone who writes code like that has other issues.
+The first problem with optimizing for selectors is that the gains are negligible. Yes, some selectors are slower than others, and from the way they work this is probably going to be the case until the world ends. Alas, nothing practically relevant follows from this observation: The effects are felt neither by us nor by our users. We do not ship websites that use 25,000 rules of the type of `::after` (and nothing else) to bring pages to a crawl; a) they don’t come to a crawl, b) someone who writes code like that has other issues.
 
-The second problem with optimizing for selectors is that we over-optimize and micromanage, and actually slow down our workflow writing _worse_ CSS. Putting up rules in place for how _selectors_ should look is adding a restriction that only hinders a team of developers. The outcome is not any more elegant code in terms of code minimalism (though those who connect verbosity with understandability may have a point).
+The second problem with optimizing for selectors is that we over-optimize and micromanage, and actually slow down our workflow writing _worse_ CSS. Putting up rules in place for how selectors should look is adding a restriction that only hinders a team of developers. The outcome is not any more elegant code in terms of code minimalism (though those who connect verbosity with understandability may have a point).
 
-Where we are right now, selector performance is still a box better left closed.
+Where we are right now, selector performance is a box better left closed.
 
 ### Irrelevant: Inline CSS
 
@@ -314,7 +314,7 @@ I> With improvements to our content management, build, and deployment processes,
 
 For declarations, we face a similar situation as with selectors—avoiding certain declarations appears to be more counter-productive than not doing anything.
 
-We know that declarations like `box-shadow`, `filter`, `opacity`, and `transform`, as well as a few special values, are significantly slower and hence more expensive than others. They’re so much more expensive that we can perceive the effects even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
+We know that declarations involving `box-shadow`, `filter`, `opacity`, and `transform`, depending on their values, can be significantly slower and hence more expensive than others. They may be so much more expensive that we can perceive the effects even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
 
 However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has Juriy Zaytsev](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/). Alas, the data are not robust and may not even be available anymore (I couldn’t reach Juriy for clarification).
 
@@ -335,22 +335,23 @@ Here are some actions that help keep unused CSS in check:
 * Monitor and remove code for unused page elements.
 * Regularly review and inspect style sheets.
 * Use tools:
-  - [Chrome Developer Tools](https://developer.chrome.com/devtools) browser extension audit tab
-  - [Dust-Me Selectors](https://addons.mozilla.org/en-US/firefox/addon/dust-me-selectors/) Firefox browser extension
+  - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) [“Coverage” tab](https://developer.chrome.com/docs/devtools/coverage/)
+  - [Dust-Me Selectors](https://web.archive.org/web/20181102223452/https://addons.mozilla.org/en-US/firefox/addon/dust-me-selectors/) Firefox browser extension
   - [Unused CSS](https://unused-css.com/) crawler
   - UnCSS [online tool](https://uncss-online.com/), [script](https://github.com/giakki/uncss), and [package](https://www.npmjs.com/package/uncss)
   - [PurifyCSS](https://github.com/purifycss/purifycss) script
-  - [Purgecss](https://www.purgecss.com/) package
+  - [PurgeCSS](https://www.purgecss.com/) package
   - [rm-unused-css](https://www.npmjs.com/package/rm-unused-css) package
+  - [ngx-unused-css](https://www.npmjs.com/package/ngx-unused-css) package (for Angular)
 
 The Unused CSS crawler has the most to offer, telling us with considerable certainty what’s used and what’s not. (It has become one of my favorite tools for CSS rule hygiene optimization.)
 
-I> Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather, as the infamous “spacer GIFs,” served the widespread deterioration of websites by being used endlessly to build entire layouts in conjunction with layout tables. But then our attention was on
+I> Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather, like the infamous “spacer GIFs,” served the widespread deterioration of websites by being used endlessly to build entire layouts in conjunction with layout tables. But then our attention was on
 I> 
 I> * what formats to use for quality and compression (“GIF or JPG?”);
 I> * how to compress images;
 I> * how to limit the number of images (and the number of HTTP requests, through sprites and such);
-I> * how not to use images (data URIs);
+I> * whether to use images (data URIs);
 I> * and again, what formats to use (“…or SVG? WebP?”).
 I> 
 I> These topics, without the redundancy of the formats and compression questions, are exactly the ones we still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization—it’s image optimization. And Addy Osmani has written [such a book](https://images.guide/).
