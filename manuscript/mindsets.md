@@ -4,7 +4,7 @@ We all know the adage, “Give a man a fish, and you feed him for a day; teach a
 
 ## Do One Thing Really, Really Well
 
-Out of [the Google book](https://www.google.com/about/philosophy.html), one guiding idea is to “do one thing really, really well.” We do end up with more than one thing, but for us as web developers, this thing should be _web development_.
+Out of [the Google book](https://about.google/philosophy/), one guiding idea is to “do one thing really, really well.” We do end up with more than one thing, but for us as web developers, this thing should be _web development_.
 
 To do one thing really well means to immerse ourselves in web development, to practice it, to understand it, to practice it more, to master it. Optimizing CSS is part of writing CSS well which is part of doing web development well, and that’s why this mindset is important for us. The goal to do web development well is an idea that serves us in our work.
 
