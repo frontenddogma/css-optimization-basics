@@ -1,20 +1,20 @@
 # Operational Optimization
 
-In this section, we’re going to talk about our options for writing higher quality CSS while we’re right at it, in operation. This type of optimization benefits us as developers. (The next section will deal with options to optimize for production, that is, for release and live use, and for the good of our users.)
+In this section, we’re going to talk about our options for writing higher quality CSS while we’re right at it, during development and in operation. This type of optimization benefits us as developers. (The next section will deal with options to optimize for production, that is, for release and live use, and for the benefit of our users.)
 
-To get a better look at CSS itself, it didn’t seem useful to cover preprocessors. For the same reason we’re not going to discuss documentation or guidelines, either, like code comments or formatting standards. Documentation is an entirely different topic that has more to do with maintenance than with optimization. Coding guidelines, as important as they are and as many of them we can set up, are often a matter of preference and don’t necessarily have a bearing on quality (instead see: [_The Little Book of HTML/CSS Coding Guidelines_](https://www.oreilly.com/library/view/the-little-book/9781492048459/)). We’re already applying one of the mantras: keeping it simple.
+To get a better look at CSS itself, it didn’t seem useful to cover preprocessors. Likewise, we’re not going to discuss documentation or guidelines, either, like code comments or formatting standards. Documentation is an entirely different topic that has more to do with maintenance than with optimization. Coding guidelines, as important as they are and as many of them we can set up, are often a matter of preference and don’t necessarily have a bearing on quality (for more on coding guidelines, see [_The Little Book of HTML/CSS Coding Guidelines_](https://www.oreilly.com/library/view/the-little-book/9781492048459/)). We’re already applying one of the mantras: keeping it simple.
 
 ## Understandability
 
 In operation, we need to make sure our work is understandable. This does not only refer to multi-person environments in which we’re not alone working on a project. With consistency, for example, there’s at least individual consistency, which means to write code consistent with ourselves.
 
-Understandability can, in part, be achieved through documentation and comments. Yet other aspects, and we’ll right start with one (consistent declaration sorting), are so important to take care of that we’ll need to go over them in detail. Consistency and simplicity, the next two sections, make for the two pillars for more understandable, because simplistically optimized, CSS code.
+Understandability can, in part, be achieved through documentation and comments. Yet other aspects, and we’ll right start with one (consistent declaration sorting), are so important to take care of that we’ll need to go over them in detail. Consistency and simplicity, the next two sections, make for the two pillars of more understandable CSS code.
 
 ### Consistency
 
 Consistency in the case of code means to write and format things the same way every time. With individual or [“level 1” consistency](https://meiert.com/en/blog/consistency-levels/), this means to be consistent with how we ourselves write code. With collective and “level 2” consistency, we strive to stay consistent within the realm that we work in, as when we touch third-party code and stick to their code style. And then there’s institutional or “level 3” consistency—being consistent with coding standards put up by our organization.
 
-Consistency is a _foundational_ part of optimization; it’s the first step of optimization. Without any sort of consistency, any other optimization work can be a lot harder.
+Consistency is a _foundational_ part of optimization; it’s the first step of optimization. Without consistency, other optimization work can be a lot harder.
 
 ```css
 .feeds ul,
