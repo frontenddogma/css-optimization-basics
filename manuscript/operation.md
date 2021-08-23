@@ -228,7 +228,7 @@ The goal of simplicity is important: Optimizing for it makes code more understan
 
 #### ID and Class Naming
 
-In times of a surprisingly alive OOCSS and BEM and Atomic CSS, ID and class naming has drowned as a developer topic, sinking to a second-order afterthought. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third-party agencies in automated testing and deployment environments, in order to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand is doing—short pause—, we don’t need or benefit from naming schemes that sacrifice understandability and maintainability for brief presentational class soups from the 90’s (Atomic CSS). The time to know how to name IDs and classes, and to use _both_ aren’t over yet; IDs aren’t blindly to be shunned, just as little as universal selectors, `!important`, and shorthands.
+In times of a surprisingly alive OOCSS and BEM and Atomic CSS [and, later, Tailwind], ID and class naming has drowned as a developer topic, sinking to a second-order afterthought. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third-party agencies in automated testing and deployment environments, in order to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand is doing—short pause—, we don’t need or benefit from naming schemes that sacrifice understandability and maintainability for brief presentational class soups from the 90’s (Atomic CSS). The time to know how to name IDs and classes, and to use _both_ aren’t over yet; IDs aren’t blindly to be shunned, just as little as universal selectors, `!important`, and shorthands.
 
 The [rules for ID and class naming](https://meiert.com/en/blog/best-practice-ids-and-classes/) are simple and lasting:
 
@@ -362,7 +362,7 @@ What is code quality, or quality code? A great question for technical interviews
 
 ### Validation
 
-How can we tell that what we’re coding works? We test. How can we tell it’s error-free? We validate. Yes, testing also exposes errors in our code, and we depend on validators to be up-to-date on the latest, which they aren’t always. Still, validation plays the critical part in making sure that our code is syntactically correct, and uses selectors and declarations (CSS) as well as a document structure and elements and attributes (HTML) that actually exist.
+How can we tell that what we’re coding works? We test. How can we tell it’s error-free? We validate. Yes, testing also exposes errors in our code, and we depend on validators to be up-to-date on the latest, which they aren’t always. Still, validation plays the critical part in making sure that our code is syntactically correct, and that it uses selectors and declarations (CSS) as well as a document structure and elements and attributes (HTML) that actually exist.
 
 There’s a gray area when the respective working groups have just come up with new features (that is, recently extended the specifications), and the validator teams haven’t caught up yet. That gray area must not prevent us from validating. That would be like refusing to use cellphones unless the batteries are fully charged, or declining to wear clothes unless they’re brand new.
 
@@ -374,11 +374,11 @@ Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org
 
 ## Maintainability
 
-Optimizing for maintainability means doing everything to make maintenance as easy as possible. It starts with avoiding work that’s unnecessary, and surprisingly, this begins with the mundanest of things—proper style sheet naming. We won’t dive deeper into such simple things here, but let’s all keep a close eye on the senseless activity of changing style sheet names. When we’re doing that, we’re not taking care of a maintenance task—we instead mess up one of the simplest things in web development. (Defensive caching assumed, let’s just use functional or generic names. Personally, I’ve never in my 20-year career changed a style sheet’s name once it was just called “default.css”—not even on heavily frequented Google sites.)
+Optimizing for maintainability means doing everything to make maintenance as easy as possible. It starts with avoiding work that’s unnecessary, and surprisingly, this begins with the mundanest of things—proper style sheet naming. We won’t dive deeper into this here, but it’s important to keep an eye on the senseless activity of changing style sheet names. When we’re doing that, we’re not taking care of a maintenance task—we instead mess up one of the simplest things in web development. (Defensive caching assumed, let’s just use functional or generic names. Personally, I’ve never in my 20-year career changed a style sheet’s name once it was just called “default.css”—including heavily frequented Google sites.)
 
 ### Irrelevant: `!important`
 
-Similar to performance, there’s some trash to bring out. Contrary to some views, there’s nothing harmful, dangerous, or unmaintainable about using `!important`. `!important`, a part of [the cascade](https://www.w3.org/TR/CSS22/cascade.html#cascade), is a tool.
+Similar to performance, there are myths to debunk. Contrary to some views, there’s nothing harmful, dangerous, or unmaintainable about using `!important`. `!important`, a part of [the cascade](https://www.w3.org/TR/CSS22/cascade.html#cascade), is a tool.
 
 As with every tool, one can use it wrong. Using a knife to eat soup is frustrating. Using a hammer to solder circuit boards is difficult. Using `!important` to fix every layout problem is like using pesticides against bugs: It’s tough on the environment.
 
@@ -394,23 +394,23 @@ Separation of concerns is one key for maintainability. It’s defined as follows
 
 > In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program. A concern can be as general as “the details of the hardware for an application,” or as specific as “the name of which class to instantiate.” A program that embodies SoC well is called a modular program. Modularity, and hence separation of concerns, is achieved by encapsulating information inside a section of code that has a well-defined interface.
 
-The first and most important part of separation of concerns is to strictly separate structure (HTML), presentation (CSS), and behavior (JavaScript or, more generally speaking, ECMAScript).
+The first and most important part of separation of concerns is to separate structure (HTML), presentation (CSS), and behavior (JavaScript or, more generally speaking, ECMAScript).
 
-On a macro level, separation of concerns ensures that we develop using the appropriate technology (in the 90’s and 2000’s we’ve seen what solving design issues in HTML leads to) and know where to look when there are issues (we don’t want to address document-structural issues in JavaScript).
+On a macro level, separation of concerns ensures that we develop using the appropriate technology (in the 90’s and 2000’s we’ve seen what solving design issues in HTML leads to—millions of layout tables), and that we know where to look when there are issues (we don’t want to address document-structural issues in JavaScript).
 
-For CSS, that means to look beyond, to make sure we collect everything that’s related to the appearance of our site or app and have that in our style sheets. In a way, separation of concerns is the basis for all optimization—that way, we know that our CSS is actually handled in style sheets (and not in HTML templates or JavaScript files).
+For CSS, that means to make sure we collect everything that’s related to the appearance of our site or app, and place that in our style sheets. In a way, separation of concerns is the basis for all optimization—that way, we know that our CSS is actually handled in style sheets (and not in HTML templates or JavaScript files).
 
 On a micro and intra-style sheet level, there are now two options for separation of concerns.
 
 One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), is to separate all styles by functionality and to break them into modules, blocks, or elements (BEM).
 
-Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets). This is especially true when we DRY our style sheets. As we’ll see, we can DRY up individual CSS modules, but we can also just DRY them up on the whole, something for which module separation is rather inconvenient. (This is another example of where our work requires a feeling for balance and priority. We might opt for a different approach when our projects are of a particularly large size.)
+Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets). This is especially true when we DRY our style sheets. As we’ll see, we can DRY individual CSS modules, but we can also DRY our style sheets entirely, something for which module separation is inconvenient. (This is another example of where our work requires a feeling for priority and balance. We may opt for a different approach when our projects are particularly large.)
 
-T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions. Look closely how they help, and how they hinder you.
+T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions [including [Tailwind](https://tailwindcss.com/)]. Look closely how they help, and how they hinder you.
 T> 
-T> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and possibilities. In some cases (Atomic CSS), they make only for fancier beginner-style code.
+T> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and flexibility. In some cases (Atomic CSS), they may end up making for fancier beginner-style code.
 T> 
-T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that’s the TSA writing CSS right there)—but also none of the incredible elegance achieved through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate _all_ the advantages of CSS and separation of concerns.
+T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that’s the TSA writing CSS right there)—but also none of the incredible elegance achieved through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate _all_ the advantages of CSS.
 
 ### Don’t Repeat Yourself
 
@@ -420,7 +420,7 @@ Limiting the number of places where a particular style is defined usually makes 
 
 #### Using Declarations Just Once
 
-Using declarations just once (“UDJO”) is an old technique. It means what is says: to use each declaration—if we always write them the same way—just a single time.
+Using declarations just once (“UDJO”) is an old technique. It means what is says: to use each declaration—if we write them the same way—just a single time.
 
 It’s a tangible optimization step in that we’re still encouraged to write CSS [the natural way](https://meiert.com/en/blog/css-dry-and-optimization/), to then go over what we’ve written to make sure we leave no repetition behind. That process is roughly [as follows](https://meiert.com/en/blog/dry-css/):
 
@@ -428,14 +428,14 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 * Decide on DRY boundaries: section (functionally separate CSS parts) or file, component, `@media` level?
 * Be sure to format code consistently, as `background: none`, `background:none`, and `background-image: none` could all mean the same but make our task of finding duplicates unnecessarily complicated.
 * Search for duplicate declarations:
-  - For new style sheets: after initial setup is done.
-  - For new features and bug fixes: after the respective work is done.
+  - For new style sheets: after the initial setup has been done.
+  - For new features and bug fixes: after the respective work has been done.
   - Tip: If version control highlighting for file changes is not enough, temporarily indent changed declarations to only check for their repetition.
 * Dissolve duplicate declarations:
-  - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting deduplication to sections, take care to limit search scope to these sections).
+  - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting de-duplication to sections, limit search scope to these sections).
   - For each duplicate declaration (the actual work):
-    + Determine which respective rule should come first in the style sheet (for this one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
-    + If this first rule contains additional declarations, i.e. declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original. Keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
+    + Determine which respective rule should come first in the style sheet (for this, one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
+    + If this first rule contains additional declarations, i.e., declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original. Keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
     + Copy the selectors of the _other_ rules that contain the respective duplicate declaration to the rule that comes first.
     + Be sure to remove the duplicate declarations whose selectors have just been copied up in the style sheet, and to remove the entire rule if the rule only consisted of the now moved duplicate declaration.
     + (Repeat.)
@@ -444,14 +444,18 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 * (Repeat.)
 * Test.
 
-This may seem intimidating, but is rather precise; and it’s only a lot of work when we just wrote and optimized an entire style sheet. For small updates, the process is considerably easier and feels much more grateful. (Unfortunately, there’s no tooling yet for UDJO. As it’s generally difficult to automate, it’s all the more a technique that belongs to the craft of writing CSS.)
+This may seem intimidating, but is precise; and it’s only a lot of work when we just wrote and optimized an entire style sheet. For small updates, the process is considerably easier and feels much more grateful. (Unfortunately, there’s no tooling yet for UDJO. As it’s difficult to automate, it’s a technique that belongs to the craft of writing CSS.)
 
-What we receive is a style sheet that’s [in most cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example) lighter than what we started with. Yet as file size is not always a factor for performance (thanks to compression), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so great that we may not even need something like variables anymore. When, [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
+![“The ratio of unique to total declarations is 0.84.”](resources/images/total-unique-declarations.png)
 
-Try this process on for size, and apply it to components or CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, login styles, however the blocks are divided). This way, it’s easier to get acquainted with the process, to get a moderate result, and also to feed back your own ideas on DRY CSS to the community.
+C> _Example: [CSS Stats](https://cssstats.com/) shows a style sheet’s DRY factor._
+
+What we receive is a style sheet that’s [in most cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example) lighter than what we started with. Yet as file size is not always a factor for performance ([thanks to compression](https://css-tricks.com/brotli-static-compression/)), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so great that we may not even need something like variables anymore. When, [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
+
+Try this process on for size, and apply it to components or CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, form styles, however the blocks are divided). This way, it’s easier to get acquainted with the process, to get a moderate result, and also to feed back your own ideas on DRY CSS to the community.
 
 C> ⁂
 
-We’re concluding this section on operational optimization. What we’ve covered are all things we need to focus on while working on style sheets. Most of that couldn’t be automated (with the exception of unintermittent controls that inform us when, say, our style sheet contained too much repetition, or if we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed. Not only does that improve our code but also us as professionals.
+This concludes the section on operational optimization. What we’ve covered are all things we need to focus on while working on style sheets. Most of that couldn’t be automated (with the exception of unintermittent controls that inform us when, say, our style sheet contained too much repetition, or if we were about to submit something invalid). But even if it could all be automated, I believe it makes sense for us to internalize and live what we’ve just discussed. Not only does that improve our code, but also us as professionals.
 
 I> That exception there in parentheses, about unintermittent controls, looks innocent but hints at the future of professional development: automatic live feedback. A priority for modern editors of which some ([Visual Studio Code](https://code.visualstudio.com/), [WebStorm](https://www.jetbrains.com/webstorm/)) have begun to pick it up, this will mean to instantly, on editing, get notifications on unused code, inconsistencies, redundancies, validation issues, &c. The way still seems long at this point: We’ll need great UI and AI features to make it all work effectively, from easy ways to mark false positives to train the software false negatives. Still it’s what’s missing from the current way of development in which code is only evaluated once we checked it into a repository or deployed it to a staging or production environment.

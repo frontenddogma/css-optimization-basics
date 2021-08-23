@@ -1,12 +1,12 @@
 # Overview
 
-CSS optimization is important because we, especially as individuals, don’t always write perfectly efficient, maintainable, and understandable code.
+CSS optimization is important because we, especially as individuals, don’t always write perfectly efficient, understandable, and maintainable code.
 
 Writing quality code, however, is what makes us professionals.
 
-CSS optimization does not entail “everything” that can be done with a style sheet; it entails what makes it more efficient, maintainable, and understandable while looking for a good balance.
+CSS optimization does not entail “everything” that can be done with a style sheet; it entails what makes it more efficient, understandable, and maintainable, while looking for a good balance.
 
-As professionals, we benefit from doing one (or two, or three, but not eighty-five) things really, really well; as web developers, it’s not a bad idea if CSS is one of those things.
+As professionals, we benefit from doing one (or two, or three, but not eighty-five) things really, really well; as web developers, it’s a good idea if CSS is one of those things.
 
 It’s useful when we know our needs.
 
@@ -48,7 +48,7 @@ For these last two observations, maintainability and maintenance are critical.
 
 `!important` is not an obstacle to maintenance; it’s a tool.
 
-One of the most important principles is separation of concerns. Content, structure, presentation, behavior are all different concerns.
+One of the most important principles is separation of concerns. Content, structure, presentation, behavior are different concerns.
 
 In code, we don’t want to repeat ourselves.
 
@@ -62,13 +62,13 @@ For production, we remove all unneeded characters. All of them.
 
 We typically want to reference one style sheet that includes all styles, though there are cases of high complexity where a modular approach leads to better performance.
 
-(We cannot be absolved from thinking and making decisions about our particular projects.)
+(We cannot be absolved from thinking and making decisions about our projects.)
 
 (Exceptions prove the rule.)
 
 We regularly review our CSS, both pre-production and in production.
 
-We are professionals and we aim for quality work.
+We are professionals.
 
 As professionals, we feel responsible, we hold ourselves accountable, and we set high ethical standards for ourselves.
 

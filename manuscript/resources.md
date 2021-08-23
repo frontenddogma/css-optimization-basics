@@ -1,7 +1,7 @@
 {sample: true}
 # Resources
 
-The following is a small selection of useful _CSS_ tools, sites, and books. They’re geared towards more experienced developers, yet novice developers may benefit from them as much, if not more, than staying with beginner materials.
+The following is a small selection of useful CSS tools, sites, and books. They’re geared towards more experienced developers, yet novice developers may benefit from them as much, if not more, than staying with beginner materials.
 
 ## Tools
 
@@ -14,8 +14,10 @@ A few handy CSS tools, for manual and automated testing:
 * css-minify [package](https://www.npmjs.com/package/css-minify), to minify CSS
 * CSSJanus Left-to-Right-to-Left-ifyer [online tool](https://cssjanus.appspot.com/) and [script](https://code.google.com/archive/p/cssjanus/), to convert CSS directionality (LTR/RTL)
 * CSSLint [online tool](http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
+* CSSO [package](https://www.npmjs.com/package/csso), to optimize and minify CSS
 * CSSTidy [online tool](https://hell.meiert.org/aux/optimize/css/) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
 * Minify [online tool](https://www.minifier.org/) and [script](https://github.com/matthiasmullie/minify), to minify CSS
+* Minify [package](https://www.npmjs.com/package/minify), to minify CSS
 * ngx-unused-css [package](https://www.npmjs.com/package/ngx-unused-css), to remove unused CSS (for Angular)
 * pre-commit [script](https://github.com/WouterSioen/pre-commit), to validate syntax errors in CSS (through CSS Lint) and SCSS (through SCSS Lint)
 * Prettier [package](https://prettier.io/), to format CSS
@@ -36,6 +38,7 @@ A small collection of initiatives and individuals covering CSS:
 * [Atkins Jr., Tab](https://www.xanthir.com/blog/)
 * [Barker, Michelle](https://css-irl.info/)
 * [Can I Use](https://caniuse.com/)
+* [Comeau, Josh W.](https://www.joshwcomeau.com/)
 * [CSS-Tricks](https://css-tricks.com/)
 * [Eckles, Stephanie](https://moderncss.dev/)
 * [Frain, Ben](https://benfrain.com/)
@@ -44,6 +47,8 @@ A small collection of initiatives and individuals covering CSS:
 * [Meiert, Jens Oliver](https://meiert.com/en/blog/categories/development/)
 * [Meyer, Eric](https://meyerweb.com/)
 * [Roberts, Harry](https://csswizardry.com/)
+* [Shadeed, Ahmad](https://ishadeed.com/)
+* [Van Damme, Bramus](https://www.bram.us/)
 * [W3C (Cascading Style Sheets)](https://www.w3.org/Style/CSS/)
 * [Verou, Lea](https://lea.verou.me/)
 * [Weyl, Estelle](http://www.standardista.com/)
