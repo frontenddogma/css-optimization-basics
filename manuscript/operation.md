@@ -435,7 +435,7 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
   - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting de-duplication to sections, limit search scope to these sections).
   - For each duplicate declaration (the actual work):
     + Determine which respective rule should come first in the style sheet (for this, one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
-    + If this first rule contains additional declarations, i.e., declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original. Keep the discovered duplicate in the first rule and remove the other declarations, and vice-versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
+    + If this first rule contains additional declarations, i.e., declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original. Keep the discovered duplicate in the first rule and remove the other declarations, and vice versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
     + Copy the selectors of the _other_ rules that contain the respective duplicate declaration to the rule that comes first.
     + Be sure to remove the duplicate declarations whose selectors have just been copied up in the style sheet, and to remove the entire rule if the rule only consisted of the now moved duplicate declaration.
     + (Repeat.)
