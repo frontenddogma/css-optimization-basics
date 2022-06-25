@@ -148,7 +148,7 @@ This is trivial and, at the same time, automatable: _Sort declarations alphabeti
 
 C> _Example: Where to add `transform: rotateY(10deg)` so that everyone can immediately find it?_
 
-This is trivial and automatable but still, in my eyes, one of the key optimization methods. That’s because an almost failsafe, easily repeatable, soon to become habitual, quickly communicable, and quite universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme, like the alphabetical ordering of declarations, at once makes our code more understandable and helps anyone to navigate it.
+This is trivial and automatable but still, in my eyes, one of the key optimization methods. That’s because an almost failsafe, easily repeatable, soon to become habitual, quickly communicable, and universal method to structure our code is something that has tremendous value. A simple and robust sorting scheme, like the alphabetical ordering of declarations, at once makes our code more understandable and helps anyone to navigate it.
 
 I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we’ll write better code once we can do it ourselves and not require a processor to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we benefit from internalizing this way of sorting.)
 
