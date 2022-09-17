@@ -7,7 +7,9 @@ Other titles by Jens Oliver Meiert:
 
 ## [_The Web Development Glossary_](https://meiert.com/en/blog/the-web-development-glossary/) (2020)
 
-> What is a BHO? Goanna? Hooking? How about a principal box? Or the Ten-Second Rule? Covering more than 2,000 terms ranging from A11Y to Zsh, and including explanations from Wikipedia and the MDN Web Docs, _The Web Development Glossary_ is a comprehensive compendium rich in information for both novice and expert developers.
+> What is a BHO? Goanna? Hooking? How about a principal box? Or the Ten-Second Rule?
+>
+> Covering more than 2,000 terms ranging from A11Y to Zsh, and including explanations from Wikipedia and the MDN Web Docs, _The Web Development Glossary_ is a comprehensive compendium rich in information for both novice and expert developers.
 
 Available at [Apple Books](https://books.apple.com/us/book/the-web-development-glossary/id1571261882?ls=1), [Kobo](https://www.kobo.com/us/en/ebook/the-web-development-glossary), [Google Play Books](https://play.google.com/store/books/details/Jens_Oliver_Meiert_The_Web_Development_Glossary?id=nYjhDwAAQBAJ), and [Leanpub](https://leanpub.com/web-development-glossary).
 
