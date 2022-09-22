@@ -430,7 +430,7 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 * Search for duplicate declarations:
   - For new style sheets: after the initial setup has been done.
   - For new features and bug fixes: after the respective work has been done.
-  - Tip: If version control highlighting for file changes is not enough, temporarily indent changed declarations to only check for their repetition.
+  - Tip: If version control highlighting for file changes is not enough, temporarily indent changed declarations only to check for their repetition.
 * Dissolve duplicate declarations:
   - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting de-duplication to sections, limit search scope to these sections).
   - For each duplicate declaration (the actual work):
