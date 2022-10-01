@@ -42,7 +42,7 @@ The most basic way to determine quality is through validation, and high error co
 
 Every piece of code gets at least touched _twice_.
 
-Web Design is a process.
+Web design is a process.
 
 For these last two observations, maintainability and maintenance are critical.
 
