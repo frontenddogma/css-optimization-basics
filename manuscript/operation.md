@@ -364,7 +364,7 @@ What is code quality, or quality code? A great question for technical interviews
 
 How can we tell that what we’re coding works? We test. How can we tell it’s error-free? We validate. Yes, testing also exposes errors in our code, and we depend on validators to be up-to-date on the latest, which they aren’t always. Still, validation plays the critical part in making sure that our code is syntactically correct, and that it uses selectors and declarations (CSS) as well as a document structure and elements and attributes (HTML) that actually exist.
 
-There’s a gray area when the respective working groups have just come up with new features (that is, recently extended the specifications), and the validator teams haven’t caught up yet. That gray area must not prevent us from validating. That would be like refusing to use cellphones unless the batteries are fully charged, or declining to wear clothes unless they’re brand new.
+There’s a gray area when the respective working groups have just come up with new features (that is, recently extended the specifications), and the validator teams haven’t caught up yet. That gray area must not prevent us from validating. That would be like refusing to use cellphones unless the batteries are fully charged, or declining to wear clothes unless they’re brand-new.
 
 ![“We found the following errors.”](resources/images/validation.png)
 
