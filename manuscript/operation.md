@@ -347,13 +347,13 @@ Here are some actions that help keep unused CSS in check:
 The Unused CSS crawler has the most to offer, telling us with considerable certainty what’s used and what’s not. (It has become one of my favorite tools for CSS rule hygiene optimization.)
 
 I> Images have always been a matter of optimization on the Web. At first they hadn’t been recognized as something to optimize for and rather, like the infamous “spacer GIFs,” served the widespread deterioration of websites by being used endlessly to build entire layouts in conjunction with layout tables. But then our attention was on
-I> 
+I>
 I> * what formats to use for quality and compression (“GIF or JPG?”);
 I> * how to compress images;
 I> * how to limit the number of images (and the number of HTTP requests, through sprites and such);
 I> * whether to use images (data URIs);
 I> * and again, what formats to use (“…or SVG? WebP?”).
-I> 
+I>
 I> These topics, without the redundancy of the formats and compression questions, are exactly the ones we still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization—it’s image optimization. And Addy Osmani has written [such a book](https://images.guide/).
 
 ## Quality
@@ -407,9 +407,9 @@ One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/w
 Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets). This is especially true when we DRY our style sheets. As we’ll see, we can DRY individual CSS modules, but we can also DRY our style sheets entirely, something for which module separation is inconvenient. (This is another example of where our work requires a feeling for priority and balance. We may opt for a different approach when our projects are particularly large.)
 
 T> Be cautious around [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/), and similar conventions [including [Tailwind](https://tailwindcss.com/)]. Look closely how they help, and how they hinder you.
-T> 
+T>
 T> In a basic sense, what they do is address some of the problems of _complex_ web development, but they also curb freedom and flexibility. In some cases (Atomic CSS), they may end up making for fancier beginner-style code.
-T> 
+T>
 T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance (that’s the TSA writing CSS right there)—but also none of the incredible elegance achieved through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate _all_ the advantages of CSS.
 
 ### Don’t Repeat Yourself

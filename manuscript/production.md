@@ -62,7 +62,7 @@ C> _Example: Random, now minified CSS snippet._
 As mentioned at the beginning of this book, we benefit from automating our work. As this optimization step is ugly to perform manually, we have a case here that should be and that is almost _always_ automated.
 
 T> For both character and code optimization there are several web-based tools and scripts, for example:
-T> 
+T>
 T> * [minifier.org](https://www.minifier.org/) based on Matthias Mullie’s [Minify](https://github.com/matthiasmullie/minify)
 T> * [YUI CSS Compressor](https://hell.meiert.org/aux/compress/css/gui/) based on Yahoo’s [YUI CSS Compressor PHP port](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)
 T> * [CSS Minifier](https://cssminifier.com/) by Andrew Chilton
@@ -152,7 +152,7 @@ At the finishing optimization step, we want to regularly employ code reviews and
 
 The reason to do automated checks is efficiency, as we don’t want to spend human time on constantly validating or otherwise confirming the quality of our style sheets.
 
-The reason to do manual checks is to make sure that nothing went wrong and that we didn’t miss an optimization step, a configuration option, or something else that could have improved the output. 
+The reason to do manual checks is to make sure that nothing went wrong and that we didn’t miss an optimization step, a configuration option, or something else that could have improved the output.
 
 * Automated tests: on deployment, daily
 * Manual tests: on major updates, weekly
