@@ -282,7 +282,7 @@ The cases we’ll look at now, still in our section on “operational” optimiz
 
 Selector performance is _not_ something to optimize for. Selector performance is irrelevant. The price we pay for optimizing for selector performance is terrible: We micromanage our work for gains that aren’t noticeable.
 
-In 2009, Steve Souders contributed perhaps the first insights into the topic, and [one of his main articles](https://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/) on the subject should have made us think. First, in his tests, even style sheets with _18,000_ rules were rendered within _600&nbsp;ms_. Then, Steve explained his hypothesis: “For most web sites, the possible performance gains from optimizing CSS selectors will be small, and are not worth the costs.”
+In 2009, Steve Souders contributed perhaps the first insights into the topic, and [one of his main articles](https://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/) on the subject should have made us think. First, in his tests, even style sheets with _18,000_ rules were rendered within _600 ms_. Then, Steve explained his hypothesis: “For most web sites, the possible performance gains from optimizing CSS selectors will be small, and are not worth the costs.”
 
 Perhaps people misunderstood when Steve went on to write, “There are some types of CSS rules and interactions with JavaScript that can make a page noticeably slower. This is where the focus should be.”—What we saw was an [undue focus](https://meiert.com/en/blog/performance-of-css-selectors/) on selector performance and an outright childish ban of selectors, notably, the universal selector.
 

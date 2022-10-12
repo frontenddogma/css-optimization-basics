@@ -79,11 +79,11 @@ T> * [UglifyCSS](https://www.npmjs.com/package/uglifycss)
 
 We can work with as many style sheet and preprocessor files as we want, even though that makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”). However, for production, we should make sure we combine them into a single file to load. That’s important for more effective compression and, even more so, to reduce the number of HTTP requests. ([HTTP/2 alleviates](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x) but at the moment I still advise to limit the number of requests.)
 
-The basic idea behind this is that HTTP request overhead makes for 500–700 bytes (Steve Souders, Kyle Simpson), costing “about 100&nbsp;ms” (Kyle Simpson).
+The basic idea behind this is that HTTP request overhead makes for 500–700 bytes (Steve Souders, Kyle Simpson), costing “about 100 ms” (Kyle Simpson).
 
-This data has led to the recommendation to inline files smaller than 1&nbsp;KB, but not bigger than 4&nbsp;KB (Guy Podjarny).
+This data has led to the recommendation to inline files smaller than 1 KB, but not bigger than 4 KB (Guy Podjarny).
 
-Let’s assume that most sites that use several style sheets (to then be combined to a single one for production) work with files that are larger than 1&nbsp;KB. As such, it’s useful to have these as individual files (and not inline). For each style sheet that we get rid of and merge, we save roughly half a kilobyte and 10&nbsp;ms. This leads to the general recommendation to merge all styles into one file and link that from our documents.
+Let’s assume that most sites that use several style sheets (to then be combined to a single one for production) work with files that are larger than 1 KB. As such, it’s useful to have these as individual files (and not inline). For each style sheet that we get rid of and merge, we save roughly half a kilobyte and 10 ms. This leads to the general recommendation to merge all styles into one file and link that from our documents.
 
 Yet, there must be something else. What about small sites, and what about overall file size and caching?
 
