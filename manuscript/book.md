@@ -12,6 +12,6 @@ While author and publisher have used good faith efforts to ensure that the infor
 
 Contact +1-754-400-0999 or info@frontenddogma.com for more information.
 
-Follow Frontend Dogma on Twitter: [@frontenddogma](https://twitter.com/frontenddogma)
+Follow Frontend Dogma [on Twitter](https://twitter.com/frontenddogma) or [on Mastodon](https://mas.to/@frontenddogma).
 
-[1.4.17]
+[1.4.18]
