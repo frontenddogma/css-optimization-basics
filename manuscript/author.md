@@ -13,11 +13,11 @@ Other titles by Jens Oliver Meiert:
 
 Available at [Apple Books](https://books.apple.com/us/book/the-web-development-glossary/id1571261882?ls=1), [Kobo](https://www.kobo.com/us/en/ebook/the-web-development-glossary), [Google Play Books](https://play.google.com/store/books/details/Jens_Oliver_Meiert_The_Web_Development_Glossary?id=nYjhDwAAQBAJ), and [Leanpub](https://leanpub.com/web-development-glossary).
 
-## _Upgrade Your HTML_ (2019–2021)
+## _Upgrade Your HTML_ (2019–2022)
 
 > The _Upgrade Your HTML_ series is about one thing: Picking examples of HTML in the wild, and explaining how to make that code better. Kindly. Constructively. Thoroughly, as finding a balance between detail and brevity permits.
 
-Available at [Amazon](https://www.amazon.com/dp/B094W54R2N/?tag=j9t-21-20), [Apple Books](https://books.apple.com/us/author/jens-oliver-meiert/id1569607039), [Kobo](https://www.kobo.com/us/en/search?query=upgrade+your+html), [Google Play Books](https://play.google.com/store/books/series?id=5AksGwAAABDJEM), and [Leanpub](https://leanpub.com/b/upgrade-your-html-123).
+Available at [Amazon](https://www.amazon.com/dp/B094W54R2N/?tag=j9t-21-20), [Apple Books](https://books.apple.com/us/author/jens-oliver-meiert/id1569607039), [Kobo](https://www.kobo.com/us/en/search?query=upgrade+your+html), [Google Play Books](https://play.google.com/store/books/series?id=5AksGwAAABDJEM), and [Leanpub](https://leanpub.com/b/upgrade-your-html-1-4).
 
 ## [_On Web Development_](https://meiert.com/en/blog/on-web-development/) (2015)
 
