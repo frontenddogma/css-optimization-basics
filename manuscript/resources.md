@@ -15,7 +15,7 @@ A few handy CSS tools, for manual and automated testing:
 * CSSJanus Left-to-Right-to-Left-ifyer [online tool](https://cssjanus.appspot.com/) and [script](https://code.google.com/archive/p/cssjanus/), to convert CSS directionality (LTR/RTL)
 * CSSLint [online tool](http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
 * CSSO [package](https://www.npmjs.com/package/csso), to optimize and minify CSS
-* CSSTidy [online tool](https://hell.meiert.org/aux/optimize/css/) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
+* CSSTidy [online tool](https://www.tenman.info/csstidy/css_optimiser.php) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
 * Minify [online tool](https://www.minifier.org/) and [script](https://github.com/matthiasmullie/minify), to minify CSS
 * Minify [package](https://www.npmjs.com/package/minify), to minify CSS
 * ngx-unused-css [package](https://www.npmjs.com/package/ngx-unused-css), to remove unused CSS (for Angular)
@@ -28,7 +28,7 @@ A few handy CSS tools, for manual and automated testing:
 * UglifyCSS [package](https://www.npmjs.com/package/uglifycss), to minify CSS
 * UnCSS [online tool](https://uncss-online.com/), [script](https://github.com/giakki/uncss), and [package](https://www.npmjs.com/package/uncss), to remove unused CSS
 * Unused CSS [online tool](https://unused-css.com/), to remove unused CSS
-* YUI CSS Compressor [online tool](https://hell.meiert.org/aux/compress/css/gui/) and [script](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port), to format and minify CSS
+* YUI CSS Compressor [online tool](https://web.archive.org/web/20210922145733/https://hell.meiert.org/aux/compress/css/gui/) and [script](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port), to format and minify CSS
 
 ## Websites
 
