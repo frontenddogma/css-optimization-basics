@@ -5,13 +5,11 @@ Jens Oliver Meiert is a German web developer and author who has been a technical
 
 Other titles by Jens Oliver Meiert:
 
-## [_The Web Development Glossary_](https://meiert.com/en/blog/the-web-development-glossary/) (2020)
+## [_The Web Development Glossary 3K_](https://meiert.com/en/blog/the-web-development-glossary-3k/) (2023)
 
-> What is a BHO? Goanna? Hooking? How about a principal box? Or the Ten-Second Rule?
->
-> Covering more than 2,000 terms ranging from A11Y to Zsh, and including explanations from Wikipedia and the MDN Web Docs, _The Web Development Glossary_ is a comprehensive compendium rich in information for both novice and expert developers.
+> What is a BHO? CQRS? An EMD? What is Goanna? Hooking? Sharding? How about dynamic color, the phoenix server pattern, or the rules of ARIA? Covering more than 3,000 terms and concepts, and including explanations from Wikipedia and MDN Web Docs, _The Web Development Glossary 3K_ provides an overview of web development unlike any other book or site.
 
-Available at [Apple Books](https://books.apple.com/us/book/the-web-development-glossary/id1571261882?ls=1), [Kobo](https://www.kobo.com/us/en/ebook/the-web-development-glossary), [Google Play Books](https://play.google.com/store/books/details/Jens_Oliver_Meiert_The_Web_Development_Glossary?id=nYjhDwAAQBAJ), and [Leanpub](https://leanpub.com/web-development-glossary).
+Available at [Apple Books](https://books.apple.com/us/book/the-web-development-glossary-3k/id6453522940?ls=1), [Kobo](https://www.kobo.com/us/en/ebook/the-web-development-glossary-3k), [Google Play Books](https://play.google.com/store/books/details?id=eFHNEAAAQBAJ), and [Leanpub](https://leanpub.com/web-development-glossary-3k).
 
 ## _Upgrade Your HTML_ (2019–2022)
 
