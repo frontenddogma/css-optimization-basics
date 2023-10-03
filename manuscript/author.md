@@ -15,7 +15,7 @@ Available at [Apple Books](https://books.apple.com/us/book/the-web-development-g
 
 > The _Upgrade Your HTML_ series is about one thing: Picking examples of HTML in the wild, and explaining how to make that code better. Kindly. Constructively. Thoroughly, as finding a balance between detail and brevity permits.
 
-Available at [Amazon](https://www.amazon.com/dp/B094W54R2N/?tag=j9t-21-20), [Apple Books](https://books.apple.com/us/author/jens-oliver-meiert/id1569607039), [Kobo](https://www.kobo.com/us/en/search?query=upgrade+your+html), [Google Play Books](https://play.google.com/store/books/series?id=5AksGwAAABDJEM), and [Leanpub](https://leanpub.com/b/upgrade-your-html-1-4).
+Available at [Amazon](https://www.amazon.com/dp/B094W54R2N/?tag=j9t-21-20), [Apple Books](https://books.apple.com/de/book-series/upgrade-your-html/id1569607037), [Kobo](https://www.kobo.com/us/en/search?query=upgrade+your+html), [Google Play Books](https://play.google.com/store/books/series?id=5AksGwAAABDJEM), and [Leanpub](https://leanpub.com/b/upgrade-your-html-1-4).
 
 ## [_On Web Development_](https://meiert.com/en/blog/on-web-development/) (2015)
 
