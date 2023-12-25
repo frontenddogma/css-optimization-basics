@@ -11,8 +11,8 @@ In the first versions of _CSS Optimization Basics_, there are probably some erro
 
 As this is an indie book, consider these options:
 
-1. [File an issue](https://github.com/j9t/css-optimization-basics/issues/new) for any problems you find—and get mentioned as a book contributor.
-2. [Submit a pull request](https://github.com/j9t/css-optimization-basics/pulls) for specific fixes and suggestions—and, if accepted, get mentioned as a book contributor, too.
+1. [File an issue](https://github.com/frontenddogma/css-optimization-basics/issues/new) for any problems you find—and get mentioned as a book contributor.
+2. [Submit a pull request](https://github.com/frontenddogma/css-optimization-basics/pulls) for specific fixes and suggestions—and, if accepted, get mentioned as a book contributor, too.
 
 With increasing quality and maturity of the book, the price of ebook may go up (probably only up to the price of [some of Jens’s self-published books](https://www.goodreads.com/author/list/13623828.Jens_Oliver_Meiert)). That still won’t be much for a tech book, even a short one, however. Everyone can always grab the free version or an update here, too; if you purchase a copy, please keep that in mind as book sellers may have different ways of sharing updates.
 
