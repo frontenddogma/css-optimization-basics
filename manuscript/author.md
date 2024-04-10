@@ -19,7 +19,7 @@ Available at [Amazon](https://www.amazon.com/dp/B0B4SD84B2/?tag=meiert-20), [App
 
 ## [_On Web Development_](https://meiert.com/en/blog/on-web-development/) (2015)
 
-> _On Web Development_ bundles 134 articles and the last 11 years of technical writings by Jens Oliver Meiert (meiert.com). Freshly reordered and commented, the articles cover processes and maintenance, HTML and CSS, standards, as well as development and design in general; they range from coding basics and principles, to carefully scathing criticism, to tips and tricks and trivia.
+> _On Web Development_ bundles 134 articles and the last 11 years of technical writings by Jens Oliver Meiert (meiert.com). Freshly reordered and commented, the articles cover processes and maintenance, HTML and CSS, standards, as well as development and design in general; they include coding basics and principles, carefully scathing criticism, and tips and tricks and trivia.
 
 Available at [Amazon](https://www.amazon.com/dp/B010PQPT90/?tag=meiert-20).
 

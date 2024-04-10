@@ -1,6 +1,6 @@
 # Operational Optimization
 
-In this section, we’re going to talk about our options for writing higher quality CSS while we’re right at it, during development and in operation. This type of optimization benefits us as developers. (The next section will deal with options to optimize for production, that is, for release and live use, and for the benefit of our users.)
+In this section, we’re going to talk about our options for writing higher-quality CSS while we’re right at it, during development and in operation. This type of optimization benefits us as developers. (The next section will deal with options to optimize for production, that is, for release and live use, and for the benefit of our users.)
 
 To get a better look at CSS itself, it didn’t seem useful to cover preprocessors. Likewise, we’re not going to discuss documentation or guidelines, either, like code comments or formatting standards. Documentation is an entirely different topic that has more to do with maintenance than with optimization. Coding guidelines, as important as they are and as many of them we can set up, are often a matter of preference and don’t necessarily have a bearing on quality (for more on coding guidelines, see [_The Little Book of HTML/CSS Coding Guidelines_](https://www.oreilly.com/library/view/the-little-book/9781492048459/)). We’re already applying one of the mantras: keeping it simple.
 
