@@ -1,10 +1,10 @@
-# Overview
+# Summary
 
 CSS optimization is important because we, especially as individuals, don’t always write perfectly efficient, understandable, and maintainable code.
 
 Writing quality code, however, is what makes us professionals.
 
-CSS optimization does not entail “everything” that can be done with a style sheet; it entails what makes it more efficient, understandable, and maintainable, while looking for a good balance.
+CSS optimization does not entail “everything” that can be done with a style sheet; it entails what makes it more efficient, understandable, and maintainable, while looking for a healthy balance.
 
 As professionals, we benefit from doing one (or two, or three, but not eighty-five) things really, really well; as web developers, it’s a good idea if CSS is one of those things.
 
@@ -30,7 +30,7 @@ Simple CSS also likes shorthands (yes).
 
 Speed is important.
 
-Selector performance doesn’t matter and inline CSS is a crime.
+Selector performance doesn’t matter and inline CSS often is a crime.
 
 (Web development is not software development.)
 
@@ -38,13 +38,13 @@ Some declarations may be slower than others but there’s rarely reason for pani
 
 Rule hygiene may be most important for CSS performance.
 
-The most basic way to determine quality is through validation, and high error counts mean low quality scores.
+The first step in determining quality is through validation, where higher error counts mean lower quality scores.
 
 Every piece of code gets at least touched _twice_.
 
 Web design is a process.
 
-For these last two observations, maintainability and maintenance are critical.
+(For these last two observations, maintainability and maintenance are critical.)
 
 `!important` is not an obstacle to maintenance; it’s a tool.
 

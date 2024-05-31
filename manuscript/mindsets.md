@@ -16,7 +16,7 @@ Knowing our goals and needs is important because it’s difficult to meet a goal
 
 ## Stay in the Present
 
-Without becoming self-helpish or philosophical, another useful mindset is to [stay in the present](https://meiert.com/en/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (documentation, design patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know is needed _with certainty_.
+Without becoming philosophical, another useful mindset is to [stay in the present](https://meiert.com/en/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (documentation, design patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know is needed _with certainty_.
 
 This mindset matters because it keeps our code base and our documentation clean, and hence contributes to our focus (“Do One Thing Really, Really Well,” “Keep It Simple”).
 
@@ -26,7 +26,7 @@ The idea to keep it simple has a lazy touch, yet requires a high level of skill.
 
 As such, keeping things simple requires that we thoroughly understand our field—the core technologies, first and foremost, but everything in between and to the sides as well. And it means economy of motion, because we don’t want to engage in something we don’t need to do.
 
-As a mindset, keeping it simple is truly grandiose, and you may not want to pick up a book on minimalism but rather one about focus—one of my recommendations is Gary Keller’s [_The One Thing_](https://www.the1thing.com/).
+As a mindset, keeping it simple is truly grandiose. To dive deeper, you may not need to start with a book on simplicity or minimalism, but rather one about focus—my recommendation is Gary Keller’s [_The One Thing_](https://www.the1thing.com/).
 
 ## Automate
 
