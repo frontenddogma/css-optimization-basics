@@ -13,7 +13,7 @@ A few handy CSS tools, for manual and automated testing:
 * [CSS Validation Service online tool](https://jigsaw.w3.org/css-validator/) and [script](https://github.com/w3c/css-validator), to validate CSS
 * [css-minify package](https://www.npmjs.com/package/css-minify), to minify CSS
 * [CSSJanus Left-to-Right-to-Left-ifyer script](https://code.google.com/archive/p/cssjanus/), to convert CSS directionality (LTR/RTL)
-* [CSSLint online tool](http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
+* [CSSLint online tool](https://web.archive.org/web/20240503225408/http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
 * [CSSO package](https://www.npmjs.com/package/csso), to optimize and minify CSS
 * [CSSTidy online tool](https://www.tenman.info/csstidy/css_optimiser.php) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
 * [Minify online tool](https://www.minifier.org/) and [script](https://github.com/matthiasmullie/minify), to minify CSS
