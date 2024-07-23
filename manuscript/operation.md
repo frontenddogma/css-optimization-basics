@@ -425,7 +425,7 @@ Using declarations just once (“UDJO”) is an old technique. It means what it 
 It’s a tangible optimization step in that we’re still encouraged to write CSS [the natural way](https://meiert.com/en/blog/css-dry-and-optimization/), to then go over what we’ve written to make sure we leave no repetition behind. That process is roughly [as follows](https://meiert.com/en/blog/dry-css/):
 
 * Write CSS.
-* Decide on DRY boundaries: section (functionally separate CSS parts) or file, component, `@media` level?
+* Decide on DRY boundaries: section (functionally separate CSS parts) or file, component, at-rule level?
 * Be sure to format code consistently, as `background: none`, `background:none`, and `background-image: none` could all mean the same but make our task of finding duplicates unnecessarily complicated.
 * Search for duplicate declarations:
   - For new style sheets: after the initial setup has been done.
