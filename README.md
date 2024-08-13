@@ -5,7 +5,7 @@ This is the source of the open and living book [_CSS Optimization Basics_](https
 You have two options to get the book.
 
 1. You can read the book here, for free.
-2. For a small amount you can purchase a nicer electronic copy at [Amazon](https://www.amazon.com/dp/B07TVW1ZT8/?tag=meiert-20), [Apple Books](https://books.apple.com/us/book/css-optimization-basics/id1571260941?ls=1), [Kobo](https://www.kobo.com/us/en/ebook/css-optimization-basics), [Google Play Books](https://play.google.com/store/books/details/Jens_Oliver_Meiert_CSS_Optimization_Basics?id=xgTfDwAAQBAJ), [Leanpub](https://leanpub.com/css-optimization-basics), [Gumroad](https://j9t.gumroad.com/l/YzeaH), or [Payhip](https://payhip.com/b/Bnie).
+2. For a small amount you can purchase a nicer electronic copy at [Amazon](https://www.amazon.com/dp/B07TVW1ZT8/?tag=meiert-20), [Apple Books](https://books.apple.com/us/book/css-optimization-basics/id1571260941?ls=1), [Kobo](https://www.kobo.com/us/en/ebook/css-optimization-basics), [Google Play Books](https://play.google.com/store/books/details/Jens_Oliver_Meiert_CSS_Optimization_Basics?id=xgTfDwAAQBAJ), [Leanpub](https://leanpub.com/css-optimization-basics), or [Gumroad](https://j9t.gumroad.com/l/YzeaH)<!-- , or [Payhip](https://payhip.com/b/Bnie) -->.
 
 In the first versions of _CSS Optimization Basics_, there are probably some errors and typos. There will also be more that not only could but _should_ be said about CSS optimization. (The book is a lot about the _craft_ and the _basics_ of writing CSS.)
 
