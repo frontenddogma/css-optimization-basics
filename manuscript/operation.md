@@ -272,7 +272,7 @@ Because of their value in making code more compact, and their generally positive
 
 ## Performance
 
-Performance is an obvious goal to optimize for. The faster, the better. We know that the [user experience improves when everyone gets what they want, quickly](https://www.nngroup.com/articles/website-response-times/), and that [with better speed, conversions increase as well](https://blog.kissmetrics.com/speed-is-a-killer/).
+Performance is an obvious goal to optimize for. The faster, the better. We know that the [user experience improves when everyone gets what they want, quickly](https://www.nngroup.com/articles/website-response-times/), and that [with better speed, conversions increase as well](https://web.archive.org/web/20110511211112/https://blog.kissmetrics.com/speed-is-a-killer/).
 
 What we can also say is that improving rendering performance may not be nearly as effective as improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not as helpful for performance as is compressing images. These calculations are generally done so quickly that the respective issues don’t matter in practice. (There’s nothing to worry about when [omitting optional tags and unneeded quotes](https://meiert.com/en/blog/optional-html/).)
 
