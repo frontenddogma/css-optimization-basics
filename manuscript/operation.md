@@ -18,7 +18,7 @@ Consistency is a _foundational_ part of optimization; it’s the first step of o
 
 ```css
 .feeds ul,
-.posts ul ,
+.posts ul,
 .events ul {
   list-style: none;
   margin: 0
@@ -73,7 +73,7 @@ C> _Example: Random sample code._
 
 ```css
 .feeds ul,
-.posts ul ,
+.posts ul,
 .events ul,
 .authors ul {
   list-style: none;
