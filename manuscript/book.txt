@@ -1,5 +1,5 @@
-acknowledgments.md
 intro.md
+acknowledgments.md
 mindsets.md
 operation.md
 production.md
