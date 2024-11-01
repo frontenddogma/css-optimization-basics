@@ -12,6 +12,6 @@ While this book has been produced with great care, the author, publisher, and co
 
 Contact +34-610859489 or info@frontenddogma.com for questions and more information.
 
-Follow [Frontend Dogma on Mastodon](https://mas.to/@frontenddogma) ([or other networks](https://frontenddogma.com/posts/2024/frontend-dogma-on-the-web/)).
+Follow [Frontend Dogma on Mastodon](https://mas.to/@frontenddogma) ([and other networks](https://frontenddogma.com/posts/2024/frontend-dogma-on-the-web/)).
 
-[1.5.14]
+[1.5.15]
