@@ -159,7 +159,7 @@ Accordingly, CSS routines may look like this:
 * Automated tests: on deployment, daily
 * Manual tests: on major updates, weekly
 
-Manual checks can be swift—scan the output, perhaps re-formatted to be more readable. (If browser developer tools don’t suffice for an in-depth look, web-based services like [CSSTidy](https://www.tenman.info/csstidy/css_optimiser.php) allow us to “uncompress” a style sheet.)
+Manual checks can be swift—scan the output, perhaps re-formatted to be more readable. (If browser developer tools don’t suffice for an in-depth look, web-based services like [CSSTidy](https://www.codebeautifier.com/) allow us to “uncompress” a style sheet.)
 
 Automated checks take time to be set up properly and depend on needs and priorities. Solutions include free and paid services used in conjunction with task runners or hooked up to the respective CI pipeline. A simple setup may involve making use of [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to use a script like [pre-commit](https://github.com/WouterSioen/pre-commit) to validate and lint on commit. Nowadays there are more elegant options, notably [stylelint](https://stylelint.io/).
 
