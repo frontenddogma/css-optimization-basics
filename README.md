@@ -17,3 +17,16 @@ As this is an indie book, consider these options:
 With increasing quality and maturity of the book, the price of ebook may go up (probably only up to the price of [some of Jens’s self-published books](https://www.goodreads.com/author/list/13623828.Jens_Oliver_Meiert)). That still won’t be much for a tech book, even a short one, however. Everyone can always grab the free version or an update here, too; if you purchase a copy, please keep that in mind as book sellers may have different ways of sharing updates.
 
 This just for a start. The book is open as everything’s public and free, and it’s living as it’s going to be maintained both by Jens as well as everyone who likes to help make it better. 🥂
+
+## Table of Contents
+
+* [Acknowledgments](manuscript/acknowledgments.md)
+* [Introduction](manuscript/intro.md)
+* [Development Mindsets](manuscript/mindsets.md)
+* [Operational Optimization](manuscript/operation.md)
+* [Production Optimization](manuscript/production.md)
+* [Summary](manuscript/overview.md)
+* [Resources](manuscript/resources.md)
+* [Feedback](manuscript/feedback.md)
+* [About the Author](manuscript/author.md)
+* [About _CSS Optimization Basics_](manuscript/book.md)
