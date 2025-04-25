@@ -169,6 +169,6 @@ C> ⁂
 
 This concludes the basics of CSS optimization. We’ve covered the most important parts, and more than basics. I don’t say that to inflate the idea of “basics” but because pretty much everything else now depends on development paradigms, priorities, and the big picture.
 
-That, then, I’m willing to put to the test: Please share your thoughts on what else should be _required_ optimization steps. Share them privately by [contacting me](https://meiert.com/en/contact/), or share them publicly, perhaps tagging them so that others can find your views. For this, I propose the hashtag [`#cssoptim`](https://nitter.net/search?q=%23cssoptim).
+That, then, I’m willing to put to the test: Please share your thoughts on what else should be _required_ optimization steps. Share them privately by [contacting me](https://meiert.com/contact/), or share them publicly, perhaps tagging them so that others can find your views. For this, I propose the hashtag [`#cssoptim`](https://nitter.net/search?q=%23cssoptim).
 
 Other than that, it’s my wish that everyone, the aspiring CSS developer as well as the senior CSS tech lead, could take something from this book. Its value is surely related to how much you can take with you. To compound that value, we’ll finish with an overview and a selection of resources.

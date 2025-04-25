@@ -1,6 +1,6 @@
 # CSS Optimization Basics: An Open Living Book
 
-This is the source of the open and living book [_CSS Optimization Basics_](https://meiert.com/en/blog/css-optimization-basics/) by O’Reilly author and former Google tech lead [Jens Oliver Meiert](https://meiert.com/en/) (short: Jens).
+This is the source of the open and living book [_CSS Optimization Basics_](https://meiert.com/en/blog/css-optimization-basics/) by O’Reilly author and former Google tech lead [Jens Oliver Meiert](https://meiert.com/) (short: Jens).
 
 You have two options to get the book.
 

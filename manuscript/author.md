@@ -1,7 +1,7 @@
 {sample: true}
 # About the Author
 
-Jens Oliver Meiert is a German web developer and author who has been a technical lead at companies like [GMX](https://gmx.de/) and [Google](https://www.google.com/). He has written a few lightweight books about a variety of topics, notably quality web development. Online, he lives at [meiert.com](https://meiert.com/en/). Please say hello.
+Jens Oliver Meiert is a German web developer and author who has been a technical lead at companies like [GMX](https://gmx.de/) and [Google](https://www.google.com/). He has written a few lightweight books about a variety of topics, notably quality web development. Online, he lives at [meiert.com](https://meiert.com/). Please say hello.
 
 Other titles by Jens Oliver Meiert:
 
