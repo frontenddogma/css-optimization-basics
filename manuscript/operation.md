@@ -12,7 +12,7 @@ Understandability can, in part, be achieved through documentation and comments. 
 
 ### Consistency
 
-Consistency in the case of code means to write and format things the same way every time. With individual or [“level 1” consistency](https://meiert.com/en/blog/consistency-levels/), this means to be consistent with how we ourselves write code. With collective and “level 2” consistency, we strive to stay consistent within the realm that we work in, as when we touch third-party code and stick to their code style. And then there’s institutional or “level 3” consistency—being consistent with coding standards put up by our organization.
+Consistency in the case of code means to write and format things the same way every time. With individual or [“level 1” consistency](https://meiert.com/blog/consistency-levels/), this means to be consistent with how we ourselves write code. With collective and “level 2” consistency, we strive to stay consistent within the realm that we work in, as when we touch third-party code and stick to their code style. And then there’s institutional or “level 3” consistency—being consistent with coding standards put up by our organization.
 
 Consistency is a _foundational_ part of optimization; it’s the first step of optimization. Without consistency, other optimization work is a lot harder.
 
@@ -152,11 +152,11 @@ This is trivial and automatable but still, in my mind, one of the key optimizati
 
 I intentionally raise alphabetical sorting to “optimization status” because of its many benefits; our code will be better once we structure it, and we’ll write better code once we can do it ourselves and not require tooling to do that for us. (Not all CSS we’ll touch will have a script behind it that sorts for us, so we benefit from internalizing this way of sorting.)
 
-Sort declarations [alphabetically](https://meiert.com/en/blog/on-declaration-sorting/).
+Sort declarations [alphabetically](https://meiert.com/blog/on-declaration-sorting/).
 
 #### Selector Sorting
 
-Selector sorting is the antithesis to declaration sorting. It’s far less trivial to standardize and also more difficult to automate. (On a brief investigation it seems that until now, [my own draft](https://meiert.com/en/blog/how-to-order-css-selectors/) is the only public attempt at a system. I welcome feedback!)
+Selector sorting is the antithesis to declaration sorting. It’s far less trivial to standardize and also more difficult to automate. (On a brief investigation it seems that until now, [my own draft](https://meiert.com/blog/how-to-order-css-selectors/) is the only public attempt at a system. I welcome feedback!)
 
 Yet selector sorting is the next impactful method at our disposal to make style sheets consistent and, in a way, optimize them for further optimization. When it comes to maintenance, a defined and followed selector order is crucial to successfully DRYing up our style sheet declarations (“DRY” from “Don’t Repeat Yourself,” a principle that helps with maintenance). It makes us avoid an extra round of DRYing _selector groups_ and spares us from additional testing complexity.
 
@@ -214,7 +214,7 @@ em {
 }
 ```
 
-C> _Example: High level block elements, then text level elements, then classes and IDs, [&c.](https://meiert.com/en/blog/how-to-order-css-selectors/)_
+C> _Example: High level block elements, then text level elements, then classes and IDs, [&c.](https://meiert.com/blog/how-to-order-css-selectors/)_
 
 Although it seems that many teams of web developers have survived without a firm idea of how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal). More importantly, only then do we have a chance of eliminating unnecessary work caused by chance ordering. As we’ll see with the avoidance of repetition, that unnecessary work is otherwise awaiting us.
 
@@ -230,7 +230,7 @@ The goal of simplicity is important: Optimizing for it makes code more understan
 
 In times of a surprisingly alive OOCSS and BEM and Atomic CSS [and, later, Tailwind], ID and class naming has drowned as a developer topic, sinking to a second-order afterthought. And yet when we consider that not all web projects are super-complex mega sites with internationally distributed teams of dozens of developers and third-party agencies in automated testing and deployment environments, in order to warrant presentational naming schemes because our guideline and communication processes are so difficult to implement that no hand knows what the other hand is doing—short pause—, we don’t need or benefit from naming schemes that sacrifice understandability and maintainability for brief presentational class soups from the 90’s (Atomic CSS). The time to know how to name IDs and classes, and to use _both_ aren’t over yet; IDs aren’t blindly to be discarded, just as little as universal selectors, `!important`, or shorthands.
 
-The [rules for ID and class naming](https://meiert.com/en/blog/best-practice-ids-and-classes/) are simple and lasting:
+The [rules for ID and class naming](https://meiert.com/blog/best-practice-ids-and-classes/) are simple and lasting:
 
 * Keep use of IDs and classes to a _minimum_.
 * If needed, use _functional_ ID and class names; otherwise use _generic_ ID and class names.
@@ -242,7 +242,7 @@ Because the topic of ID and class naming, although a beginner topic, has been so
 
 #### Shorthands
 
-Shorthands—CSS declarations that combine other declarations, like `font`, `border`, or `animation`—are a useful part of CSS because they help to make CSS more minimal-simple. They allow us to write less code, though not necessarily more understandable code. This is a situation that perhaps made one camp declare that [CSS shorthands were an anti-pattern](https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/), and the other say [they weren’t](https://meiert.com/en/blog/css-shorthands/).
+Shorthands—CSS declarations that combine other declarations, like `font`, `border`, or `animation`—are a useful part of CSS because they help to make CSS more minimal-simple. They allow us to write less code, though not necessarily more understandable code. This is a situation that perhaps made one camp declare that [CSS shorthands were an anti-pattern](https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/), and the other say [they weren’t](https://meiert.com/blog/css-shorthands/).
 
 Modifying what I put to protocol as a part of that other camp, they’re both.
 
@@ -274,7 +274,7 @@ Because of their value in making code more compact, and their generally positive
 
 Performance is an obvious goal to optimize for. The faster, the better. We know that the [user experience improves when everyone gets what they want, quickly](https://www.nngroup.com/articles/website-response-times/), and that [with better speed, conversions increase as well](https://web.archive.org/web/20110511211112/https://blog.kissmetrics.com/speed-is-a-killer/).
 
-What we can also say is that improving rendering performance may not be nearly as effective as improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not as helpful for performance as is compressing images. These calculations are generally done so quickly that the respective issues don’t matter in practice. (There’s nothing to worry about when [omitting optional tags and unneeded quotes](https://meiert.com/en/blog/optional-html/).)
+What we can also say is that improving rendering performance may not be nearly as effective as improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not as helpful for performance as is compressing images. These calculations are generally done so quickly that the respective issues don’t matter in practice. (There’s nothing to worry about when [omitting optional tags and unneeded quotes](https://meiert.com/blog/optional-html/).)
 
 The cases we’ll look at now exemplify this situation. Performance is not nearly as clear-cut as it’s often presented.
 
@@ -284,7 +284,7 @@ Selector performance is _not_ something to optimize for. Selector performance is
 
 In 2009, Steve Souders contributed perhaps the first insights into the topic, and [one of his main articles](https://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/) on the subject should have made us think. First, in his tests, even style sheets with _18,000_ rules were rendered within _600 ms_. Then, Steve explained: “For most websites, the possible performance gains from optimizing CSS selectors will be small, and are not worth the costs.”
 
-Perhaps people misunderstood when Steve went on to write, “There are some types of CSS rules and interactions with JavaScript that can make a page noticeably slower. This is where the focus should be.” What we saw was an [undue focus](https://meiert.com/en/blog/performance-of-css-selectors/) on selector performance and an outright childish ban of selectors, notably, the universal selector.
+Perhaps people misunderstood when Steve went on to write, “There are some types of CSS rules and interactions with JavaScript that can make a page noticeably slower. This is where the focus should be.” What we saw was an [undue focus](https://meiert.com/blog/performance-of-css-selectors/) on selector performance and an outright childish ban of selectors, notably, the universal selector.
 
 (Years later, in additional investigations, we find problems with the methodology, leading to important observations like this one, [by Ben Frain](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/): “It is practically impossible to predict the final performance impact of a given selector by just examining the selectors.”)
 
@@ -296,7 +296,7 @@ Where we are right now, selector performance is a box better left closed.
 
 ### Irrelevant: Inline CSS
 
-Avoid inline CSS (applying CSS directly through `style` attributes). Again, this recommendation is based on the idea of keeping [the big picture](https://meiert.com/en/blog/big-picture-thinking/) in mind, by acknowledging that yes, inline CSS can be useful for performance reasons (saving one or more style sheet HTTP requests, applying faster selectors), but no, it violates separation of concerns and makes maintenance harder. Too hard.
+Avoid inline CSS (applying CSS directly through `style` attributes). Again, this recommendation is based on the idea of keeping [the big picture](https://meiert.com/blog/big-picture-thinking/) in mind, by acknowledging that yes, inline CSS can be useful for performance reasons (saving one or more style sheet HTTP requests, applying faster selectors), but no, it violates separation of concerns and makes maintenance harder. Too hard.
 
 It’s important to drive home this point: We are of little help as web developers when we are blind to the consequences of our work. It’s tragic even, if we are JavaScript experts, performance experts, accessibility experts, and don’t consider and understand how our expert knowledge impacts other areas of the field.
 
@@ -308,7 +308,7 @@ C> _Example: Can these styles lie?_
 
 As such, yes, inline CSS is good for performance, and as such, we should consider it a CSS optimization measure. But unless we deal with truly unique styling on truly unique single pages, a categorical _“no”_ to inline CSS. Our vision of web development discourages this: It asks to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance. We don’t want to touch HTML for formatting updates—and inline CSS prevents that.
 
-I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. Not only due to component-based development have we gotten to a point at which we can speak of [a new paradigm](https://meiert.com/en/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been softened decisively. That’s practically speaking a helpful and theoretically speaking a fascinating development. Personally, I still recommend following the first paradigm and to separate concerns (like structure, presentation, and behavior).
+I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. Not only due to component-based development have we gotten to a point at which we can speak of [a new paradigm](https://meiert.com/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been softened decisively. That’s practically speaking a helpful and theoretically speaking a fascinating development. Personally, I still recommend following the first paradigm and to separate concerns (like structure, presentation, and behavior).
 
 ### Potentially Relevant: Declaration Prudence
 
@@ -370,7 +370,7 @@ There’s a gray area when the respective working groups have just come up with 
 
 C> _Example: [Issues.](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.deutscher-ethikrat.de%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)_
 
-Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [another tool](https://frontenddogma.com/tools/#analysis-conformance)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit by getting a better technical understanding (validation issues can be instructive) and with that becoming better professionals (_everyone_ can write invalid code—we’re experts because we write valid code). These are [the two great things](https://meiert.com/en/blog/about-validation/) about validation.
+Through validation—whether using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) or [another tool](https://frontenddogma.com/tools/#analysis-conformance)—we optimize our style sheets because we can correct or remove code that doesn’t work. We also benefit by getting a better technical understanding (validation issues can be instructive) and with that becoming better professionals (_everyone_ can write invalid code—we’re experts because we write valid code). These are [the two great things](https://meiert.com/blog/about-validation/) about validation.
 
 ## Maintainability
 
@@ -422,7 +422,7 @@ Limiting the number of places where a particular style is defined usually makes 
 
 Using declarations just once (“UDJO”) is an old technique. It means what it says: to use each declaration just a single time.
 
-It’s a tangible optimization step in that we’re still encouraged to write CSS [the natural way](https://meiert.com/en/blog/css-dry-and-optimization/), to then go over what we’ve written to make sure we leave no repetition behind. That process is roughly [as follows](https://meiert.com/en/blog/dry-css/):
+It’s a tangible optimization step in that we’re still encouraged to write CSS [the natural way](https://meiert.com/blog/css-dry-and-optimization/), to then go over what we’ve written to make sure we leave no repetition behind. That process is roughly [as follows](https://meiert.com/blog/dry-css/):
 
 * Write CSS.
 * Decide on DRY boundaries: section (functionally separate CSS parts) or file, component, at-rule level?
@@ -434,7 +434,7 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
 * Dissolve duplicate declarations:
   - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting de-duplication to sections, limit search scope to these sections).
   - For each duplicate declaration (the actual work):
-    + Determine which respective rule should come first in the style sheet (for this, one has to have an unwritten or [written](https://meiert.com/en/blog/how-to-order-css-selectors/) standard for how to order selectors).
+    + Determine which respective rule should come first in the style sheet (for this, one has to have an unwritten or [written](https://meiert.com/blog/how-to-order-css-selectors/) standard for how to order selectors).
     + If this first rule contains additional declarations, i.e., declarations that we haven’t checked yet or that aren’t duplicates, copy the entire rule and paste it after the original. Keep the discovered duplicate in the first rule and remove the other declarations, and vice versa in the second rule, so that that rule is like the old rule just without the declaration we found to be used more than once.
     + Copy the selectors of the _other_ rules that contain the respective duplicate declaration to the rule that comes first.
     + Be sure to remove the duplicate declarations whose selectors have just been copied up in the style sheet, and to remove the entire rule if the rule only consisted of the now moved duplicate declaration.
@@ -450,7 +450,7 @@ This may seem intimidating, but is precise; and it’s only a lot of work when w
 
 C> _Example: [CSS Stats](https://cssstats.com/) shows a style sheet’s DRY factor._
 
-What we receive is a style sheet that’s [in most cases](https://meiert.com/en/blog/70-percent-css-repetition/#toc-example) lighter than what we started with. Yet as file size is not always a factor for performance ([thanks to compression](https://css-tricks.com/brotli-static-compression/)), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so great that we may not even need something like variables anymore. When, [unlike the average website](https://meiert.com/en/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
+What we receive is a style sheet that’s [in most cases](https://meiert.com/blog/70-percent-css-repetition/#toc-example) lighter than what we started with. Yet as file size is not always a factor for performance ([thanks to compression](https://css-tricks.com/brotli-static-compression/)), the main benefit is greater maintainability: We end up with style sheets that are more compact, easier to understand, and easier to manage. The benefit of this optimization step is so great that we may not even need something like variables anymore. When, [unlike the average website](https://meiert.com/blog/70-percent-css-repetition/), we _don’t_ repeat each declaration about four times, we don’t suffer from the issues of that much repetition.
 
 Try this process on for size, and apply it to components or CSS sections first (that is, avoid declaration repetition within functional blocks, as with page styles, navigation styles, form styles, however the blocks are divided). This way, it’s easier to get acquainted with the process, to get a moderate result, and also to feed back your own ideas on DRY CSS to the community.
 

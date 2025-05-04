@@ -12,11 +12,11 @@ To do one thing really well means to immerse ourselves in web development, to pr
 
 An idea occasionally forgotten, and not strictly followed, is the one of knowing our needs—of knowing our needs well. It’s also the idea of knowing our _goals_, or having goals in the first place—because our goals determine the specific needs we have.
 
-Knowing our goals and needs is important because it’s difficult to meet a goal when we don’t know it, and to satisfy a need that we’re ignorant of. In the web development world, there are many goals and needs we may have. They go from our fundamental understanding of maintenance (shall it be [“fire and forget”](https://meiert.com/en/blog/fire-and-forget/) or an iterative process?) to our preferences around frameworks (which ones [help us without introducing bloat](https://www.oreilly.com/library/view/the-little-book/9781492048121/)?) to our ambitions for output quality.
+Knowing our goals and needs is important because it’s difficult to meet a goal when we don’t know it, and to satisfy a need that we’re ignorant of. In the web development world, there are many goals and needs we may have. They go from our fundamental understanding of maintenance (shall it be [“fire and forget”](https://meiert.com/blog/fire-and-forget/) or an iterative process?) to our preferences around frameworks (which ones [help us without introducing bloat](https://www.oreilly.com/library/view/the-little-book/9781492048121/)?) to our ambitions for output quality.
 
 ## Stay in the Present
 
-Without becoming philosophical, another useful mindset is to [stay in the present](https://meiert.com/en/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (documentation, design patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know is needed _with certainty_.
+Without becoming philosophical, another useful mindset is to [stay in the present](https://meiert.com/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (documentation, design patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know is needed _with certainty_.
 
 This mindset matters because it keeps our code base and our documentation clean, and hence contributes to our focus (“Do One Thing Really, Really Well,” “Keep It Simple”).
 

@@ -44,7 +44,7 @@ A small collection of initiatives and individuals covering CSS:
 * [Frain, Ben](https://benfrain.com/)
 * [Heilmann, Christian](https://christianheilmann.com/)
 * [Kinlan, Paul](https://paul.kinlan.me/)
-* [Meiert, Jens Oliver](https://meiert.com/en/blog/categories/development/)
+* [Meiert, Jens Oliver](https://meiert.com/topics/development/)
 * [Meyer, Eric](https://meyerweb.com/)
 * [Roberts, Harry](https://csswizardry.com/)
 * [Shadeed, Ahmad](https://ishadeed.com/)

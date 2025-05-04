@@ -130,7 +130,7 @@ In other cases it seems most effective to go for a single style sheet. That hold
 
 C> _Example: Just one style sheet._
 
-Compromises and exceptions should be made sparingly and wisely, as I may demonstrate with an approach I took in [Google’s Go framework](https://meiert.com/en/blog/google-web-frameworks/): Provide a small core style sheet sufficient for basic pages, a bigger one for more complex pages, and individual style sheets for custom subsites and pages.
+Compromises and exceptions should be made sparingly and wisely, as I may demonstrate with an approach I took in [Google’s Go framework](https://meiert.com/blog/google-web-frameworks/): Provide a small core style sheet sufficient for basic pages, a bigger one for more complex pages, and individual style sheets for custom subsites and pages.
 
 ```
 ┣ go.css (or)
