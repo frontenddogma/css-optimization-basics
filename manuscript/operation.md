@@ -316,7 +316,7 @@ For declarations, we face a similar situation as with selectors—avoiding certa
 
 We know that declarations involving `box-shadow`, `filter`, `opacity`, and `transform`, depending on their values, can be significantly slower and hence more expensive than others. They may be so much more expensive that we can perceive the effects even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
 
-However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has Juriy Zaytsev](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/). Alas, the data are not robust and may not even be available anymore (I couldn’t reach Juriy for clarification).
+However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has Juriy Zaytsev](https://web.archive.org/web/20120107042804/http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/). Alas, the data are not robust and may not even be available anymore (I couldn’t reach Juriy for clarification).
 
 Until we do more research and can properly, reliably document all the declarations and value ranges that are particularly slow, there’s no point in panicking and no point in blindly guessing what declarations and values should be avoided.
 
@@ -406,11 +406,11 @@ One, reflecting the [Single Responsibility Principle](https://en.wikipedia.org/w
 
 Two is not to do anything, as we don’t have to do anything if we’re sorting selectors consistently (sorting will inherently lead to a modular order within our style sheets). This is especially true when we DRY our style sheets. As we’ll see, we can DRY individual CSS modules, but we can also DRY our style sheets entirely, something for which module separation is inconvenient. (This is another example of where our work requires prioritization and balance. We may opt for a different approach when our projects are particularly large.)
 
-T> Be cautious with [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](http://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/) [and [Tailwind](https://tailwindcss.com/)], and similar methods and solutions. Monitor closely how they help and how they hinder you.
+T> Be cautious with [OOCSS](https://www.slideshare.net/stubbornella/object-oriented-css) (object-oriented CSS), [BEM](https://getbem.com/) (Block Element Modifier), [Atomic CSS](https://acss.io/) [and [Tailwind](https://tailwindcss.com/)], and similar methods and solutions. Monitor closely how they help and how they hinder you.
 T>
 T> What they do is address some of the problems of _large-scale_ web development, while curbing freedom and flexibility affecting _all of_ web development. (In the case of utility CSS, it may lead everyone back to standardized beginner code.)
 T>
-T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance—but also no elegance through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](http://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate _all_ the advantages of CSS.
+T> When we’re asked to avoid the descendant selector (OOCSS), then great, no worries about inheritance—but also no elegance through contextual styling. When we shall avoid nested selectors (BEM), but “[in this case](https://getbem.com/faq/#can-a-block-modifier-affect-elements-) they are reasonable,” then we are not better off than before. When we must memorize more than 40 new classes (Atomic CSS) only to write the most presentational markup (the opposite of separation of concerns), then we negate _all_ the advantages of CSS.
 
 ### Don’t Repeat Yourself
 

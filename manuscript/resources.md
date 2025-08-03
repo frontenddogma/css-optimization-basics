@@ -15,7 +15,7 @@ A few handy CSS tools, for manual and automated testing:
 * [CSSJanus Left-to-Right-to-Left-ifyer script](https://code.google.com/archive/p/cssjanus/), to convert CSS directionality (LTR/RTL)
 * [CSSLint online tool](https://web.archive.org/web/20240503225408/http://csslint.net/) and [script](https://github.com/CSSLint/csslint), to identify CSS code issues
 * [CSSO package](https://www.npmjs.com/package/csso), to optimize and minify CSS
-* [CSSTidy online tool](https://www.codebeautifier.com/) and [script](http://csstidy.sourceforge.net/), to reformat and optimize CSS
+* [CSSTidy online tool](https://www.codebeautifier.com/) and [script](https://csstidy.sourceforge.net/), to reformat and optimize CSS
 * [Minify online tool](https://www.minifier.org/) and [script](https://github.com/matthiasmullie/minify), to minify CSS
 * [Minify package](https://www.npmjs.com/package/minify), to minify CSS
 * [ngx-unused-css package](https://www.npmjs.com/package/ngx-unused-css), to remove unused CSS (for Angular)
@@ -51,7 +51,7 @@ A small collection of initiatives and individuals covering CSS:
 * [Van Damme, Bramus](https://www.bram.us/)
 * [W3C (Cascading Style Sheets)](https://www.w3.org/Style/CSS/)
 * [Verou, Lea](https://lea.verou.me/)
-* [Weyl, Estelle](http://www.standardista.com/)
+* [Weyl, Estelle](https://estelle.github.io/)
 
 ## Books
 
