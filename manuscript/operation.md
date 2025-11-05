@@ -316,7 +316,7 @@ For declarations, we face a similar situation as with selectors—avoiding certa
 
 We know that declarations involving `box-shadow`, `filter`, `opacity`, and `transform`, depending on their values, can be significantly slower and hence more expensive than others. They may be so much more expensive that we can perceive the effects even with few declarations, hence making this a much more important point on our optimization agenda than selectors.
 
-However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has Juriy Zaytsev](https://web.archive.org/web/20120107042804/http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/). Alas, the data are not robust and may not even be available anymore (I couldn’t reach Juriy for clarification).
+However, the problem is that data are hard to come by. Ben Frain has contributed some [data on selector and declaration performance](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/), and [so has Juriy Zaytsev](https://web.archive.org/web/20120107042804/https://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/). Alas, the data are not robust and may not even be available anymore (I couldn’t reach Juriy for clarification).
 
 Until we do more research and can properly, reliably document all the declarations and value ranges that are particularly slow, there’s no point in panicking and no point in blindly guessing what declarations and values should be avoided.
 
