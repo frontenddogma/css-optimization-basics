@@ -5,6 +5,12 @@ Jens Oliver Meiert is a German web developer and author who has been a technical
 
 Other titles by Jens Oliver Meiert:
 
+## [_On Web Development II_](https://meiert.com/blog/on-web-development-2/) (2025)
+
+> A comprehensive ebook marking another 10 years of meiert.com, featuring 180 curated articles on web development from 2015 to 2025.
+
+Available at [Amazon](https://www.amazon.com/dp/B0G15TM2XL/?tag=meiert-20), [Kobo](https://www.kobo.com/us/en/ebook/on-web-development-ii), [Google Play Books](https://play.google.com/store/books/details?id=ruaVEQAAQBAJ), and [Leanpub](https://leanpub.com/on-web-development-2).
+
 ## _Upgrade Your HTML_ (2019–2024)
 
 > The _Upgrade Your HTML_ series is about one thing: Picking examples of HTML in the wild, and explaining how to make that code better. Kindly. Constructively. Thoroughly, as finding a balance between detail and brevity permits.
@@ -28,9 +34,3 @@ Available at [Apple Books](https://books.apple.com/us/book/the-web-development-g
 > _The Little Book of Little Books_ consists of lovingly polished editions of _The Little Book of HTML/CSS Frameworks_ (originally published in 2015), _The Little Book of HTML/CSS Coding Guidelines_ (2015), and _The Little Book of Website Quality Control_ (2016).
 
 Available at [Amazon](https://www.amazon.com/dp/B09LLFH2RY/?tag=meiert-20), [Apple Books](https://books.apple.com/us/book/the-little-book-of-little-books/id1596573542), [Kobo](https://www.kobo.com/us/en/ebook/the-little-book-of-little-books), [Google Play Books](https://play.google.com/store/books/details?id=H3dOEAAAQBAJ), and [Leanpub](https://leanpub.com/little-books).
-
-## [_On Web Development_](https://meiert.com/blog/on-web-development/) (2015)
-
-> _On Web Development_ bundles 134 articles and the last 11 years of technical writings by Jens Oliver Meiert (meiert.com). Freshly reordered and commented, the articles cover processes and maintenance, HTML and CSS, standards, as well as development and design in general; they include coding basics and principles, carefully scathing criticism, and tips and tricks and trivia.
-
-Available at [Amazon](https://www.amazon.com/dp/B010PQPT90/?tag=meiert-20).
