@@ -9,7 +9,7 @@ Other titles by Jens Oliver Meiert:
 
 > A comprehensive ebook marking another 10 years of meiert.com, featuring 180 curated articles on web development from 2015 to 2025.
 
-Available at [Amazon](https://www.amazon.com/dp/B0G15TM2XL/?tag=meiert-20), [Kobo](https://www.kobo.com/us/en/ebook/on-web-development-ii), [Google Play Books](https://play.google.com/store/books/details?id=ruaVEQAAQBAJ), and [Leanpub](https://leanpub.com/on-web-development-2).
+Available at [Amazon](https://www.amazon.com/dp/B0G15TM2XL/?tag=meiert-20), [Apple Books](https://books.apple.com/us/book/on-web-development-ii/id6755723929), [Kobo](https://www.kobo.com/us/en/ebook/on-web-development-ii), [Google Play Books](https://play.google.com/store/books/details?id=ruaVEQAAQBAJ), and [Leanpub](https://leanpub.com/on-web-development-2).
 
 ## _Upgrade Your HTML_ (2019–2024)
 
