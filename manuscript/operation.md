@@ -109,7 +109,7 @@ C> _Example: Random sample code._
 }
 ```
 
-C> _Example: Revised sample code (note the order of declarations and selectors). Since the writing of this book, [the `:is()` pseudo-class](https://css-tricks.com/almanac/selectors/i/is/) emerged as a great option to simplify code like this._
+C> _Example: Revised sample code (note the order of declarations and selectors). Since the writing of this book, [the `:is()` and `:where()` pseudo-classes](https://web.dev/articles/css-is-and-where) emerged as great options to simplify code like this._
 
 Consistency is reasonably easy to achieve. We [establish coding guidelines](https://www.oreilly.com/library/view/the-little-book/9781492048459/), we use (or build) tools to help follow and test for the guidelines, and then we enforce the guidelines. Many guidelines can be enforced right after writing and editing our CSS; others when shipping the code to production, where we may apply slightly different rules.
 
@@ -117,7 +117,7 @@ We’ll cover this last part in the chapter “Production Optimization,” and g
 
 #### Declaration Sorting
 
-This is trivial and, at the same time, automatable: _Sort declarations alphabetically._ [As Google advocates](https://google.github.io/styleguide/htmlcssguide.html#Declaration_Order), the only exception are vendor-specific extensions—self-destructing declarations that start with hyphens—which are to be located right before the respective main declaration. (Disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines, which introduced alphabetical sorting.)
+This is trivial and also automatable: _Sort declarations alphabetically._ [As Google advocates](https://google.github.io/styleguide/htmlcssguide.html#Declaration_Order), the only exception are vendor-specific extensions—eventually obsolete declarations that start with hyphens—which are to be located right before the respective main declaration. (Disclosure: I had been driving the last major initiative around Google’s HTML and CSS guidelines, which introduced alphabetical sorting.)
 
 ```css
 .example {
@@ -156,7 +156,7 @@ Sort declarations [alphabetically](https://meiert.com/blog/on-declaration-sortin
 
 #### Selector Sorting
 
-Selector sorting is the antithesis to declaration sorting. It’s far less trivial to standardize and also more difficult to automate. (On a brief investigation it seems that until now, [my own draft](https://meiert.com/blog/how-to-order-css-selectors/) is the only public attempt at a system. I welcome feedback!)
+Selector sorting is the complement to declaration sorting. It’s far less trivial to standardize and also more difficult to automate. (On a brief investigation it seems that until now, [my own draft](https://meiert.com/blog/how-to-order-css-selectors/) is the only public attempt at a system. I welcome feedback!)
 
 Yet selector sorting is the next impactful method at our disposal to make style sheets consistent and, in a way, optimize them for further optimization. When it comes to maintenance, a defined and followed selector order is crucial to successfully DRYing up our style sheet declarations (“DRY” from “Don’t Repeat Yourself,” a principle that helps with maintenance). It makes us avoid an extra round of DRYing _selector groups_ and spares us from additional testing complexity.
 
@@ -216,7 +216,7 @@ em {
 
 C> _Example: High level block elements, then text level elements, then classes and IDs, [&c.](https://meiert.com/blog/how-to-order-css-selectors/)_
 
-Although it seems that many teams of web developers have survived without a firm idea of how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal). More importantly, only then do we have a chance of eliminating unnecessary work caused by chance ordering. As we’ll see with the avoidance of repetition, that unnecessary work is otherwise awaiting us.
+Although it appears that many teams of web developers have survived without specific conventions for how to arrange selectors, only when we have some sense of order can we truly get to consistent style sheets (granted that this is our goal). More importantly, only then do we have a chance of eliminating work caused by chance ordering. As we’ll see with the avoidance of repetition, that unnecessary work is otherwise awaiting us.
 
 Accordingly, the lack of initiatives and options for selector orders should give us something to think about and work on in our community. If you’re in a position to do so, consider what we have and help us come up with additional options and conventions.
 
@@ -272,7 +272,7 @@ Because of their value in making code more compact, and their generally positive
 
 ## Performance
 
-Performance is an obvious goal to optimize for. The faster, the better. We know that the [user experience improves when everyone gets what they want, quickly](https://www.nngroup.com/articles/website-response-times/), and that [with better speed, conversions increase as well](https://web.archive.org/web/20110511211112/https://blog.kissmetrics.com/speed-is-a-killer/).
+Performance is an obvious goal to optimize for. The faster, the better. We know that the [user experience improves when everyone swiftly gets what they want](https://www.nngroup.com/articles/website-response-times/), and that [with higher speed, conversions increase as well](https://web.archive.org/web/20110511211112/https://blog.kissmetrics.com/speed-is-a-killer/).
 
 What we can also say is that improving rendering performance may not be nearly as effective as improving loading performance. That is, not omitting optional tags for the reason that the browser would otherwise need to “put them back” is not as helpful for performance as is compressing images. These calculations are generally done so quickly that the respective issues don’t matter in practice. (There’s nothing to worry about when [omitting optional tags and unneeded quotes](https://meiert.com/blog/optional-html/).)
 
@@ -308,7 +308,7 @@ C> _Example: Can these styles lie?_
 
 As such, yes, inline CSS is good for performance, and as such, we should consider it a CSS optimization measure. But unless we deal with truly unique styling on truly unique single pages, a categorical _“no”_ to inline CSS. Our vision of web development discourages this: It asks to write the leanest possible HTML for maximum freedom of movement in terms of updates and maintenance. We don’t want to touch HTML for formatting updates—and inline CSS prevents that.
 
-I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. Not only due to component-based development have we gotten to a point at which we can speak of [a new paradigm](https://meiert.com/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been softened decisively. That’s practically speaking a helpful and theoretically speaking a fascinating development. Personally, I still recommend following the first paradigm and to separate concerns (like structure, presentation, and behavior).
+I> With improvements to our content management, build, and deployment processes, HTML maintenance has become a lot easier and cheaper. Not only due to component-based development have we gotten to a point at which we can speak of [a new paradigm](https://meiert.com/blog/two-paradigms/) for web development, where the first paradigm, absolute separation of concerns, has been softened. That’s practically speaking a helpful and theoretically speaking a fascinating development. Personally, I still recommend following the first paradigm and to separate concerns (like structure, presentation, and behavior).
 
 ### Potentially Relevant: Declaration Prudence
 
@@ -354,7 +354,7 @@ I> * how to limit the number of images (and the number of HTTP requests, through
 I> * whether to use images (data URIs);
 I> * and again, what formats to use (“…or SVG? WebP?”).
 I>
-I> These topics, without the redundancy of the formats and compression questions, are exactly the ones we still focus on today. But although I’ve debated to make image optimization a part of this book, it’s not _CSS_ optimization—it’s image optimization. And Addy Osmani has written [such a book](https://images.guide/).
+I> These topics, without the redundancy of the formats and compression questions, are exactly the ones we still focus on today. But although I’ve debated making image optimization a part of this book, it’s not _CSS_ optimization—it’s image optimization. And Addy Osmani has written [such a book](https://images.guide/).
 
 ## Quality
 
@@ -394,9 +394,9 @@ Separation of concerns is one key for maintainability. It’s defined as follows
 
 > In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program. A concern can be as general as “the details of the hardware for an application,” or as specific as “the name of which class to instantiate.” A program that embodies SoC well is called a modular program. Modularity, and hence separation of concerns, is achieved by encapsulating information inside a section of code that has a well-defined interface.
 
-The first and most important part of separation of concerns is to separate structure (HTML), presentation (CSS), and behavior (JavaScript or, more accurately, ECMAScript).
+The first and most important part of separation of concerns is to separate structure (HTML), presentation (CSS), and behavior (JavaScript).
 
-On a macro-level, separation of concerns ensures that we develop using the appropriate language (in the 90’s and 2000’s we’ve seen what solving design issues in HTML leads to: millions of layout tables), and that we know where to look when there are issues (we don’t want to address document-structural issues in JavaScript).
+On a macro-level, separation of concerns ensures that we develop using the appropriate language (in the 90’s and 2000’s we’ve seen what solving design issues in HTML leads to: millions of hard-to-maintain layout tables), and that we know where to look when there are issues (we would rather not address document-structural issues in JavaScript).
 
 For CSS, that means to make sure we collect everything that’s related to the appearance of our site or app, and place that in our style sheets. In a way, separation of concerns is the basis for all optimization—that way, we know that our CSS is actually handled in style sheets (and not in HTML templates or JavaScript files).
 
@@ -431,7 +431,7 @@ It’s a tangible optimization step in that we’re still encouraged to write CS
   - For new style sheets: after the initial setup has been done.
   - For new features and bug fixes: after the respective work has been done.
   - Tip: If version control highlighting for file changes is not enough, temporarily indent changed declarations only to check for their repetition.
-* Dissolve duplicate declarations:
+* Consolidate duplicate declarations:
   - Check each declaration (in new style sheets) or each changed declaration for re-occurrence within the set boundary (when limiting de-duplication to sections, limit search scope to these sections).
   - For each duplicate declaration (the actual work):
     + Determine which respective rule should come first in the style sheet (for this, one has to have an unwritten or [written](https://meiert.com/blog/how-to-order-css-selectors/) standard for how to order selectors).

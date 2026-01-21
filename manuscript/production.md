@@ -4,13 +4,13 @@ For production, we usually take care of all the things that are good for end use
 
 ## Performance
 
-Performance is one of the primary optimization goals and again, _rendering_ performance is not the subject here. This is due to the so far practical impediments to measure and optimize it, and hence the often comparatively marginal results.
+Performance is one of the primary optimization goals and again, _rendering_ performance is not the subject here. This is due to the so far practical impediments to measure and optimize it, and the often comparatively marginal results.
 
 As long as our code is consistent, the steps suggested here can all be taken care of right before production, automatically. They don’t have to find their way back into the operational repository. We’ll start with the exceptions, because they can be covered by our code style guidelines and also be handled manually.
 
 ### Character Minimization
 
-To make our style sheets more compact (that is, to make them easier to read and smaller in size), we remove all unneeded characters. That doesn’t refer to whitespace and comments yet. (Both can be covered by the same tool, so let’s make that a separate step.) Instead, it refers to removing CSS that isn’t strictly needed. This includes:
+To make our style sheets more compact (that is, to make them easier to read and smaller in size), we remove all unneeded characters. That doesn’t refer to whitespace and comments yet. (Both can be covered by the same tool, though.) Instead, it refers to removing CSS that isn’t strictly needed. This includes:
 
 * leading `0`’s (`margin: .1rem`, not `margin: 0.1rem`);
 * unneeded trailing `0`’s (`line-height: 1`, not `line-height: 1.0`);
@@ -29,8 +29,8 @@ Again, this is only presented as a separate step to illustrate that we can remov
 
 We’re doing two things at this step:
 
-1) removing comments,
-2) removing (non-required) whitespace characters.
+1. removing comments,
+2. removing (non-required) whitespace characters.
 
 ```css
 html {
@@ -57,7 +57,7 @@ C> _Example: Random non-minified CSS snippet._
 html{font:87.5%/1.5 'helvetica neue',helvetica,sans-serif;max-width:600px;padding:1em}footer{border-top:1px solid #eee;margin:2.5em 0 0;padding:3px 0 0}footer small,label{display:block}
 ```
 
-C> _Example: Random, now minified CSS snippet._
+C> _Example: Random, now minified (one-liner) CSS snippet._
 
 As mentioned at the beginning of this book, we benefit from automating our work. As this optimization step is ugly to perform manually, we have a case here that should be and that is almost _always_ automated.
 
@@ -77,27 +77,27 @@ T> * [UglifyCSS](https://www.npmjs.com/package/uglifycss)
 
 ### File Normalization
 
-We can work with as many style sheet and preprocessor files as we want, even though that makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”). However, for production, we should make sure we combine them into a single file to load. That’s important for more effective compression and, even more so, to reduce the number of HTTP requests. ([HTTP/2 alleviates](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x) but at the moment I still advise to limit the number of requests.)
+We can work with as many style sheet and preprocessor files as we want, even though that makes it more difficult to avoid declaration repetition (see “Using Declarations Just Once”). However, for production, we should make sure we combine them into a single file to load. That’s important for more effective compression and, even more so, to reduce the number of HTTP requests. ([HTTP/2 changes this](https://http2.github.io/faq/#what-are-the-key-differences-to-http1x), but at the moment [2018] I still advise limiting the number of requests.)
 
 The idea behind this is that HTTP request overhead makes for 500–700 bytes, costing “about 100 ms” (Steve Souders, Kyle Simpson).
 
 This data has led to the recommendation to inline files smaller than 1 KB, but not bigger than 4 KB (Guy Podjarny).
 
-Let’s assume that most sites that use several style sheets (to then be combined to a single one for production) work with files that are larger than 1 KB. As such, it’s useful to have these as individual files (and not inline). For each style sheet that we get rid of and merge, we save roughly half a kilobyte and 10 ms. This leads to the general recommendation to merge all styles into one file and link that from our documents.
+Let’s assume that most sites that use several style sheets (to then be combined into a single one for production) work with files that are larger than 1 KB. As such, it’s useful to have these as individual files (and not inline). For each style sheet that we get rid of and merge, we may save up to half a kilobyte and 10 ms. This leads to the general recommendation to merge all styles into one file and to link that from our documents.
 
 Yet, there must be something else. What about small sites, and what about overall file size and caching?
 
-Small sites, particularly one-pagers with just a few rules, may be under the threshold. If the site is and will be a one-pager forever, we have a stronger incentive to inline all code, both styles and scripts. But that also depends on the page itself and our ideas about separation of concerns. If the page resources are so few and light that an extra CSS request is not noticeable, it may well be fine to stick with a separate style sheet. If we strongly believe in separation of concerns, we might just always go for that separation (and what may at first sound rigid then becomes consistent and simple).
+Small sites, particularly one-pagers with just a few rules, may be under the threshold. If the site is and will be a one-pager forever, we have a stronger incentive to inline all code, both styles and scripts. But that also depends on the page itself and our ideas about separation of concerns. If the page resources are so few and light that an extra CSS request is not noticeable, it may well be fine to stick with a separate style sheet. When we believe in separation of concerns, we might just always go for that separation (and what may at first sound rigid then becomes consistent and simple).
 
 File size and caching are normally the issues of biggest concern. They’re linked with the following two questions:
 
-1) If all our styles are in one style sheet, but a user visits just one page, how can we justify pushing all the unused styles onto them?
+1. If all our styles are in one style sheet, but a user visits just one page, how can we justify pushing all the unused styles onto them?
 
-(Per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide a number, as bounce rates vary per field as well as per type of content.)
+   (Per RocketFuel and Kissmetrics, the average bounce rate on the Web is around 50%—just to provide a number, as bounce rates vary per field as well as per type of content.)
 
-2) Same scenario—if all our styles are in one style sheet, what is a good balance to make sure that the style sheet gets cached but we can swiftly roll out updates?
+2. Same scenario—if all our styles are in one style sheet, what is a good balance to make sure that the style sheet gets cached, but we can swiftly roll out updates?
 
-I set out to go over both questions in detail, but believe it to be more useful now to leave them open. This should remind us that, even though technical questions often beg definite answers, there are questions that don’t lead to a strict “right” or “wrong”—the answers often depend on our priorities.
+I set out to go over both questions in detail, but believe it to be more useful to leave them open. This should remind us that, even though technical questions often beg definite answers, there are questions that don’t lead to a strict “right” or “wrong”—the answers often depend on our priorities.
 
 What’s there to consider for a decision?
 
