@@ -2,6 +2,11 @@
 
 This is the source of the open and living book [_CSS Optimization Basics_](https://meiert.com/blog/css-optimization-basics/) by O’Reilly author and former Google tech lead [Jens Oliver Meiert](https://meiert.com/) (short: Jens).
 
+<!-- Seriously, GitHub? -->
+<div align="center">
+	<a href="https://meiert.com/blog/css-optimization-basics/"><img src="https://meiert.com/de/publications/books/css-optimization-basics/cover-s.png" alt="The cover of “CSS Optimization Basics.”"></a>
+</div>
+
 You have two options to get the book.
 
 1. You can read the book here, for free.
