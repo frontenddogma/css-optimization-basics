@@ -18,7 +18,7 @@ Knowing our goals and needs is important because it’s difficult to meet a goal
 
 Without becoming philosophical, another useful mindset is to [stay in the present](https://meiert.com/blog/develop-for-what-is/), to stay in the now. This means both a keen eye to get rid of everything (documentation, design patterns, code snippets, libraries, &c.) that we don’t need and use anymore (“Know Your Needs”), as well as not to bother coding something that we don’t know is needed _with certainty_.
 
-This mindset matters because it keeps our code base and our documentation clean, and hence contributes to our focus (“Do One Thing Really, Really Well,” “Keep It Simple”).
+This mindset matters because it keeps our codebase and our documentation clean, and hence contributes to our focus (“Do One Thing Really, Really Well,” “Keep It Simple”).
 
 ## Keep It Simple
 
