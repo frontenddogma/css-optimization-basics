@@ -5,6 +5,12 @@ Jens Oliver Meiert is a German web developer and author who has been a technical
 
 Other titles by Jens Oliver Meiert:
 
+## [_The Web Development Glossary 4K_](https://meiert.com/blog/the-web-development-glossary-4k/) (2026)
+
+> What is 3P? Afferent coupling? Strict evaluation? What are CPH, cHTML, and CMF? How about Vanadium, OPcache, or Auto Forms Mode? Covering more than 4,000 terms and concepts, and including explanations from Wikipedia and MDN Web Docs, _The Web Development Glossary 4K_ provides an overview of web development unlike any other book or site.
+
+Available at [Apple Books](https://books.apple.com/us/book/the-web-development-glossary-4k/id6760966634), [Google Play Books](https://play.google.com/store/books/details?id=WuDKEQAAQBAJ), and [Leanpub](https://leanpub.com/web-development-glossary-4k). (Try the glossary online at [WebGlossary.info](https://webglossary.info/)!)
+
 ## [_On Web Development II_](https://meiert.com/blog/on-web-development-2/) (2025)
 
 > A comprehensive ebook marking another 10 years of meiert.com, featuring 180 curated articles on web development from 2015 to 2025.
@@ -22,12 +28,6 @@ Available at [Amazon](https://www.amazon.com/dp/B0B4SD84B2/?tag=meiert-20), [App
 > Learn HTML and CSS, the hard way.
 
 Available at [Apple Books](https://books.apple.com/us/book/rote-learning-html-css/id6633442792), [Kobo](https://www.kobo.com/us/en/ebook/rote-learning-html-css), [Google Play Books](https://play.google.com/store/books/details?id=KYAZEQAAQBAJ), and [Leanpub](https://leanpub.com/rote-learning-html-css).
-
-## [_The Web Development Glossary 3K_](https://meiert.com/blog/the-web-development-glossary-3k/) (2023)
-
-> What is a BHO? CQRS? An EMD? What is Goanna? Hooking? Sharding? How about dynamic color, the phoenix server pattern, or the rules of ARIA? Covering more than 3,000 terms and concepts, and including explanations from Wikipedia and MDN Web Docs, _The Web Development Glossary 3K_ provides an overview of web development unlike any other book or site.
-
-Available at [Apple Books](https://books.apple.com/us/book/the-web-development-glossary-3k/id6453522940), [Kobo](https://www.kobo.com/us/en/ebook/the-web-development-glossary-3k), [Google Play Books](https://play.google.com/store/books/details?id=eFHNEAAAQBAJ), and [Leanpub](https://leanpub.com/web-development-glossary-3k). (Try the glossary online at [WebGlossary.info](https://webglossary.info/).)
 
 ## [_The Little Book of Little Books_](https://meiert.com/blog/the-little-book-of-little-books/) (2021)
 
