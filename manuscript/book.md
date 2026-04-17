@@ -3,7 +3,7 @@
 
 Written by [Jens Oliver Meiert](https://meiert.com/).
 
-Published by [Frontend Dogma](https://frontenddogma.com/), c/o Jens Oliver Meiert, Apartado de correos 3, 36070 Pontevedra, Spain.
+Published by [Frontend Dogma](https://frontenddogma.com/), c/o Jens Oliver Meiert, Apartado de correos 26, 36780 A Guarda, Spain.
 
 Editor: Kirsty MacRae
 Reviewer: Tony Ruscoe
@@ -14,4 +14,4 @@ Contact +34-610859489 or info@frontenddogma.com for questions and more informati
 
 Follow [Frontend Dogma on Mastodon](https://mas.to/@frontenddogma) ([and other networks](https://frontenddogma.com/posts/2024/frontend-dogma-on-the-web/)).
 
-[1.7.5]
+[1.7.6]
