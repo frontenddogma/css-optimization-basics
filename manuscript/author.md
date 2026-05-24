@@ -15,13 +15,13 @@ Available at [Apple Books](https://books.apple.com/us/book/the-web-development-g
 
 > A comprehensive ebook marking another 10 years of meiert.com, featuring 180 curated articles on web development from 2015 to 2025.
 
-Available at [Amazon](https://www.amazon.com/dp/B0G15TM2XL/?tag=meiert-20), [Apple Books](https://books.apple.com/us/book/on-web-development-ii/id6755723929), [Kobo](https://www.kobo.com/us/en/ebook/on-web-development-ii), [Google Play Books](https://play.google.com/store/books/details?id=ruaVEQAAQBAJ), and [Leanpub](https://leanpub.com/on-web-development-2).
+Available at [Amazon](https://www.amazon.com/dp/B0G15TM2XL/), [Apple Books](https://books.apple.com/us/book/on-web-development-ii/id6755723929), [Kobo](https://www.kobo.com/us/en/ebook/on-web-development-ii), [Google Play Books](https://play.google.com/store/books/details?id=ruaVEQAAQBAJ), and [Leanpub](https://leanpub.com/on-web-development-2).
 
 ## _Upgrade Your HTML_ (2019–2024)
 
 > The _Upgrade Your HTML_ series is about one thing: Picking examples of HTML in the wild, and explaining how to make that code better. Kindly. Constructively. Thoroughly, as finding a balance between detail and brevity permits.
 
-Available at [Amazon](https://www.amazon.com/dp/B0B4SD84B2/?tag=meiert-20), [Apple Books](https://books.apple.com/us/book-series/upgrade-your-html/id1569607037), [Kobo](https://www.kobo.com/us/en/series/upgrade-your-html), [Google Play Books](https://play.google.com/store/books/series?id=5AksGwAAABDJEM), and [Leanpub](https://leanpub.com/b/upgrade-your-html-1-5).
+Available at [Amazon](https://www.amazon.com/dp/B0B4SD84B2/), [Apple Books](https://books.apple.com/us/book-series/upgrade-your-html/id1569607037), [Kobo](https://www.kobo.com/us/en/series/upgrade-your-html), [Google Play Books](https://play.google.com/store/books/series?id=5AksGwAAABDJEM), and [Leanpub](https://leanpub.com/b/upgrade-your-html-1-5).
 
 ## [_Rote Learning HTML & CSS_](https://meiert.com/blog/rote-learning-html-and-css/) (2024)
 
@@ -33,4 +33,4 @@ Available at [Apple Books](https://books.apple.com/us/book/rote-learning-html-cs
 
 > _The Little Book of Little Books_ consists of lovingly polished editions of _The Little Book of HTML/CSS Frameworks_ (originally published in 2015), _The Little Book of HTML/CSS Coding Guidelines_ (2015), and _The Little Book of Website Quality Control_ (2016).
 
-Available at [Amazon](https://www.amazon.com/dp/B09LLFH2RY/?tag=meiert-20), [Apple Books](https://books.apple.com/us/book/the-little-book-of-little-books/id1596573542), [Kobo](https://www.kobo.com/us/en/ebook/the-little-book-of-little-books), [Google Play Books](https://play.google.com/store/books/details?id=H3dOEAAAQBAJ), and [Leanpub](https://leanpub.com/little-books).
+Available at [Amazon](https://www.amazon.com/dp/B09LLFH2RY/), [Apple Books](https://books.apple.com/us/book/the-little-book-of-little-books/id1596573542), [Kobo](https://www.kobo.com/us/en/ebook/the-little-book-of-little-books), [Google Play Books](https://play.google.com/store/books/details?id=H3dOEAAAQBAJ), and [Leanpub](https://leanpub.com/little-books).
