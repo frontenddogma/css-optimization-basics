@@ -57,7 +57,7 @@ A small collection of initiatives and individuals covering CSS:
 
 An even smaller selection of books:
 
-* [_CSS Secrets: Better Solutions to Everyday Web Design Problems_ (Lea Verou)](https://www.amazon.com/dp/B0131MQ1NS/)
-* [_CSS: The Definitive Guide: Visual Presentation for the Web_ (Eric A. Meyer and Estelle Weyl)](https://www.amazon.com/dp/1449393195/)
-* [_CSS: The Missing Manual: The Missing Manual_ (David Sawyer McFarland)](https://www.amazon.com/dp/B0026OR2QI/)
+* [_CSS Secrets: Better Solutions to Everyday Web Design Problems_ (Lea Verou)](https://www.kobo.com/us/en/ebook/css-secrets)
+* [_CSS: The Definitive Guide: Visual Presentation for the Web_ (Eric A. Meyer and Estelle Weyl)](https://app.thestorygraph.com/books/96c0f9cd-43ae-40c8-8511-03bb8d5bac09)
+* [_CSS: The Missing Manual_ (David Sawyer McFarland)](https://www.kobo.com/us/en/ebook/css-the-missing-manual-2)
 * [_The Little Book of HTML/CSS Frameworks_ (Jens Oliver Meiert)](https://www.oreilly.com/library/view/the-little-book/9781492048121/)
