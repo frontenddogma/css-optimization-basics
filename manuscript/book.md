@@ -10,8 +10,8 @@ Reviewer: Tony Ruscoe
 
 While this book has been produced with great care, the author, publisher, and contributors assume no liability for the up-to-dateness, correctness, and completeness of the information provided. Liability claims based on the use or non-use of this information are excluded, unless author, publisher, or contributors can be proven to have acted with intent or gross negligence. Use of the information in this book is on your own responsibility. When using code or content subject to open-source licenses or the rights of others, it is on you to ensure compliance with the respective licenses and rights.
 
-Contact +34-610859489 or info@frontenddogma.com for questions and more information.
+Contact +34-624419643 or info@frontenddogma.com for questions and more information.
 
 Follow [Frontend Dogma on Mastodon](https://mas.to/@frontenddogma) ([and other networks](https://frontenddogma.com/posts/2024/frontend-dogma-on-the-web/)).
 
-[1.7.12]
+[1.7.13]
